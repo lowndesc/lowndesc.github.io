@@ -1,6 +1,0 @@
-{
-  "@id": "dtmi:digitaltwins:org:generic:sco:scobe:Group_Inferior_Range;1",
-  "@type": "Interface",
-  "extends": "dtmi:digitaltwins:org:generic:sco:scobe:Range_Result;1",
-  "@context": "dtmi:dtdl:context;2"
-}

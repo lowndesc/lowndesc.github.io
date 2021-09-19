@@ -1,9 +1,0 @@
-{
-  "@id": "dtmi:digitaltwins:org:generic:sco:scopro:Waste_Disposal;1",
-  "@type": "Interface",
-  "displayName": {
-    "en": "Waste_Disposal"
-  },
-  "extends": "dtmi:digitaltwins:org:generic:sco:scopro:EtO_Process_Element;1",
-  "@context": "dtmi:dtdl:context;2"
-}

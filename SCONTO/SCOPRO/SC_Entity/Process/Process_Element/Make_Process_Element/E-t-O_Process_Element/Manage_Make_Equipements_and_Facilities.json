@@ -1,9 +1,0 @@
-{
-  "@id": "dtmi:digitaltwins:org:generic:sco:scopro:Manage_Make_Equipements_and_Facilities;1",
-  "@type": "Interface",
-  "displayName": {
-    "en": "Manage_Make_Equipements_and_Facilities"
-  },
-  "extends": "dtmi:digitaltwins:org:generic:sco:scopro:EtO_Process_Element;1",
-  "@context": "dtmi:dtdl:context;2"
-}

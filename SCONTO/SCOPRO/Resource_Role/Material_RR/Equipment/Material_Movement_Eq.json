@@ -1,9 +1,0 @@
-{
-  "@id": "dtmi:digitaltwins:org:generic:sco:scopro:Material_Movement_Eq;1",
-  "@type": "Interface",
-  "displayName": {
-    "en": "Material_Movement_Eq"
-  },
-  "extends": "dtmi:digitaltwins:org:generic:sco:scopro:Equipment;1",
-  "@context": "dtmi:dtdl:context;2"
-}

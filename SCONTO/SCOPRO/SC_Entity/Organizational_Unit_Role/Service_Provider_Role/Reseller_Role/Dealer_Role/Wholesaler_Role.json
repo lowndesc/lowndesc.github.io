@@ -1,9 +1,0 @@
-{
-  "@id": "dtmi:digitaltwins:org:generic:sco:scopro:Wholesaler_Role;1",
-  "@type": "Interface",
-  "displayName": {
-    "en": "Wholesaler_Role"
-  },
-  "extends": "dtmi:digitaltwins:org:generic:sco:scopro:Dealer_Role;1",
-  "@context": "dtmi:dtdl:context;2"
-}

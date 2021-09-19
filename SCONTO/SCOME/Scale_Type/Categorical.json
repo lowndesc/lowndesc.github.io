@@ -1,9 +1,0 @@
-{
-  "@id": "dtmi:digitaltwins:org:generic:sco:scome:Categorical;1",
-  "@type": "Interface",
-  "description": {
-    "en": "Tipo de escala cuyos valores se vinculan a una clasificación o categorización de una propiedad"
-  },
-  "extends": "dtmi:digitaltwins:org:generic:sco:scome:Scale_Type;1",
-  "@context": "dtmi:dtdl:context;2"
-}

@@ -1,9 +1,0 @@
-{
-  "@id": "dtmi:digitaltwins:org:generic:sco:scome:Measure_Creation;1",
-  "@type": "Interface",
-  "description": {
-    "en": "Generación de una medida durante una actividad de medición"
-  },
-  "extends": "dtmi:digitaltwins:org:generic:sco:scopro:Creation;1",
-  "@context": "dtmi:dtdl:context;2"
-}

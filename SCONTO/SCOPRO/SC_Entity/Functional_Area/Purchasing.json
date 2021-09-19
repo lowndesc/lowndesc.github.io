@@ -1,9 +1,0 @@
-{
-  "@id": "dtmi:digitaltwins:org:generic:sco:scopro:Purchasing;1",
-  "@type": "Interface",
-  "displayName": {
-    "en": "Purchasing"
-  },
-  "extends": "dtmi:digitaltwins:org:generic:sco:scopro:Functional_Area;1",
-  "@context": "dtmi:dtdl:context;2"
-}

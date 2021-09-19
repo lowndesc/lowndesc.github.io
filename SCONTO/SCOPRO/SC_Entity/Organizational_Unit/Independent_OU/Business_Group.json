@@ -1,9 +1,0 @@
-{
-  "@id": "dtmi:digitaltwins:org:generic:sco:scopro:Business_Group;1",
-  "@type": "Interface",
-  "displayName": {
-    "en": "Business_Group"
-  },
-  "extends": "dtmi:digitaltwins:org:generic:sco:scopro:Independent_OU;1",
-  "@context": "dtmi:dtdl:context;2"
-}

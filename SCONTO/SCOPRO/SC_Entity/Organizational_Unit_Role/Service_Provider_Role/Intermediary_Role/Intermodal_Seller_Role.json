@@ -1,9 +1,0 @@
-{
-  "@id": "dtmi:digitaltwins:org:generic:sco:scopro:Intermodal_Seller_Role;1",
-  "@type": "Interface",
-  "displayName": {
-    "en": "Intermodal_Seller_Role"
-  },
-  "extends": "dtmi:digitaltwins:org:generic:sco:scopro:Intermediary_Role;1",
-  "@context": "dtmi:dtdl:context;2"
-}

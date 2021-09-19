@@ -1,9 +1,0 @@
-{
-  "@id": "dtmi:digitaltwins:org:generic:sco:scopro:Intermediary_Role;1",
-  "@type": "Interface",
-  "displayName": {
-    "en": "Intermediary_Role"
-  },
-  "extends": "dtmi:digitaltwins:org:generic:sco:scopro:Service_Provider_Role;1",
-  "@context": "dtmi:dtdl:context;2"
-}

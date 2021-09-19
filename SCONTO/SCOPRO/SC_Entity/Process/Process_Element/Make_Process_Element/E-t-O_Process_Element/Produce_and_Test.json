@@ -1,9 +1,0 @@
-{
-  "@id": "dtmi:digitaltwins:org:generic:sco:scopro:Produce_and_Test;1",
-  "@type": "Interface",
-  "displayName": {
-    "en": "Produce_and_Test"
-  },
-  "extends": "dtmi:digitaltwins:org:generic:sco:scopro:EtO_Process_Element;1",
-  "@context": "dtmi:dtdl:context;2"
-}

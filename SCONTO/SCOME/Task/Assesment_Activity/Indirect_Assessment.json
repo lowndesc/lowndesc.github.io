@@ -1,9 +1,0 @@
-{
-  "@id": "dtmi:digitaltwins:org:generic:sco:scome:Indirect_Assessment;1",
-  "@type": "Interface",
-  "description": {
-    "en": "Actividad de medición en la cual se usa una o más medidas de atributos mensurables"
-  },
-  "extends": "dtmi:digitaltwins:org:generic:sco:scome:Assesment_Activity;1",
-  "@context": "dtmi:dtdl:context;2"
-}

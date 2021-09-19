@@ -1,9 +1,0 @@
-{
-  "@id": "dtmi:digitaltwins:org:generic:sco:scome:Measure_Use;1",
-  "@type": "Interface",
-  "description": {
-    "en": "Empleo de una medida en una actividad de medición indirecta"
-  },
-  "extends": "dtmi:digitaltwins:org:generic:sco:scopro:Use;1",
-  "@context": "dtmi:dtdl:context;2"
-}

@@ -1,9 +1,0 @@
-{
-  "@id": "dtmi:digitaltwins:org:generic:sco:scopro:Source_Return_Process_Element;1",
-  "@type": "Interface",
-  "displayName": {
-    "en": "Source_Return_Process_Element"
-  },
-  "extends": "dtmi:digitaltwins:org:generic:sco:scopro:Process_Element;1",
-  "@context": "dtmi:dtdl:context;2"
-}

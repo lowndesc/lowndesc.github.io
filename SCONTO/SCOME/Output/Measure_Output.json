@@ -1,9 +1,0 @@
-{
-  "@id": "dtmi:digitaltwins:org:generic:sco:scome:Measure_Output;1",
-  "@type": "Interface",
-  "description": {
-    "en": "Rol de una medida que se obtiene como resultado de una actividad de medición"
-  },
-  "extends": "dtmi:digitaltwins:org:generic:sco:scopro:Output;1",
-  "@context": "dtmi:dtdl:context;2"
-}

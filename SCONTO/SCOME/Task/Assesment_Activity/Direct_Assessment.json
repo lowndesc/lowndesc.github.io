@@ -1,9 +1,0 @@
-{
-  "@id": "dtmi:digitaltwins:org:generic:sco:scome:Direct_Assessment;1",
-  "@type": "Interface",
-  "description": {
-    "en": "Actividad de medición en la cual no se usan medidas de atributos mensurables"
-  },
-  "extends": "dtmi:digitaltwins:org:generic:sco:scome:Assesment_Activity;1",
-  "@context": "dtmi:dtdl:context;2"
-}

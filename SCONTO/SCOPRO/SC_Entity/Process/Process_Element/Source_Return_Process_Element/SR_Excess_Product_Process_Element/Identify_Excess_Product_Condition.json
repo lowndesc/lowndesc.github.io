@@ -1,9 +1,0 @@
-{
-  "@id": "dtmi:digitaltwins:org:generic:sco:scopro:Identify_Excess_Product_Condition;1",
-  "@type": "Interface",
-  "displayName": {
-    "en": "Identify_Excess_Product_Condition"
-  },
-  "extends": "dtmi:digitaltwins:org:generic:sco:scopro:SR_Excess_Product_Process_Element;1",
-  "@context": "dtmi:dtdl:context;2"
-}
