@@ -1,0 +1,30 @@
+{
+  "@id": "dtmi:digitaltwins:org:generic:sco:scopro:Composite_Task;1",
+  "@type": "Interface",
+  "contents": [
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "inversa de isPartOfCT Inverse of: isPartOfCT"
+      },
+      "name": "isComprisedOfST",
+      "target": "dtmi:digitaltwins:org:generic:sco:scopro:Task;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "inversa de isSubProcessOf Inverse of: isSubProcessOf"
+      },
+      "name": "isComprisedOfSubProcess",
+      "target": "dtmi:digitaltwins:org:generic:sco:scopro:Task;1"
+    }
+  ],
+  "description": {
+    "en": "Tarea que posee como componentes a otras tareas"
+  },
+  "displayName": {
+    "en": "Composite_Task"
+  },
+  "extends": "dtmi:digitaltwins:org:generic:sco:scopro:Task;1",
+  "@context": "dtmi:dtdl:context;2"
+}

@@ -1,0 +1,38 @@
+{
+  "@id": "dtmi:digitaltwins:org:generic:sco:scome:Measure;1",
+  "@type": "Interface",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "hasMeasuredValue",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "es": "timepoint"
+      },
+      "name": "timepoint",
+      "schema": "dateTime",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "timeFEnd",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "timeFBegin",
+      "schema": "string",
+      "writable": true
+    }
+  ],
+  "description": {
+    "en": "Resultado de una actividad de medición. Caracteriza a un atributo mensurable"
+  },
+  "extends": "dtmi:digitaltwins:org:generic:sco:scome:Performance_Information;1",
+  "@context": "dtmi:dtdl:context;2"
+}

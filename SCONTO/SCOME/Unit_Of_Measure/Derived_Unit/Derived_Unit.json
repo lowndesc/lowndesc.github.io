@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:digitaltwins:org:generic:sco:scome:Derived_Unit;1",
+  "@type": "Interface",
+  "contents": [
+    {
+      "@type": "Relationship",
+      "name": "derivesFrom",
+      "target": "dtmi:digitaltwins:org:generic:sco:scome:Unit_Of_Measure;1"
+    }
+  ],
+  "description": {
+    "en": "Unidad de medida que se deriva de otra/s unidad/es"
+  },
+  "extends": "dtmi:digitaltwins:org:generic:sco:scome:Unit_Of_Measure;1",
+  "@context": "dtmi:dtdl:context;2"
+}

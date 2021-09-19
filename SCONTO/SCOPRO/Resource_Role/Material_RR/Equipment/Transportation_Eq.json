@@ -1,0 +1,9 @@
+{
+  "@id": "dtmi:digitaltwins:org:generic:sco:scopro:Transportation_Eq;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Transportation_Eq"
+  },
+  "extends": "dtmi:digitaltwins:org:generic:sco:scopro:Equipment;1",
+  "@context": "dtmi:dtdl:context;2"
+}

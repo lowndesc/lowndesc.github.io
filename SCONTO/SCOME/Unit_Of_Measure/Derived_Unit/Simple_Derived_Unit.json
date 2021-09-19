@@ -1,0 +1,26 @@
+{
+  "@id": "dtmi:digitaltwins:org:generic:sco:scome:Simple_Derived_Unit;1",
+  "@type": "Interface",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "modifierPrefix",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "es": "dimensionalSize"
+      },
+      "name": "dimensionalSize",
+      "schema": "float",
+      "writable": true
+    }
+  ],
+  "description": {
+    "en": "Unidad de medida que se deriva de una única unidad base. Puede obtenerse por la adición de un prefijo a la unidad base para formar un múltiplo o submúltiplo decimal de la misma y/o por la modificación de su exponente"
+  },
+  "extends": "dtmi:digitaltwins:org:generic:sco:scome:Derived_Unit;1",
+  "@context": "dtmi:dtdl:context;2"
+}

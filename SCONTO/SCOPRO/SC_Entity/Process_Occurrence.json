@@ -1,0 +1,21 @@
+{
+  "@id": "dtmi:digitaltwins:org:generic:sco:scopro:Process_Occurrence;1",
+  "@type": "Interface",
+  "contents": [
+    {
+      "@type": "Relationship",
+      "maxMultiplicity": 1,
+      "minMultiplicity": 0,
+      "name": "materializesProcess",
+      "target": "dtmi:digitaltwins:org:generic:sco:scopro:Process;1"
+    }
+  ],
+  "description": {
+    "en": "Actividad o conjunto de actividades interrelacionadas que materializan un proceso"
+  },
+  "displayName": {
+    "en": "Process_Occurrence"
+  },
+  "extends": "dtmi:digitaltwins:org:generic:sco:scopro:SC_Entity;1",
+  "@context": "dtmi:dtdl:context;2"
+}

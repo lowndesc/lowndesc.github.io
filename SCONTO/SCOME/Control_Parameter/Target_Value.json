@@ -1,0 +1,27 @@
+{
+  "@id": "dtmi:digitaltwins:org:generic:sco:scome:Target_Value;1",
+  "@type": "Interface",
+  "contents": [
+    {
+      "@type": "Property",
+      "displayName": {
+        "es": "hasTargetValue"
+      },
+      "name": "hasTargetvalue",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Relationship",
+      "maxMultiplicity": 1,
+      "minMultiplicity": 0,
+      "name": "isTargetValueOf",
+      "target": "dtmi:digitaltwins:org:generic:sco:scome:Assessable_Attribute;1"
+    }
+  ],
+  "description": {
+    "en": "Valor deseado de un atributo mensurable"
+  },
+  "extends": "dtmi:digitaltwins:org:generic:sco:scome:Control_Parameter;1",
+  "@context": "dtmi:dtdl:context;2"
+}

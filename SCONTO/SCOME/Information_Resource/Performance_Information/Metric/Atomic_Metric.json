@@ -1,0 +1,9 @@
+{
+  "@id": "dtmi:digitaltwins:org:generic:sco:scome:Atomic_Metric;1",
+  "@type": "Interface",
+  "description": {
+    "en": "Método que no necesita ninguna otra métrica para la asignación de valores a un atributo mensurable"
+  },
+  "extends": "dtmi:digitaltwins:org:generic:sco:scome:Metric;1",
+  "@context": "dtmi:dtdl:context;2"
+}

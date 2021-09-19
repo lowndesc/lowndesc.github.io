@@ -1,0 +1,9 @@
+{
+  "@id": "dtmi:digitaltwins:org:generic:sco:scome:Numerical;1",
+  "@type": "Interface",
+  "description": {
+    "en": "Tipo de escala en la cual sus valores tienen un orden y cada par consecutivo representa un intervalo constante de una propiedad"
+  },
+  "extends": "dtmi:digitaltwins:org:generic:sco:scome:Scale_Type;1",
+  "@context": "dtmi:dtdl:context;2"
+}

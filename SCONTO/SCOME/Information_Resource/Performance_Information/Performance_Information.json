@@ -1,0 +1,9 @@
+{
+  "@id": "dtmi:digitaltwins:org:generic:sco:scome:Performance_Information;1",
+  "@type": "Interface",
+  "description": {
+    "en": "Recurso de información vinculado a la evaluación del desempeño de una entidad de una cadena de suministros"
+  },
+  "extends": "dtmi:digitaltwins:org:generic:sco:scopro:Information_Resource;1",
+  "@context": "dtmi:dtdl:context;2"
+}

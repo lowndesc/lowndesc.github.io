@@ -1,0 +1,9 @@
+{
+  "@id": "dtmi:digitaltwins:org:generic:sco:scopro:ThirdPL_Provider_Role;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "ThirdPL_Provider_Role"
+  },
+  "extends": "dtmi:digitaltwins:org:generic:sco:scopro:Service_Provider_Role;1",
+  "@context": "dtmi:dtdl:context;2"
+}

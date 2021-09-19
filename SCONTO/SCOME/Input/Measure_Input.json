@@ -1,0 +1,9 @@
+{
+  "@id": "dtmi:digitaltwins:org:generic:sco:scome:Measure_Input;1",
+  "@type": "Interface",
+  "description": {
+    "en": "Rol de una medida que es requerida para la ejecución de una actividad de medición indirecta"
+  },
+  "extends": "dtmi:digitaltwins:org:generic:sco:scopro:Input;1",
+  "@context": "dtmi:dtdl:context;2"
+}

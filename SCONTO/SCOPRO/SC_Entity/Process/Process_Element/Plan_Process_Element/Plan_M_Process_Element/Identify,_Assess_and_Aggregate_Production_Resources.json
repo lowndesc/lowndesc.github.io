@@ -1,0 +1,9 @@
+{
+  "@id": "dtmi:digitaltwins:org:generic:sco:scopro:Identify_Assess_and_Aggregate_Production_Resources;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "IAA_Production_Resources"
+  },
+  "extends": "dtmi:digitaltwins:org:generic:sco:scopro:Plan_M_Process_Element;1",
+  "@context": "dtmi:dtdl:context;2"
+}

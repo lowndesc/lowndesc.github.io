@@ -1,0 +1,9 @@
+{
+  "@id": "dtmi:digitaltwins:org:generic:sco:scome:Metric_Input;1",
+  "@type": "Interface",
+  "description": {
+    "en": "Rol de una métrica que es requerida para la ejecución de una actividad de medición"
+  },
+  "extends": "dtmi:digitaltwins:org:generic:sco:scopro:Input;1",
+  "@context": "dtmi:dtdl:context;2"
+}

@@ -1,0 +1,22 @@
+{
+  "@id": "dtmi:digitaltwins:org:generic:sco:scopro:Facility_RR;1",
+  "@type": "Interface",
+  "contents": [
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Inversa de involves Inverse of: involves"
+      },
+      "name": "isInvolvedIn",
+      "target": "dtmi:digitaltwins:org:generic:sco:scopro:Use;1"
+    }
+  ],
+  "description": {
+    "en": "Función con la cual un establecimiento participa en un proceso"
+  },
+  "displayName": {
+    "en": "Facility_RR"
+  },
+  "extends": "dtmi:digitaltwins:org:generic:sco:scopro:Resource_Role;1",
+  "@context": "dtmi:dtdl:context;2"
+}

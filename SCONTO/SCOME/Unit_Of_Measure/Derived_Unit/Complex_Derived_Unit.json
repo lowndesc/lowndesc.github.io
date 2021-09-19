@@ -1,0 +1,9 @@
+{
+  "@id": "dtmi:digitaltwins:org:generic:sco:scome:Complex_Derived_Unit;1",
+  "@type": "Interface",
+  "description": {
+    "en": "Unidad de medida que se deriva del producto de dos o más unidades de medidas"
+  },
+  "extends": "dtmi:digitaltwins:org:generic:sco:scome:Derived_Unit;1",
+  "@context": "dtmi:dtdl:context;2"
+}

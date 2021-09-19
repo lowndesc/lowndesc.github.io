@@ -1,0 +1,9 @@
+{
+  "@id": "dtmi:digitaltwins:org:generic:sco:scopro:Subsidiary;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Subsidiary"
+  },
+  "extends": "dtmi:digitaltwins:org:generic:sco:scopro:Dependent_OU;1",
+  "@context": "dtmi:dtdl:context;2"
+}

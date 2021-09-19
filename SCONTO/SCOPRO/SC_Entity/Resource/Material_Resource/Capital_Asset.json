@@ -1,0 +1,9 @@
+{
+  "@id": "dtmi:digitaltwins:org:generic:sco:scopro:Capital_Asset;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Capital_Asset"
+  },
+  "extends": "dtmi:digitaltwins:org:generic:sco:scopro:Material_Resource;1",
+  "@context": "dtmi:dtdl:context;2"
+}

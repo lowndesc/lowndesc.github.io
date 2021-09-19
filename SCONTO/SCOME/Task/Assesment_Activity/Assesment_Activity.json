@@ -1,0 +1,9 @@
+{
+  "@id": "dtmi:digitaltwins:org:generic:sco:scome:Assesment_Activity;1",
+  "@type": "Interface",
+  "description": {
+    "en": "Actividad mediante la cual se valora un atributo mensurable\nasignándole un valor (“measure”) de acuerdo al\nprocedimiento especificado por una métrica"
+  },
+  "extends": "dtmi:digitaltwins:org:generic:sco:scopro:Task;1",
+  "@context": "dtmi:dtdl:context;2"
+}

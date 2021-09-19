@@ -1,0 +1,24 @@
+{
+  "@id": "dtmi:digitaltwins:org:generic:sco:scopro:Facility;1",
+  "@type": "Interface",
+  "contents": [
+    {
+      "@type": "Relationship",
+      "name": "isSourceFacilityOf",
+      "target": "dtmi:digitaltwins:org:generic:sco:scopro:Transportation;1"
+    },
+    {
+      "@type": "Relationship",
+      "name": "isDestinationFacilityOf",
+      "target": "dtmi:digitaltwins:org:generic:sco:scopro:Transportation;1"
+    }
+  ],
+  "description": {
+    "en": "Sitio donde se desarrollan actividades de una cadena de suministros"
+  },
+  "displayName": {
+    "en": "Facility"
+  },
+  "extends": "dtmi:digitaltwins:org:generic:sco:scopro:Resource;1",
+  "@context": "dtmi:dtdl:context;2"
+}
