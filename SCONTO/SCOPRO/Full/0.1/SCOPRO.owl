@@ -31,10 +31,10 @@
         <vann:preferredNamespacePrefix>scopro</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>http://purl.org/sconto/scopro/full/0.1/</vann:preferredNamespaceUri>
         <owl:versionInfo xml:lang="en">0.1</owl:versionInfo>
-        <skos:historyNote xml:lang="en">Version 0.1 is an initial release that contains the full SCOPRO ontology.</skos:historyNote>
-        <skos:note xml:lang="en">See also:
+        <skos:historyNote xml:lang="en">Version 0.1 is an initial release that contains the full SCOPRO ontology.
+        See also:
         * [Supply Chain Measurement Ontology (SCOME)](http://purl.org/sconto/scome)
-        * [Supply Chain Benchmarking Ontology (SCOBE)](http://purl.org/sconto/scobe)</skos:note>
+        * [Supply Chain Benchmarking Ontology (SCOBE)](http://purl.org/sconto/scobe)</skos:historyNote>
     </owl:Ontology>
     
 
