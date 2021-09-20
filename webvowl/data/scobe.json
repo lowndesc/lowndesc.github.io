@@ -28,7 +28,7 @@
     },
     "iri" : "http://purl.org/sconto/scobe/",
     "version" : "0.1",
-    "author" : [ "Alicia C. Böhm" ],
+    "author" : [ "Chris Lowndes, Avanade\nAlicia C. Boehm, IndOnto" ],
     "description" : {
       "en" : "This ontology is an extension of the SCONTO ontology, presented via this [academic paper](https://openreview.net/pdf?id=ricE3prhfH8). It imports all SCOBE modules and thus gives the fullest expressivity that SCOBE allows. You can use this ontology as-is, or you can construct your own ontology by importing individual SCOBE modules.\n\nSee also:\n* [Supply Chain Process Ontology (SCOPRO)](http://purl.org/sconto/scopro)\n* [Supply Chain Measurement Ontology (SCOME)](http://purl.org/sconto/scome)"
     },
@@ -42,28 +42,23 @@
       "creator" : [ {
         "identifier" : "creator",
         "language" : "en",
-        "value" : "Alicia C. Böhm",
+        "value" : "Chris Lowndes, Avanade\nAlicia C. Boehm, IndOnto",
         "type" : "label"
       } ],
       "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "en",
+        "value" : "Horacio P. Leone",
+        "type" : "label"
+      }, {
         "identifier" : "contributor",
         "language" : "en",
         "value" : "Gabriela P. Henning",
         "type" : "label"
       }, {
         "identifier" : "contributor",
-        "language" : "en",
-        "value" : "Chris Lowndes",
-        "type" : "label"
-      }, {
-        "identifier" : "contributor",
         "language" : "undefined",
         "value" : "Marcela Vegetti",
-        "type" : "label"
-      }, {
-        "identifier" : "contributor",
-        "language" : "en",
-        "value" : "Horacio P. Leone",
         "type" : "label"
       } ],
       "preferredNamespacePrefix" : [ {
@@ -84,16 +79,16 @@
         "value" : "Indonto, Avanade",
         "type" : "label"
       } ],
-      "versionInfo" : [ {
-        "identifier" : "versionInfo",
-        "language" : "en",
-        "value" : "0.1",
-        "type" : "label"
-      } ],
       "preferredNamespaceUri" : [ {
         "identifier" : "preferredNamespaceUri",
         "language" : "undefined",
         "value" : "http://purl.org/sconto/scobe/full/0.1/",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "en",
+        "value" : "0.1",
         "type" : "label"
       } ],
       "title" : [ {
@@ -2098,7 +2093,7 @@
       "IRI-based" : "hasTransformationRule"
     },
     "domain" : "88",
-    "attributes" : [ "object", "someValues" ],
+    "attributes" : [ "someValues", "object" ],
     "id" : "87"
   }, {
     "range" : "1",
@@ -2114,7 +2109,7 @@
       "IRI-based" : "hasMembershipProperty"
     },
     "domain" : "84",
-    "attributes" : [ "object", "someValues" ],
+    "attributes" : [ "someValues", "object" ],
     "id" : "91"
   }, {
     "range" : "7",
@@ -2129,7 +2124,7 @@
       "IRI-based" : "isBenchmarkGroupOf"
     },
     "domain" : "84",
-    "attributes" : [ "object", "someValues" ],
+    "attributes" : [ "someValues", "object" ],
     "id" : "95"
   }, {
     "iri" : "http://purl.org/sconto/scobe/informationQuality",
@@ -2154,7 +2149,7 @@
       "IRI-based" : "isReferencePracticeOfRGroup"
     },
     "domain" : "70",
-    "attributes" : [ "object", "functional", "someValues" ],
+    "attributes" : [ "someValues", "object", "functional" ],
     "id" : "100"
   }, {
     "range" : "9",
@@ -2179,7 +2174,7 @@
       "IRI-based" : "isTransformationRuleOf"
     },
     "domain" : "36",
-    "attributes" : [ "object", "functional", "someValues" ],
+    "attributes" : [ "someValues", "object", "functional" ],
     "id" : "105"
   }, {
     "range" : "17",
@@ -2194,7 +2189,7 @@
       "IRI-based" : "hasBValueScale"
     },
     "domain" : "92",
-    "attributes" : [ "object", "functional", "someValues" ],
+    "attributes" : [ "someValues", "object", "functional" ],
     "id" : "107"
   }, {
     "range" : "20",
@@ -2209,7 +2204,7 @@
       "IRI-based" : "isMembershipPropertyOf"
     },
     "domain" : "92",
-    "attributes" : [ "object", "functional", "someValues" ],
+    "attributes" : [ "someValues", "object", "functional" ],
     "id" : "109"
   }, {
     "range" : "24",
@@ -2224,7 +2219,7 @@
       "IRI-based" : "isEquivalentProperty"
     },
     "domain" : "92",
-    "attributes" : [ "object", "someValues" ],
+    "attributes" : [ "someValues", "object" ],
     "id" : "111"
   }, {
     "range" : "30",
@@ -2240,7 +2235,7 @@
       "IRI-based" : "hasMembershipValue"
     },
     "domain" : "92",
-    "attributes" : [ "object", "functional", "someValues" ],
+    "attributes" : [ "someValues", "object", "functional" ],
     "id" : "114"
   }, {
     "range" : "11",
@@ -2285,7 +2280,7 @@
       "IRI-based" : "isMembershipValueOf"
     },
     "domain" : "52",
-    "attributes" : [ "object", "functional", "someValues" ],
+    "attributes" : [ "someValues", "object", "functional" ],
     "id" : "126"
   }, {
     "range" : "4",
@@ -2311,7 +2306,7 @@
       "IRI-based" : "originalMeasure"
     },
     "domain" : "30",
-    "attributes" : [ "object", "functional", "someValues" ],
+    "attributes" : [ "someValues", "object", "functional" ],
     "id" : "132"
   }, {
     "range" : "52",
@@ -2327,7 +2322,7 @@
       "IRI-based" : "isProducedBy"
     },
     "domain" : "71",
-    "attributes" : [ "object", "functional", "someValues" ],
+    "attributes" : [ "someValues", "object", "functional" ],
     "id" : "135"
   }, {
     "range" : "52",
@@ -2342,7 +2337,7 @@
       "IRI-based" : "hasGECValueScale"
     },
     "domain" : "2",
-    "attributes" : [ "object", "functional", "someValues" ],
+    "attributes" : [ "someValues", "object", "functional" ],
     "id" : "138"
   }, {
     "range" : "52",
@@ -2358,7 +2353,7 @@
       "IRI-based" : "hasCriterionResult"
     },
     "domain" : "2",
-    "attributes" : [ "object", "someValues" ],
+    "attributes" : [ "someValues", "object" ],
     "id" : "141"
   }, {
     "range" : "52",
@@ -2373,7 +2368,7 @@
       "IRI-based" : "isCriterionResultOf"
     },
     "domain" : "49",
-    "attributes" : [ "object", "functional", "someValues" ],
+    "attributes" : [ "someValues", "object", "functional" ],
     "id" : "144"
   }, {
     "range" : "7",
@@ -2388,7 +2383,7 @@
       "IRI-based" : "isEvaluationResultOf"
     },
     "domain" : "49",
-    "attributes" : [ "object", "functional", "someValues" ],
+    "attributes" : [ "someValues", "object", "functional" ],
     "id" : "146"
   }, {
     "range" : "49",
@@ -3255,7 +3250,7 @@
       "IRI-based" : "isTargetGroupOf"
     },
     "domain" : "55",
-    "attributes" : [ "object", "inverse functional", "functional" ],
+    "attributes" : [ "object", "functional", "inverse functional" ],
     "id" : "310"
   }, {
     "iri" : "http://purl.org/sconto/scobe/isEvaluationResultOf",
@@ -3325,7 +3320,7 @@
       "IRI-based" : "hasEvaluationCriterion"
     },
     "domain" : "96",
-    "attributes" : [ "object", "inverse functional", "functional" ],
+    "attributes" : [ "object", "functional", "inverse functional" ],
     "id" : "319"
   }, {
     "iri" : "http://purl.org/sconto/scobe/numberOfRGEntities",
@@ -3516,7 +3511,7 @@
       "IRI-based" : "hasEvaluationResult"
     },
     "domain" : "84",
-    "attributes" : [ "object", "someValues" ],
+    "attributes" : [ "someValues", "object" ],
     "id" : "357"
   }, {
     "range" : "15",
@@ -3531,7 +3526,7 @@
       "IRI-based" : "numberOfBGEntities"
     },
     "domain" : "84",
-    "attributes" : [ "functional", "datatype", "someValues" ],
+    "attributes" : [ "someValues", "functional", "datatype" ],
     "id" : "359"
   }, {
     "range" : "5",
@@ -3552,7 +3547,7 @@
       "IRI-based" : "hasReferencesValueSingleResult"
     },
     "domain" : "103",
-    "attributes" : [ "object", "functional", "someValues" ],
+    "attributes" : [ "someValues", "object", "functional" ],
     "id" : "363"
   }, {
     "range" : "4",
@@ -3568,7 +3563,7 @@
       "IRI-based" : "hasBenchmarkGroup"
     },
     "domain" : "96",
-    "attributes" : [ "object", "functional", "someValues" ],
+    "attributes" : [ "someValues", "object", "functional" ],
     "id" : "365"
   }, {
     "range" : "9",
@@ -3583,7 +3578,7 @@
       "IRI-based" : "hasEvaluationCriterion"
     },
     "domain" : "96",
-    "attributes" : [ "object", "inverse functional", "functional", "someValues" ],
+    "attributes" : [ "someValues", "object", "functional", "inverse functional" ],
     "id" : "367"
   }, {
     "range" : "13",
@@ -3598,7 +3593,7 @@
       "IRI-based" : "produce"
     },
     "domain" : "96",
-    "attributes" : [ "object", "someValues" ],
+    "attributes" : [ "someValues", "object" ],
     "id" : "369"
   }, {
     "range" : "17",
@@ -3671,7 +3666,7 @@
       "IRI-based" : "isTargetGroupOf"
     },
     "domain" : "55",
-    "attributes" : [ "object", "inverse functional", "functional", "someValues" ],
+    "attributes" : [ "someValues", "object", "functional", "inverse functional" ],
     "id" : "377"
   }, {
     "iri" : "http://purl.org/sconto/scobe/hasReferencePractice",
@@ -3682,7 +3677,7 @@
       "IRI-based" : "hasReferencePractice"
     },
     "domain" : "55",
-    "attributes" : [ "object", "someValues" ],
+    "attributes" : [ "someValues", "object" ],
     "id" : "378"
   }, {
     "iri" : "http://purl.org/sconto/scobe/isDeterminedBy",
@@ -3692,7 +3687,7 @@
       "IRI-based" : "isDeterminedBy"
     },
     "domain" : "55",
-    "attributes" : [ "object", "functional", "someValues" ],
+    "attributes" : [ "someValues", "object", "functional" ],
     "id" : "379"
   }, {
     "iri" : "http://purl.org/sconto/scobe/numberOfRGEntities",
@@ -3702,7 +3697,7 @@
       "IRI-based" : "numberOfRGEntities"
     },
     "domain" : "55",
-    "attributes" : [ "functional", "datatype", "someValues" ],
+    "attributes" : [ "someValues", "functional", "datatype" ],
     "id" : "380"
   }, {
     "range" : "84",

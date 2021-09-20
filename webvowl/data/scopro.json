@@ -27,7 +27,7 @@
     },
     "iri" : "http://purl.org/sconto/scopro/",
     "version" : "0.1",
-    "author" : [ "Alicia C. Böhm" ],
+    "author" : [ "Chris Lowndes, Avanade\nAlicia C. Boehm, IndOnto" ],
     "description" : {
       "en" : "This ontology is an extension of the SCONTO ontology, presented via this [academic paper](https://openreview.net/pdf?id=ricE3prhfH8). It imports all SCOPRO modules and thus gives the fullest expressivity that SCOPRO allows. You can use this ontology as-is, or you can construct your own ontology by importing individual SCOPRO modules."
     },
@@ -41,7 +41,7 @@
       "creator" : [ {
         "identifier" : "creator",
         "language" : "en",
-        "value" : "Alicia C. Böhm",
+        "value" : "Chris Lowndes, Avanade\nAlicia C. Boehm, IndOnto",
         "type" : "label"
       } ],
       "contributor" : [ {
