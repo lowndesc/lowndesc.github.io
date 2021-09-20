@@ -1,0 +1,3733 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.7), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://purl.org/sconto/scobe", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://purl.org/sconto/scopro", "http://purl.org/sconto/scome" ],
+    "prefixList" : {
+      "owl" : "http://www.w3.org/2002/07/owl#",
+      "vann" : "http://purl.org/vocab/vann/",
+      "terms" : "http://purl.org/dc/terms/",
+      "scome" : "http://purl.org/sconto/scome/",
+      "dcterms" : "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#",
+      "xsd" : "http://www.w3.org/2001/XMLSchema#",
+      "swrlb" : "http://www.w3.org/2003/11/swrlb#",
+      "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+      "swrl" : "http://www.w3.org/2003/11/swrl#",
+      "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "p1" : "http://www.owl-ontologies.com/assert.owl#",
+      "skos" : "http://www.w3.org/2004/02/skos/core#",
+      "protege" : "http://protege.stanford.edu/plugins/owl/protege#",
+      "" : "http://purl.org/sconto/scobe/",
+      "dc" : "http://purl.org/dc/elements/1.1/",
+      "xml" : "http://www.w3.org/XML/1998/namespace",
+      "indonto" : "http://purl.org/sconto/scobe/",
+      "xsp" : "http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+    },
+    "title" : {
+      "en" : "Supply Chain Benchmarking Ontology (SCOBE)"
+    },
+    "iri" : "http://purl.org/sconto/scobe/",
+    "version" : "0.1",
+    "author" : [ "Alicia C. Böhm" ],
+    "description" : {
+      "en" : "This ontology is an extension of the SCONTO ontology, presented via this [academic paper](https://openreview.net/pdf?id=ricE3prhfH8). It imports all SCOBE modules and thus gives the fullest expressivity that SCOBE allows. You can use this ontology as-is, or you can construct your own ontology by importing individual SCOBE modules.\n\nSee also:\n* [Supply Chain Process Ontology (SCOPRO)](http://purl.org/sconto/scopro)\n* [Supply Chain Measurement Ontology (SCOME)](http://purl.org/sconto/scome)"
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://opensource.org/licenses/MIT",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "en",
+        "value" : "Alicia C. Böhm",
+        "type" : "label"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "en",
+        "value" : "Gabriela P. Henning",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "en",
+        "value" : "Chris Lowndes",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Marcela Vegetti",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "en",
+        "value" : "Horacio P. Leone",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "scobe",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2021-09-19",
+        "type" : "label"
+      } ],
+      "publisher" : [ {
+        "identifier" : "publisher",
+        "language" : "undefined",
+        "value" : "Indonto, Avanade",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "en",
+        "value" : "0.1",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "http://purl.org/sconto/scobe/full/0.1/",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "Supply Chain Benchmarking Ontology (SCOBE)",
+        "type" : "label"
+      } ],
+      "historyNote" : [ {
+        "identifier" : "historyNote",
+        "language" : "en",
+        "value" : "Version 0.1 is an initial release that contains the full SCOBE ontology.",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "70",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "49",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "118",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "131",
+    "type" : "owl:Class"
+  }, {
+    "id" : "122",
+    "type" : "owl:Class"
+  }, {
+    "id" : "192",
+    "type" : "owl:Class"
+  }, {
+    "id" : "71",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "129",
+    "type" : "owl:Class"
+  }, {
+    "id" : "103",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "233",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "92",
+    "type" : "owl:Class"
+  }, {
+    "id" : "55",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "133",
+    "type" : "owl:Class"
+  }, {
+    "id" : "112",
+    "type" : "owl:Class"
+  }, {
+    "id" : "57",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "98",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "317",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "318",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "181",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "198",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "236",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "256",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "353",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "314",
+    "type" : "owl:Class"
+  }, {
+    "id" : "85",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "321",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "119",
+    "type" : "owl:Class"
+  }, {
+    "id" : "88",
+    "type" : "owl:Class"
+  }, {
+    "id" : "360",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "139",
+    "type" : "owl:Class"
+  }, {
+    "id" : "84",
+    "type" : "owl:Class"
+  }, {
+    "id" : "52",
+    "type" : "owl:Class"
+  }, {
+    "id" : "381",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "96",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://purl.org/sconto/scopro/SC_Entity",
+    "baseIri" : "http://purl.org/sconto/scopro",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SC_Entity",
+      "en" : "SC_Entity"
+    },
+    "attributes" : [ "external" ],
+    "id" : "17"
+  }, {
+    "iri" : "http://purl.org/sconto/scobe/Reference_Practice",
+    "baseIri" : "http://purl.org/sconto/scobe",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Reference_Practice",
+      "en" : "Reference_Practice"
+    },
+    "comment" : {
+      "undefined" : "Procedimiento; técnica; herramienta; metodología o tecnología que ha demostrado producir buenos resultados en un grupo de referencia; que ha sido seleccionada por medio de un proceso sistemático y que es considerada como ejemplar para el logro del criterio adoptado"
+    },
+    "id" : "70",
+    "superClasses" : [ "71" ]
+  }, {
+    "iri" : "http://purl.org/sconto/scobe/Benchmarking_Transformation_Rule",
+    "baseIri" : "http://purl.org/sconto/scobe",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Benchmarking_Transformation_Rule",
+      "en" : "Benchmarking_Transformation_Rule"
+    },
+    "comment" : {
+      "undefined" : "Procedimiento para trasladar las medidas de atributos de desempeño a la escala correspondiente a un criterio atómico"
+    },
+    "id" : "36"
+  }, {
+    "iri" : "http://purl.org/sconto/scobe/Group_Evaluation_Criterion",
+    "baseIri" : "http://purl.org/sconto/scobe",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Group_Evaluation_Criterion",
+      "en" : "Group_Evaluation_Criterion"
+    },
+    "union" : [ "88", "131" ],
+    "subClasses" : [ "88", "131" ],
+    "comment" : {
+      "undefined" : "Característica de desempeño que se utiliza para la evaluación y análisis de los miembros de un grupo de “benchmarking”"
+    },
+    "attributes" : [ "union" ],
+    "id" : "2"
+  }, {
+    "iri" : "http://purl.org/sconto/scobe/Group_Evaluation_Result",
+    "baseIri" : "http://purl.org/sconto/scobe",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Group_Evaluation_Result",
+      "en" : "Group_Evaluation_Result"
+    },
+    "union" : [ "129", "139" ],
+    "subClasses" : [ "129", "139" ],
+    "comment" : {
+      "undefined" : "Resultado del análisis de un grupo de “benchmarking” con respecto a un criterio de evaluación"
+    },
+    "attributes" : [ "union" ],
+    "id" : "49"
+  }, {
+    "iri" : "http://purl.org/sconto/scobe/Group_Standard_Range",
+    "baseIri" : "http://purl.org/sconto/scobe",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Group_Standard_Range",
+      "en" : "Group_Standard_Range"
+    },
+    "id" : "118",
+    "superClasses" : [ "139" ]
+  }, {
+    "iri" : "http://purl.org/sconto/scobe/Transformed_Measure",
+    "baseIri" : "http://purl.org/sconto/scobe",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Transformed_Measure",
+      "en" : "Transformed_Measure"
+    },
+    "comment" : {
+      "undefined" : "Medida de un atributo de desempeño compatiblizada para que sea comparable con un criterio atómico"
+    },
+    "id" : "30"
+  }, {
+    "iri" : "http://purl.org/sconto/scobe/Composite_Criterion",
+    "baseIri" : "http://purl.org/sconto/scobe",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Composite_Criterion",
+      "en" : "Composite_Criterion"
+    },
+    "comment" : {
+      "undefined" : "Característica de desempeño que resulta de la composición de otros criterios de evaluación. Se utiliza directa o indirectamente para el análisis del conjunto de miembros de un grupo de “benchmarking”"
+    },
+    "id" : "131",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://purl.org/sconto/scobe/Group_Superior_Range",
+    "baseIri" : "http://purl.org/sconto/scobe",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Group_Superior_Range",
+      "en" : "Group_Superior_Range"
+    },
+    "id" : "122",
+    "superClasses" : [ "139" ]
+  }, {
+    "iri" : "http://purl.org/sconto/scobe/Group_Best_Value_Result",
+    "baseIri" : "http://purl.org/sconto/scobe",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Group_Best_Value_Result",
+      "en" : "Group_Best_Value_Result"
+    },
+    "id" : "192",
+    "superClasses" : [ "129" ]
+  }, {
+    "iri" : "http://purl.org/sconto/scobe/Benchmark",
+    "baseIri" : "http://purl.org/sconto/scobe",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Benchmark",
+      "en" : "Benchmark"
+    },
+    "union" : [ "103", "70" ],
+    "subClasses" : [ "103", "70" ],
+    "comment" : {
+      "undefined" : "Punto de referencia contra el cual se compara el desempeño o las prácticas de cada una de las entidades de la cadena de suministros involucradas en un proyecto de “benchmarking”"
+    },
+    "attributes" : [ "union" ],
+    "id" : "71"
+  }, {
+    "iri" : "http://purl.org/sconto/scome/SC_Performance_Concept",
+    "baseIri" : "http://purl.org/sconto/scome",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SC_Performance_Concept",
+      "en" : "SC_Performance_Concept"
+    },
+    "attributes" : [ "external" ],
+    "id" : "7"
+  }, {
+    "iri" : "http://purl.org/sconto/scobe/Single_Result",
+    "baseIri" : "http://purl.org/sconto/scobe",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Single_Result",
+      "en" : "Single_Result"
+    },
+    "subClasses" : [ "192", "233" ],
+    "comment" : {
+      "undefined" : "Resultado del análisis de un grupo de “benchmarking” que constituye un valor puntual de un criterio de evaluación"
+    },
+    "id" : "129",
+    "superClasses" : [ "49" ]
+  }, {
+    "iri" : "http://purl.org/sconto/scobe/Reference_Value",
+    "baseIri" : "http://purl.org/sconto/scobe",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Reference_Value",
+      "en" : "Reference_Value"
+    },
+    "comment" : {
+      "undefined" : "Nivel de desempeño de un grupo de “benchmarking” que es reconocido como un punto de comparación para las entidades de la cadena de suministros vinculadas a un proyecto de “benchmarking”"
+    },
+    "id" : "103",
+    "superClasses" : [ "71" ]
+  }, {
+    "iri" : "http://purl.org/sconto/scome/Value_Scale",
+    "baseIri" : "http://purl.org/sconto/scome",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Value_Scale",
+      "en" : "Value_Scale"
+    },
+    "attributes" : [ "external" ],
+    "id" : "4"
+  }, {
+    "iri" : "http://purl.org/sconto/scopro/Utilization",
+    "baseIri" : "http://purl.org/sconto/scopro",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Utilization",
+      "en" : "Utilization"
+    },
+    "attributes" : [ "external" ],
+    "id" : "24"
+  }, {
+    "iri" : "http://purl.org/sconto/scome/Unit_Of_Measure",
+    "baseIri" : "http://purl.org/sconto/scome",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Unit_Of_Measure",
+      "en" : "Unit_Of_Measure"
+    },
+    "attributes" : [ "external" ],
+    "id" : "22"
+  }, {
+    "iri" : "http://purl.org/sconto/scobe/Group_Mean_Value_Result",
+    "baseIri" : "http://purl.org/sconto/scobe",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Group_Mean_Value_Result",
+      "en" : "Group_Mean_Value_Result"
+    },
+    "id" : "233",
+    "superClasses" : [ "129" ]
+  }, {
+    "iri" : "http://purl.org/sconto/scome/Control_Parameter",
+    "baseIri" : "http://purl.org/sconto/scome",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Control_Parameter",
+      "en" : "Control_Parameter"
+    },
+    "attributes" : [ "external" ],
+    "id" : "1"
+  }, {
+    "iri" : "http://purl.org/sconto/scobe/Benchmarking_Membership_Property",
+    "baseIri" : "http://purl.org/sconto/scobe",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Benchmarking_Membership_Property",
+      "en" : "Benchmarking_Membership_Property"
+    },
+    "comment" : {
+      "undefined" : "Propiedad de los elementos de un grupo de “benchmarking”"
+    },
+    "id" : "92"
+  }, {
+    "iri" : "http://purl.org/sconto/scobe/Reference_Group",
+    "baseIri" : "http://purl.org/sconto/scobe",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Reference_Group",
+      "en" : "Reference_Group"
+    },
+    "comment" : {
+      "undefined" : "Subconjunto del grupo de “benchmarking” que se adopta como referencia para identificar buenas prácticas"
+    },
+    "id" : "55"
+  }, {
+    "iri" : "http://purl.org/sconto/scome/SC_Performance_Dimension",
+    "baseIri" : "http://purl.org/sconto/scome",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SC_Performance_Dimension",
+      "en" : "SC_Performance_Dimension"
+    },
+    "attributes" : [ "external" ],
+    "id" : "11"
+  }, {
+    "iri" : "http://purl.org/sconto/scopro/Market",
+    "baseIri" : "http://purl.org/sconto/scopro",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Market",
+      "en" : "Market"
+    },
+    "attributes" : [ "external" ],
+    "id" : "9"
+  }, {
+    "iri" : "http://purl.org/sconto/scome/Scale_Type",
+    "baseIri" : "http://purl.org/sconto/scome",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Scale_Type",
+      "en" : "Scale_Type"
+    },
+    "attributes" : [ "external" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://purl.org/sconto/scome/SC_Performance_Evaluation_System",
+    "baseIri" : "http://purl.org/sconto/scome",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SC_Performance_Evaluation_System",
+      "en" : "SC_Performance_Evaluation_System"
+    },
+    "attributes" : [ "external" ],
+    "id" : "15"
+  }, {
+    "iri" : "http://purl.org/sconto/scopro/Temporal_Relationship",
+    "baseIri" : "http://purl.org/sconto/scopro",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Temporal_Relationship",
+      "en" : "Temporal_Relationship"
+    },
+    "attributes" : [ "external" ],
+    "id" : "20"
+  }, {
+    "iri" : "http://purl.org/sconto/scome/Assessable_Attribute",
+    "baseIri" : "http://purl.org/sconto/scome",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Assessable_Attribute",
+      "en" : "Assessable_Attribute"
+    },
+    "attributes" : [ "external" ],
+    "id" : "33"
+  }, {
+    "iri" : "http://purl.org/sconto/scopro/Resource_Role",
+    "baseIri" : "http://purl.org/sconto/scopro",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Resource_Role",
+      "en" : "Resource_Role"
+    },
+    "attributes" : [ "external" ],
+    "id" : "13"
+  }, {
+    "iri" : "http://purl.org/sconto/scome/Measure",
+    "baseIri" : "http://purl.org/sconto/scome",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Measure",
+      "en" : "Measure"
+    },
+    "attributes" : [ "external" ],
+    "id" : "133"
+  }, {
+    "iri" : "http://purl.org/sconto/scome/Secondary_Attribute",
+    "baseIri" : "http://purl.org/sconto/scome",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Secondary_Attribute",
+      "en" : "Secondary_Attribute"
+    },
+    "attributes" : [ "external" ],
+    "id" : "112"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "57",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "98",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "317",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "318",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "181",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "198",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "236",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "256",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "353",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://purl.org/sconto/scome/Performance_Attribute",
+    "baseIri" : "http://purl.org/sconto/scome",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Performance_Attribute",
+      "en" : "Performance_Attribute"
+    },
+    "attributes" : [ "external" ],
+    "id" : "314"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "85",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "321",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://purl.org/sconto/scobe/Group_Inferior_Range",
+    "baseIri" : "http://purl.org/sconto/scobe",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Group_Inferior_Range",
+      "en" : "Group_Inferior_Range"
+    },
+    "id" : "119",
+    "superClasses" : [ "139" ]
+  }, {
+    "iri" : "http://purl.org/sconto/scobe/Atomic_Criterion",
+    "baseIri" : "http://purl.org/sconto/scobe",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Atomic_Criterion",
+      "en" : "Atomic_Criterion"
+    },
+    "comment" : {
+      "undefined" : "Característica de desempeño que no resulta de la composición de otros criterios de evaluación. Se utiliza directa o indirectamente para el análisis del conjunto de miembros de un grupo de “benchmarking”"
+    },
+    "id" : "88",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "360",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://purl.org/sconto/scobe/Range_Result",
+    "baseIri" : "http://purl.org/sconto/scobe",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Range_Result",
+      "en" : "Range_Result"
+    },
+    "subClasses" : [ "118", "119", "122" ],
+    "comment" : {
+      "undefined" : "Resultado del análisis de un grupo de “benchmarking” que constituye un rango de valores de un criterio de evaluación"
+    },
+    "id" : "139",
+    "superClasses" : [ "49" ]
+  }, {
+    "iri" : "http://purl.org/sconto/scobe/Benchmarking_Group",
+    "baseIri" : "http://purl.org/sconto/scobe",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Benchmarking_Group",
+      "en" : "Benchmarking_Group"
+    },
+    "comment" : {
+      "undefined" : "Grupo de entidades que poseen características afines preestablecidas cuyos desempeños se evalúan en un proyecto de “benchmarking” a efectos de establecer -directa o indirectamente- puntos de comparación"
+    },
+    "id" : "84"
+  }, {
+    "iri" : "http://purl.org/sconto/scobe/Membership_Property_Value",
+    "baseIri" : "http://purl.org/sconto/scobe",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Membership_Property_Value",
+      "en" : "Membership_Property_Value"
+    },
+    "comment" : {
+      "undefined" : "Conjunto de valores de una propiedad que pueden poseer los individuos de un grupo de “benchmarking”"
+    },
+    "id" : "52"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "381",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://purl.org/sconto/scobe/Benchmarking_Project",
+    "baseIri" : "http://purl.org/sconto/scobe",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Benchmarking_Project",
+      "en" : "Benchmarking_Project"
+    },
+    "comment" : {
+      "undefined" : "Proyecto de investigación del desempeño y/o de la actuación de un grupo de “benchmarking\"- con el fin de mejorar la performance de entidades de una cadena de suministros"
+    },
+    "id" : "96"
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "3",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "6",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "8",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "10",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "12",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "14",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "16",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "18",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "19",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "21",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "23",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "25",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "26",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "27",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "28",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "29",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "31",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "32",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "34",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "35",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "37",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "38",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "39",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "40",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "41",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "42",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "43",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "44",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "45",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "46",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "47",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "48",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "50",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "51",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "53",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "54",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "56",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "58",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "59",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "60",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "61",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "62",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "63",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "64",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "65",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "66",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "67",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "68",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "69",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "72",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "73",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "74",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "75",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "76",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "77",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "78",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "79",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "80",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "81",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "82",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "83",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "86",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "87",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "90",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "91",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "94",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "95",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "97",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "99",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "100",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "101",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "102",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "104",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "105",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "106",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "107",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "108",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "109",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "110",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "111",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "113",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "114",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "116",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "117",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "120",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "121",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "123",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "124",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "125",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "126",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "127",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "128",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "132",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "134",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "135",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "137",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "138",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "140",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "141",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "143",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "144",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "145",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "146",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "147",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "148",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "149",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "150",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "151",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "152",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "153",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "154",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "155",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "156",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "157",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "136",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "158",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "159",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "160",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "161",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "162",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "163",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "164",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "165",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "166",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "167",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "168",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "169",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "170",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "171",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "172",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "173",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "174",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "175",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "176",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "177",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "178",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "179",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "180",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "183",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "184",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "185",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "186",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "187",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "188",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "189",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "190",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "191",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "193",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "194",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "195",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "196",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "197",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "199",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "200",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "201",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "202",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "203",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "204",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "205",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "206",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "207",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "208",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "209",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "210",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "211",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "212",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "213",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "214",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "215",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "216",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "217",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "218",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "220",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "221",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "222",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "223",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "224",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "225",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "226",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "227",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "228",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "230",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "231",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "232",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "234",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "235",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "237",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "238",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "239",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "240",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "241",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "242",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "243",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "244",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "245",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "246",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "247",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "248",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "249",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "250",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "251",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "252",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "253",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "254",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "255",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "257",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "258",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "259",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "260",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "261",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "262",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "263",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "264",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "265",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "266",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "267",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "268",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "269",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "270",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "271",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "272",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "273",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "274",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "275",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "276",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "277",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "278",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "279",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "280",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "281",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "282",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "283",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "284",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "285",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "286",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "287",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "288",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "289",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "290",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "291",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "292",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "293",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "294",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "295",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "296",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "297",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "298",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "299",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "300",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "301",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "302",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "303",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "304",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "305",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "306",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "307",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "308",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "309",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "310",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "311",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "312",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "313",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "315",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "316",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "182",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "319",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "320",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "322",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "323",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "324",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "325",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "326",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "327",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "328",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "329",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "330",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "331",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "332",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "333",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "334",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "335",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "336",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "337",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "338",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "339",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "340",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "341",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "342",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "343",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "344",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "345",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "346",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "347",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "348",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "349",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "350",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "351",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "352",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "354",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "355",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "356",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "357",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "358",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "359",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "361",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "362",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "363",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "364",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "365",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "366",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "367",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "368",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "369",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "370",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "371",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "372",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "374",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "375",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "130",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "376",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "377",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "378",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "379",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "380",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "382",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "383",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "384",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "385",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "386",
+    "type" : "owl:disjointWith"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "2",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "0"
+  }, {
+    "range" : "5",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "3"
+  }, {
+    "range" : "7",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "6"
+  }, {
+    "range" : "9",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "8"
+  }, {
+    "range" : "11",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "10"
+  }, {
+    "range" : "5",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "12"
+  }, {
+    "range" : "2",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "14"
+  }, {
+    "range" : "5",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "16"
+  }, {
+    "range" : "5",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "18"
+  }, {
+    "range" : "5",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "19"
+  }, {
+    "range" : "22",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "21"
+  }, {
+    "range" : "5",
+    "domain" : "24",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "23"
+  }, {
+    "range" : "4",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "25"
+  }, {
+    "range" : "22",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "26"
+  }, {
+    "range" : "9",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "27"
+  }, {
+    "range" : "20",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "28"
+  }, {
+    "range" : "2",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "29"
+  }, {
+    "range" : "24",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "31"
+  }, {
+    "range" : "2",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "32"
+  }, {
+    "range" : "5",
+    "domain" : "22",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "34"
+  }, {
+    "range" : "36",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "35"
+  }, {
+    "range" : "11",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "37"
+  }, {
+    "range" : "36",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "38"
+  }, {
+    "range" : "11",
+    "domain" : "24",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "39"
+  }, {
+    "range" : "36",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "40"
+  }, {
+    "range" : "5",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "41"
+  }, {
+    "range" : "36",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "42"
+  }, {
+    "range" : "22",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "43"
+  }, {
+    "range" : "36",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "44"
+  }, {
+    "range" : "4",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "45"
+  }, {
+    "range" : "36",
+    "domain" : "24",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "46"
+  }, {
+    "range" : "9",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "47"
+  }, {
+    "range" : "49",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "48"
+  }, {
+    "range" : "13",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "50"
+  }, {
+    "range" : "52",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "51"
+  }, {
+    "range" : "17",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "53"
+  }, {
+    "range" : "2",
+    "domain" : "55",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "54"
+  }, {
+    "iri" : "http://purl.org/sconto/scobe/elementValue",
+    "baseIri" : "http://purl.org/sconto/scobe",
+    "range" : "57",
+    "label" : {
+      "IRI-based" : "elementValue"
+    },
+    "domain" : "52",
+    "attributes" : [ "datatype" ],
+    "id" : "56"
+  }, {
+    "range" : "13",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "58"
+  }, {
+    "range" : "36",
+    "domain" : "22",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "59"
+  }, {
+    "range" : "11",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "60"
+  }, {
+    "range" : "13",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "61"
+  }, {
+    "range" : "7",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "62"
+  }, {
+    "range" : "20",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "63"
+  }, {
+    "range" : "7",
+    "domain" : "24",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "64"
+  }, {
+    "range" : "11",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "65"
+  }, {
+    "range" : "5",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "66"
+  }, {
+    "range" : "11",
+    "domain" : "22",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "67"
+  }, {
+    "range" : "11",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "68"
+  }, {
+    "range" : "9",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "69"
+  }, {
+    "range" : "9",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "72"
+  }, {
+    "range" : "9",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "73"
+  }, {
+    "range" : "13",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "74"
+  }, {
+    "range" : "17",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "75"
+  }, {
+    "range" : "20",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "76"
+  }, {
+    "range" : "24",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "77"
+  }, {
+    "range" : "11",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "78"
+  }, {
+    "range" : "7",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "79"
+  }, {
+    "range" : "5",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "80"
+  }, {
+    "range" : "22",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "81"
+  }, {
+    "range" : "7",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "82"
+  }, {
+    "iri" : "http://purl.org/sconto/scobe/numberOfBGEntities",
+    "baseIri" : "http://purl.org/sconto/scobe",
+    "range" : "85",
+    "label" : {
+      "IRI-based" : "numberOfBGEntities"
+    },
+    "domain" : "84",
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "83"
+  }, {
+    "range" : "33",
+    "domain" : "55",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "86"
+  }, {
+    "iri" : "http://purl.org/sconto/scobe/hasTransformationRule",
+    "inverse" : "89",
+    "baseIri" : "http://purl.org/sconto/scobe",
+    "range" : "36",
+    "label" : {
+      "IRI-based" : "hasTransformationRule"
+    },
+    "domain" : "88",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "87"
+  }, {
+    "range" : "1",
+    "domain" : "55",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "90"
+  }, {
+    "iri" : "http://purl.org/sconto/scobe/hasMembershipProperty",
+    "inverse" : "93",
+    "baseIri" : "http://purl.org/sconto/scobe",
+    "range" : "92",
+    "label" : {
+      "IRI-based" : "hasMembershipProperty"
+    },
+    "domain" : "84",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "91"
+  }, {
+    "range" : "7",
+    "domain" : "55",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "94"
+  }, {
+    "iri" : "http://purl.org/sconto/scobe/isBenchmarkGroupOf",
+    "baseIri" : "http://purl.org/sconto/scobe",
+    "range" : "96",
+    "label" : {
+      "IRI-based" : "isBenchmarkGroupOf"
+    },
+    "domain" : "84",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "95"
+  }, {
+    "iri" : "http://purl.org/sconto/scobe/informationQuality",
+    "baseIri" : "http://purl.org/sconto/scobe",
+    "range" : "98",
+    "label" : {
+      "IRI-based" : "informationQuality"
+    },
+    "domain" : "84",
+    "attributes" : [ "datatype" ],
+    "id" : "97"
+  }, {
+    "range" : "11",
+    "domain" : "55",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "99"
+  }, {
+    "iri" : "http://purl.org/sconto/scobe/isReferencePracticeOfRGroup",
+    "baseIri" : "http://purl.org/sconto/scobe",
+    "range" : "55",
+    "label" : {
+      "IRI-based" : "isReferencePracticeOfRGroup"
+    },
+    "domain" : "70",
+    "attributes" : [ "object", "functional", "someValues" ],
+    "id" : "100"
+  }, {
+    "range" : "9",
+    "domain" : "52",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "101"
+  }, {
+    "range" : "103",
+    "domain" : "70",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "102"
+  }, {
+    "range" : "13",
+    "domain" : "52",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "104"
+  }, {
+    "iri" : "http://purl.org/sconto/scobe/isTransformationRuleOf",
+    "baseIri" : "http://purl.org/sconto/scobe",
+    "range" : "88",
+    "label" : {
+      "IRI-based" : "isTransformationRuleOf"
+    },
+    "domain" : "36",
+    "attributes" : [ "object", "functional", "someValues" ],
+    "id" : "105"
+  }, {
+    "range" : "17",
+    "domain" : "52",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "106"
+  }, {
+    "iri" : "http://purl.org/sconto/scobe/hasBValueScale",
+    "baseIri" : "http://purl.org/sconto/scobe",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "hasBValueScale"
+    },
+    "domain" : "92",
+    "attributes" : [ "object", "functional", "someValues" ],
+    "id" : "107"
+  }, {
+    "range" : "20",
+    "domain" : "52",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "108"
+  }, {
+    "iri" : "http://purl.org/sconto/scobe/isMembershipPropertyOf",
+    "baseIri" : "http://purl.org/sconto/scobe",
+    "range" : "84",
+    "label" : {
+      "IRI-based" : "isMembershipPropertyOf"
+    },
+    "domain" : "92",
+    "attributes" : [ "object", "functional", "someValues" ],
+    "id" : "109"
+  }, {
+    "range" : "24",
+    "domain" : "52",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "110"
+  }, {
+    "iri" : "http://purl.org/sconto/scobe/isEquivalentProperty",
+    "baseIri" : "http://purl.org/sconto/scobe",
+    "range" : "112",
+    "label" : {
+      "IRI-based" : "isEquivalentProperty"
+    },
+    "domain" : "92",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "111"
+  }, {
+    "range" : "30",
+    "domain" : "55",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "113"
+  }, {
+    "iri" : "http://purl.org/sconto/scobe/hasMembershipValue",
+    "inverse" : "115",
+    "baseIri" : "http://purl.org/sconto/scobe",
+    "range" : "52",
+    "label" : {
+      "IRI-based" : "hasMembershipValue"
+    },
+    "domain" : "92",
+    "attributes" : [ "object", "functional", "someValues" ],
+    "id" : "114"
+  }, {
+    "range" : "11",
+    "domain" : "52",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "116"
+  }, {
+    "range" : "119",
+    "domain" : "118",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "117"
+  }, {
+    "range" : "52",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "120"
+  }, {
+    "range" : "122",
+    "domain" : "119",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "121"
+  }, {
+    "range" : "5",
+    "domain" : "52",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "123"
+  }, {
+    "range" : "122",
+    "domain" : "118",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "124"
+  }, {
+    "range" : "22",
+    "domain" : "52",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "125"
+  }, {
+    "iri" : "http://purl.org/sconto/scobe/isMembershipValueOf",
+    "baseIri" : "http://purl.org/sconto/scobe",
+    "range" : "92",
+    "label" : {
+      "IRI-based" : "isMembershipValueOf"
+    },
+    "domain" : "52",
+    "attributes" : [ "object", "functional", "someValues" ],
+    "id" : "126"
+  }, {
+    "range" : "4",
+    "domain" : "52",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "127"
+  }, {
+    "iri" : "http://purl.org/sconto/scobe/hasReferencesValueSingleResult",
+    "inverse" : "130",
+    "baseIri" : "http://purl.org/sconto/scobe",
+    "range" : "129",
+    "label" : {
+      "IRI-based" : "hasReferencesValueSingleResult"
+    },
+    "domain" : "103",
+    "attributes" : [ "object", "functional" ],
+    "id" : "128"
+  }, {
+    "iri" : "http://purl.org/sconto/scobe/originalMeasure",
+    "baseIri" : "http://purl.org/sconto/scobe",
+    "range" : "133",
+    "label" : {
+      "IRI-based" : "originalMeasure"
+    },
+    "domain" : "30",
+    "attributes" : [ "object", "functional", "someValues" ],
+    "id" : "132"
+  }, {
+    "range" : "52",
+    "domain" : "55",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "134"
+  }, {
+    "iri" : "http://purl.org/sconto/scobe/isProducedBy",
+    "inverse" : "136",
+    "baseIri" : "http://purl.org/sconto/scobe",
+    "range" : "96",
+    "label" : {
+      "IRI-based" : "isProducedBy"
+    },
+    "domain" : "71",
+    "attributes" : [ "object", "functional", "someValues" ],
+    "id" : "135"
+  }, {
+    "range" : "52",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "137"
+  }, {
+    "iri" : "http://purl.org/sconto/scobe/hasGECValueScale",
+    "baseIri" : "http://purl.org/sconto/scobe",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "hasGECValueScale"
+    },
+    "domain" : "2",
+    "attributes" : [ "object", "functional", "someValues" ],
+    "id" : "138"
+  }, {
+    "range" : "52",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "140"
+  }, {
+    "iri" : "http://purl.org/sconto/scobe/hasCriterionResult",
+    "inverse" : "142",
+    "baseIri" : "http://purl.org/sconto/scobe",
+    "range" : "49",
+    "label" : {
+      "IRI-based" : "hasCriterionResult"
+    },
+    "domain" : "2",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "141"
+  }, {
+    "range" : "52",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "143"
+  }, {
+    "iri" : "http://purl.org/sconto/scobe/isCriterionResultOf",
+    "baseIri" : "http://purl.org/sconto/scobe",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "isCriterionResultOf"
+    },
+    "domain" : "49",
+    "attributes" : [ "object", "functional", "someValues" ],
+    "id" : "144"
+  }, {
+    "range" : "7",
+    "domain" : "52",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "145"
+  }, {
+    "iri" : "http://purl.org/sconto/scobe/isEvaluationResultOf",
+    "baseIri" : "http://purl.org/sconto/scobe",
+    "range" : "84",
+    "label" : {
+      "IRI-based" : "isEvaluationResultOf"
+    },
+    "domain" : "49",
+    "attributes" : [ "object", "functional", "someValues" ],
+    "id" : "146"
+  }, {
+    "range" : "49",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "147"
+  }, {
+    "range" : "13",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "148"
+  }, {
+    "range" : "9",
+    "domain" : "49",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "149"
+  }, {
+    "range" : "13",
+    "domain" : "24",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "150"
+  }, {
+    "range" : "13",
+    "domain" : "49",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "151"
+  }, {
+    "range" : "20",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "152"
+  }, {
+    "range" : "49",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "153"
+  }, {
+    "range" : "24",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "154"
+  }, {
+    "range" : "20",
+    "domain" : "49",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "155"
+  }, {
+    "range" : "20",
+    "domain" : "24",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "156"
+  }, {
+    "range" : "49",
+    "domain" : "24",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "157"
+  }, {
+    "iri" : "http://purl.org/sconto/scobe/produce",
+    "baseIri" : "http://purl.org/sconto/scobe",
+    "range" : "71",
+    "label" : {
+      "IRI-based" : "produce"
+    },
+    "domain" : "96",
+    "attributes" : [ "object" ],
+    "id" : "136"
+  }, {
+    "range" : "9",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "158"
+  }, {
+    "range" : "11",
+    "domain" : "49",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "159"
+  }, {
+    "range" : "9",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "160"
+  }, {
+    "range" : "49",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "161"
+  }, {
+    "range" : "9",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "162"
+  }, {
+    "range" : "5",
+    "domain" : "49",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "163"
+  }, {
+    "range" : "9",
+    "domain" : "24",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "164"
+  }, {
+    "range" : "49",
+    "domain" : "22",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "165"
+  }, {
+    "range" : "13",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "166"
+  }, {
+    "range" : "24",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "167"
+  }, {
+    "range" : "22",
+    "domain" : "24",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "168"
+  }, {
+    "range" : "49",
+    "domain" : "52",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "169"
+  }, {
+    "range" : "9",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "170"
+  }, {
+    "range" : "49",
+    "domain" : "55",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "171"
+  }, {
+    "range" : "13",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "172"
+  }, {
+    "range" : "49",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "173"
+  }, {
+    "range" : "4",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "174"
+  }, {
+    "range" : "49",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "175"
+  }, {
+    "range" : "20",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "176"
+  }, {
+    "range" : "49",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "177"
+  }, {
+    "range" : "4",
+    "domain" : "24",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "178"
+  }, {
+    "range" : "49",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "179"
+  }, {
+    "iri" : "http://purl.org/sconto/scobe/hasBenchmarkedSCEntity",
+    "inverse" : "182",
+    "baseIri" : "http://purl.org/sconto/scobe",
+    "range" : "181",
+    "label" : {
+      "IRI-based" : "hasBenchmarkedSCEntity"
+    },
+    "domain" : "96",
+    "attributes" : [ "object" ],
+    "id" : "180"
+  }, {
+    "iri" : "http://purl.org/sconto/scobe/hasMembershipValue",
+    "inverse" : "115",
+    "baseIri" : "http://purl.org/sconto/scobe",
+    "range" : "52",
+    "label" : {
+      "IRI-based" : "hasMembershipValue"
+    },
+    "domain" : "92",
+    "attributes" : [ "object", "functional" ],
+    "id" : "183"
+  }, {
+    "range" : "9",
+    "domain" : "22",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "184"
+  }, {
+    "range" : "13",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "185"
+  }, {
+    "range" : "13",
+    "domain" : "22",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "186"
+  }, {
+    "range" : "17",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "187"
+  }, {
+    "range" : "22",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "188"
+  }, {
+    "range" : "20",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "189"
+  }, {
+    "range" : "20",
+    "domain" : "22",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "190"
+  }, {
+    "range" : "96",
+    "domain" : "84",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "191"
+  }, {
+    "range" : "84",
+    "domain" : "92",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "193"
+  }, {
+    "range" : "24",
+    "domain" : "71",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "194"
+  }, {
+    "range" : "13",
+    "domain" : "71",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "195"
+  }, {
+    "range" : "9",
+    "domain" : "71",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "196"
+  }, {
+    "iri" : "http://purl.org/sconto/scobe/lowerBound",
+    "baseIri" : "http://purl.org/sconto/scobe",
+    "range" : "198",
+    "label" : {
+      "IRI-based" : "lowerBound"
+    },
+    "domain" : "52",
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "197"
+  }, {
+    "range" : "20",
+    "domain" : "71",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "199"
+  }, {
+    "range" : "17",
+    "domain" : "71",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "200"
+  }, {
+    "range" : "5",
+    "domain" : "71",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "201"
+  }, {
+    "range" : "15",
+    "domain" : "71",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "202"
+  }, {
+    "range" : "4",
+    "domain" : "71",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "203"
+  }, {
+    "range" : "22",
+    "domain" : "71",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "204"
+  }, {
+    "range" : "7",
+    "domain" : "71",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "205"
+  }, {
+    "range" : "1",
+    "domain" : "71",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "206"
+  }, {
+    "range" : "11",
+    "domain" : "71",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "207"
+  }, {
+    "range" : "71",
+    "domain" : "55",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "208"
+  }, {
+    "range" : "52",
+    "domain" : "71",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "209"
+  }, {
+    "range" : "33",
+    "domain" : "71",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "210"
+  }, {
+    "range" : "71",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "211"
+  }, {
+    "range" : "36",
+    "domain" : "71",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "212"
+  }, {
+    "range" : "49",
+    "domain" : "71",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "213"
+  }, {
+    "range" : "2",
+    "domain" : "71",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "214"
+  }, {
+    "range" : "96",
+    "domain" : "92",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "215"
+  }, {
+    "range" : "2",
+    "domain" : "92",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "216"
+  }, {
+    "range" : "36",
+    "domain" : "92",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "217"
+  }, {
+    "iri" : "http://purl.org/sconto/scobe/hasReferencePractice",
+    "inverse" : "219",
+    "baseIri" : "http://purl.org/sconto/scobe",
+    "range" : "70",
+    "label" : {
+      "IRI-based" : "hasReferencePractice"
+    },
+    "domain" : "55",
+    "attributes" : [ "object" ],
+    "id" : "218"
+  }, {
+    "iri" : "http://purl.org/sconto/scobe/hasTransformationRule",
+    "inverse" : "89",
+    "baseIri" : "http://purl.org/sconto/scobe",
+    "range" : "36",
+    "label" : {
+      "IRI-based" : "hasTransformationRule"
+    },
+    "domain" : "88",
+    "attributes" : [ "object" ],
+    "id" : "220"
+  }, {
+    "range" : "84",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "221"
+  }, {
+    "range" : "13",
+    "domain" : "84",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "222"
+  }, {
+    "range" : "84",
+    "domain" : "24",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "223"
+  }, {
+    "range" : "20",
+    "domain" : "84",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "224"
+  }, {
+    "range" : "22",
+    "domain" : "84",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "225"
+  }, {
+    "range" : "5",
+    "domain" : "84",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "226"
+  }, {
+    "range" : "9",
+    "domain" : "84",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "227"
+  }, {
+    "iri" : "http://purl.org/sconto/scobe/hasBenchmarkGroup",
+    "inverse" : "229",
+    "baseIri" : "http://purl.org/sconto/scobe",
+    "range" : "84",
+    "label" : {
+      "IRI-based" : "hasBenchmarkGroup"
+    },
+    "domain" : "96",
+    "attributes" : [ "object", "functional" ],
+    "id" : "228"
+  }, {
+    "range" : "4",
+    "domain" : "84",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "230"
+  }, {
+    "range" : "84",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "231"
+  }, {
+    "range" : "11",
+    "domain" : "84",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "232"
+  }, {
+    "iri" : "http://purl.org/sconto/scobe/hasBValueScale",
+    "baseIri" : "http://purl.org/sconto/scobe",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "hasBValueScale"
+    },
+    "domain" : "92",
+    "attributes" : [ "object", "functional" ],
+    "id" : "234"
+  }, {
+    "iri" : "http://purl.org/sconto/scobe/hasRUpperBound",
+    "baseIri" : "http://purl.org/sconto/scobe",
+    "range" : "236",
+    "label" : {
+      "IRI-based" : "hasRUpperBound"
+    },
+    "domain" : "139",
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "235"
+  }, {
+    "iri" : "http://purl.org/sconto/scobe/originalMeasure",
+    "baseIri" : "http://purl.org/sconto/scobe",
+    "range" : "133",
+    "label" : {
+      "IRI-based" : "originalMeasure"
+    },
+    "domain" : "30",
+    "attributes" : [ "object", "functional" ],
+    "id" : "237"
+  }, {
+    "range" : "7",
+    "domain" : "84",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "238"
+  }, {
+    "range" : "84",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "239"
+  }, {
+    "range" : "84",
+    "domain" : "55",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "240"
+  }, {
+    "range" : "84",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "241"
+  }, {
+    "range" : "84",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "242"
+  }, {
+    "range" : "84",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "243"
+  }, {
+    "range" : "36",
+    "domain" : "84",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "244"
+  }, {
+    "range" : "84",
+    "domain" : "52",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "245"
+  }, {
+    "range" : "49",
+    "domain" : "84",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "246"
+  }, {
+    "range" : "96",
+    "domain" : "49",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "247"
+  }, {
+    "range" : "96",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "248"
+  }, {
+    "range" : "96",
+    "domain" : "55",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "249"
+  }, {
+    "range" : "96",
+    "domain" : "52",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "250"
+  }, {
+    "range" : "36",
+    "domain" : "96",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "251"
+  }, {
+    "iri" : "http://purl.org/sconto/scobe/isEquivalentProperty",
+    "baseIri" : "http://purl.org/sconto/scobe",
+    "range" : "112",
+    "label" : {
+      "IRI-based" : "isEquivalentProperty"
+    },
+    "domain" : "92",
+    "attributes" : [ "object" ],
+    "id" : "252"
+  }, {
+    "range" : "24",
+    "domain" : "92",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "253"
+  }, {
+    "range" : "20",
+    "domain" : "92",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "254"
+  }, {
+    "iri" : "http://purl.org/sconto/scobe/hasRValue",
+    "baseIri" : "http://purl.org/sconto/scobe",
+    "range" : "256",
+    "label" : {
+      "IRI-based" : "hasRValue"
+    },
+    "domain" : "129",
+    "attributes" : [ "datatype" ],
+    "id" : "255"
+  }, {
+    "range" : "9",
+    "domain" : "92",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "257"
+  }, {
+    "range" : "4",
+    "domain" : "92",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "258"
+  }, {
+    "range" : "17",
+    "domain" : "92",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "259"
+  }, {
+    "range" : "13",
+    "domain" : "92",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "260"
+  }, {
+    "range" : "15",
+    "domain" : "92",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "261"
+  }, {
+    "range" : "11",
+    "domain" : "92",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "262"
+  }, {
+    "range" : "2",
+    "domain" : "131",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "263"
+  }, {
+    "range" : "22",
+    "domain" : "92",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "264"
+  }, {
+    "range" : "49",
+    "domain" : "129",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "265"
+  }, {
+    "range" : "5",
+    "domain" : "92",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "266"
+  }, {
+    "range" : "49",
+    "domain" : "139",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "267"
+  }, {
+    "range" : "71",
+    "domain" : "103",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "268"
+  }, {
+    "range" : "71",
+    "domain" : "70",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "269"
+  }, {
+    "range" : "129",
+    "domain" : "192",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "270"
+  }, {
+    "range" : "129",
+    "domain" : "233",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "271"
+  }, {
+    "range" : "139",
+    "domain" : "118",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "272"
+  }, {
+    "range" : "139",
+    "domain" : "119",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "273"
+  }, {
+    "range" : "139",
+    "domain" : "122",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "274"
+  }, {
+    "range" : "1",
+    "domain" : "92",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "275"
+  }, {
+    "range" : "33",
+    "domain" : "92",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "276"
+  }, {
+    "range" : "7",
+    "domain" : "92",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "277"
+  }, {
+    "range" : "52",
+    "domain" : "92",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "278"
+  }, {
+    "range" : "49",
+    "domain" : "92",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "279"
+  }, {
+    "range" : "92",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "280"
+  }, {
+    "range" : "92",
+    "domain" : "55",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "281"
+  }, {
+    "range" : "36",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "282"
+  }, {
+    "range" : "36",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "283"
+  }, {
+    "range" : "36",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "284"
+  }, {
+    "range" : "36",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "285"
+  }, {
+    "range" : "36",
+    "domain" : "49",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "286"
+  }, {
+    "range" : "36",
+    "domain" : "55",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "287"
+  }, {
+    "range" : "36",
+    "domain" : "52",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "288"
+  }, {
+    "iri" : "http://purl.org/sconto/scobe/hasMembershipProperty",
+    "inverse" : "93",
+    "baseIri" : "http://purl.org/sconto/scobe",
+    "range" : "92",
+    "label" : {
+      "IRI-based" : "hasMembershipProperty"
+    },
+    "domain" : "84",
+    "attributes" : [ "object" ],
+    "id" : "289"
+  }, {
+    "range" : "96",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "290"
+  }, {
+    "range" : "96",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "291"
+  }, {
+    "range" : "36",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "292"
+  }, {
+    "range" : "96",
+    "domain" : "24",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "293"
+  }, {
+    "range" : "96",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "294"
+  }, {
+    "range" : "96",
+    "domain" : "22",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "295"
+  }, {
+    "range" : "96",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "296"
+  }, {
+    "range" : "96",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "297"
+  }, {
+    "range" : "96",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "298"
+  }, {
+    "range" : "96",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "299"
+  }, {
+    "range" : "96",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "300"
+  }, {
+    "range" : "96",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "301"
+  }, {
+    "range" : "96",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "302"
+  }, {
+    "range" : "96",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "303"
+  }, {
+    "range" : "96",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "304"
+  }, {
+    "iri" : "http://purl.org/sconto/scobe/hasCComponent",
+    "baseIri" : "http://purl.org/sconto/scobe",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "hasCComponent"
+    },
+    "domain" : "131",
+    "attributes" : [ "object" ],
+    "id" : "305"
+  }, {
+    "range" : "36",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "306"
+  }, {
+    "range" : "36",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "307"
+  }, {
+    "range" : "36",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "308"
+  }, {
+    "iri" : "http://purl.org/sconto/scobe/hasCriterionResult",
+    "inverse" : "142",
+    "baseIri" : "http://purl.org/sconto/scobe",
+    "range" : "49",
+    "label" : {
+      "IRI-based" : "hasCriterionResult"
+    },
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "309"
+  }, {
+    "iri" : "http://purl.org/sconto/scobe/isTargetGroupOf",
+    "baseIri" : "http://purl.org/sconto/scobe",
+    "range" : "84",
+    "label" : {
+      "IRI-based" : "isTargetGroupOf"
+    },
+    "domain" : "55",
+    "attributes" : [ "object", "inverse functional", "functional" ],
+    "id" : "310"
+  }, {
+    "iri" : "http://purl.org/sconto/scobe/isEvaluationResultOf",
+    "baseIri" : "http://purl.org/sconto/scobe",
+    "range" : "84",
+    "label" : {
+      "IRI-based" : "isEvaluationResultOf"
+    },
+    "domain" : "49",
+    "attributes" : [ "object", "functional" ],
+    "id" : "311"
+  }, {
+    "iri" : "http://purl.org/sconto/scobe/isTransformedWith",
+    "baseIri" : "http://purl.org/sconto/scobe",
+    "range" : "36",
+    "label" : {
+      "IRI-based" : "isTransformedWith"
+    },
+    "domain" : "30",
+    "attributes" : [ "object" ],
+    "id" : "312"
+  }, {
+    "iri" : "http://purl.org/sconto/scobe/isTransformableInto",
+    "baseIri" : "http://purl.org/sconto/scobe",
+    "range" : "88",
+    "label" : {
+      "IRI-based" : "isTransformableInto"
+    },
+    "domain" : "314",
+    "attributes" : [ "object" ],
+    "id" : "313"
+  }, {
+    "iri" : "http://purl.org/sconto/scobe/hasGECValueScale",
+    "baseIri" : "http://purl.org/sconto/scobe",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "hasGECValueScale"
+    },
+    "domain" : "2",
+    "attributes" : [ "object", "functional" ],
+    "id" : "315"
+  }, {
+    "iri" : "http://purl.org/sconto/scobe/hasRLowerBound",
+    "baseIri" : "http://purl.org/sconto/scobe",
+    "range" : "318",
+    "label" : {
+      "IRI-based" : "hasRLowerBound"
+    },
+    "domain" : "317",
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "316"
+  }, {
+    "iri" : "http://purl.org/sconto/scobe/isBenchmarkedWith",
+    "baseIri" : "http://purl.org/sconto/scobe",
+    "range" : "96",
+    "label" : {
+      "IRI-based" : "isBenchmarkedWith"
+    },
+    "domain" : "181",
+    "attributes" : [ "object" ],
+    "id" : "182"
+  }, {
+    "iri" : "http://purl.org/sconto/scobe/hasEvaluationCriterion",
+    "baseIri" : "http://purl.org/sconto/scobe",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "hasEvaluationCriterion"
+    },
+    "domain" : "96",
+    "attributes" : [ "object", "inverse functional", "functional" ],
+    "id" : "319"
+  }, {
+    "iri" : "http://purl.org/sconto/scobe/numberOfRGEntities",
+    "baseIri" : "http://purl.org/sconto/scobe",
+    "range" : "321",
+    "label" : {
+      "IRI-based" : "numberOfRGEntities"
+    },
+    "domain" : "55",
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "320"
+  }, {
+    "range" : "13",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "322"
+  }, {
+    "range" : "17",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "323"
+  }, {
+    "range" : "20",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "324"
+  }, {
+    "range" : "24",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "325"
+  }, {
+    "range" : "7",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "326"
+  }, {
+    "range" : "11",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "327"
+  }, {
+    "range" : "15",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "328"
+  }, {
+    "range" : "5",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "329"
+  }, {
+    "range" : "22",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "330"
+  }, {
+    "range" : "4",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "331"
+  }, {
+    "range" : "9",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "332"
+  }, {
+    "range" : "20",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "333"
+  }, {
+    "range" : "24",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "334"
+  }, {
+    "range" : "33",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "335"
+  }, {
+    "range" : "7",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "336"
+  }, {
+    "range" : "11",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "337"
+  }, {
+    "range" : "15",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "338"
+  }, {
+    "range" : "5",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "339"
+  }, {
+    "range" : "22",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "340"
+  }, {
+    "range" : "4",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "341"
+  }, {
+    "range" : "13",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "342"
+  }, {
+    "range" : "2",
+    "domain" : "88",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "343"
+  }, {
+    "range" : "17",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "344"
+  }, {
+    "range" : "1",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "345"
+  }, {
+    "range" : "7",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "346"
+  }, {
+    "range" : "11",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "347"
+  }, {
+    "range" : "15",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "348"
+  }, {
+    "range" : "5",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "349"
+  }, {
+    "range" : "22",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "350"
+  }, {
+    "range" : "4",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "351"
+  }, {
+    "range" : "9",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "352"
+  }, {
+    "range" : "20",
+    "domain" : "55",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "354"
+  }, {
+    "range" : "24",
+    "domain" : "55",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "355"
+  }, {
+    "range" : "33",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "356"
+  }, {
+    "iri" : "http://purl.org/sconto/scobe/hasEvaluationResult",
+    "inverse" : "311",
+    "baseIri" : "http://purl.org/sconto/scobe",
+    "range" : "49",
+    "label" : {
+      "IRI-based" : "hasEvaluationResult"
+    },
+    "domain" : "84",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "357"
+  }, {
+    "range" : "15",
+    "domain" : "55",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "358"
+  }, {
+    "iri" : "http://purl.org/sconto/scobe/numberOfBGEntities",
+    "baseIri" : "http://purl.org/sconto/scobe",
+    "range" : "360",
+    "label" : {
+      "IRI-based" : "numberOfBGEntities"
+    },
+    "domain" : "84",
+    "attributes" : [ "functional", "datatype", "someValues" ],
+    "id" : "359"
+  }, {
+    "range" : "5",
+    "domain" : "55",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "361"
+  }, {
+    "range" : "22",
+    "domain" : "55",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "362"
+  }, {
+    "iri" : "http://purl.org/sconto/scobe/hasReferencesValueSingleResult",
+    "inverse" : "130",
+    "baseIri" : "http://purl.org/sconto/scobe",
+    "range" : "129",
+    "label" : {
+      "IRI-based" : "hasReferencesValueSingleResult"
+    },
+    "domain" : "103",
+    "attributes" : [ "object", "functional", "someValues" ],
+    "id" : "363"
+  }, {
+    "range" : "4",
+    "domain" : "55",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "364"
+  }, {
+    "iri" : "http://purl.org/sconto/scobe/hasBenchmarkGroup",
+    "inverse" : "229",
+    "baseIri" : "http://purl.org/sconto/scobe",
+    "range" : "84",
+    "label" : {
+      "IRI-based" : "hasBenchmarkGroup"
+    },
+    "domain" : "96",
+    "attributes" : [ "object", "functional", "someValues" ],
+    "id" : "365"
+  }, {
+    "range" : "9",
+    "domain" : "55",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "366"
+  }, {
+    "iri" : "http://purl.org/sconto/scobe/hasEvaluationCriterion",
+    "baseIri" : "http://purl.org/sconto/scobe",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "hasEvaluationCriterion"
+    },
+    "domain" : "96",
+    "attributes" : [ "object", "inverse functional", "functional", "someValues" ],
+    "id" : "367"
+  }, {
+    "range" : "13",
+    "domain" : "55",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "368"
+  }, {
+    "iri" : "http://purl.org/sconto/scobe/produce",
+    "baseIri" : "http://purl.org/sconto/scobe",
+    "range" : "71",
+    "label" : {
+      "IRI-based" : "produce"
+    },
+    "domain" : "96",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "369"
+  }, {
+    "range" : "17",
+    "domain" : "55",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "370"
+  }, {
+    "range" : "139",
+    "domain" : "129",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "371"
+  }, {
+    "iri" : "http://purl.org/sconto/scobe/determinesTargetGroup",
+    "inverse" : "373",
+    "baseIri" : "http://purl.org/sconto/scobe",
+    "range" : "55",
+    "label" : {
+      "IRI-based" : "determinesTargetGroup"
+    },
+    "domain" : "49",
+    "attributes" : [ "object", "functional" ],
+    "id" : "372"
+  }, {
+    "iri" : "http://purl.org/sconto/scobe/hasEvaluationResult",
+    "inverse" : "311",
+    "baseIri" : "http://purl.org/sconto/scobe",
+    "range" : "49",
+    "label" : {
+      "IRI-based" : "hasEvaluationResult"
+    },
+    "domain" : "84",
+    "attributes" : [ "object" ],
+    "id" : "374"
+  }, {
+    "iri" : "http://purl.org/sconto/scobe/isProducedBy",
+    "inverse" : "136",
+    "baseIri" : "http://purl.org/sconto/scobe",
+    "range" : "96",
+    "label" : {
+      "IRI-based" : "isProducedBy"
+    },
+    "domain" : "71",
+    "attributes" : [ "object", "functional" ],
+    "id" : "375"
+  }, {
+    "iri" : "http://purl.org/sconto/scobe/isReferenceValue",
+    "baseIri" : "http://purl.org/sconto/scobe",
+    "range" : "103",
+    "label" : {
+      "IRI-based" : "isReferenceValue"
+    },
+    "domain" : "129",
+    "attributes" : [ "object", "functional" ],
+    "id" : "130"
+  }, {
+    "iri" : "http://purl.org/sconto/scobe/upperBound",
+    "baseIri" : "http://purl.org/sconto/scobe",
+    "range" : "353",
+    "label" : {
+      "IRI-based" : "upperBound"
+    },
+    "domain" : "52",
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "376"
+  }, {
+    "iri" : "http://purl.org/sconto/scobe/isTargetGroupOf",
+    "baseIri" : "http://purl.org/sconto/scobe",
+    "range" : "84",
+    "label" : {
+      "IRI-based" : "isTargetGroupOf"
+    },
+    "domain" : "55",
+    "attributes" : [ "object", "inverse functional", "functional", "someValues" ],
+    "id" : "377"
+  }, {
+    "iri" : "http://purl.org/sconto/scobe/hasReferencePractice",
+    "inverse" : "219",
+    "baseIri" : "http://purl.org/sconto/scobe",
+    "range" : "70",
+    "label" : {
+      "IRI-based" : "hasReferencePractice"
+    },
+    "domain" : "55",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "378"
+  }, {
+    "iri" : "http://purl.org/sconto/scobe/isDeterminedBy",
+    "baseIri" : "http://purl.org/sconto/scobe",
+    "range" : "49",
+    "label" : {
+      "IRI-based" : "isDeterminedBy"
+    },
+    "domain" : "55",
+    "attributes" : [ "object", "functional", "someValues" ],
+    "id" : "379"
+  }, {
+    "iri" : "http://purl.org/sconto/scobe/numberOfRGEntities",
+    "baseIri" : "http://purl.org/sconto/scobe",
+    "range" : "381",
+    "label" : {
+      "IRI-based" : "numberOfRGEntities"
+    },
+    "domain" : "55",
+    "attributes" : [ "functional", "datatype", "someValues" ],
+    "id" : "380"
+  }, {
+    "range" : "84",
+    "domain" : "71",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "382"
+  }, {
+    "range" : "92",
+    "domain" : "71",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "383"
+  }, {
+    "range" : "96",
+    "domain" : "71",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "384"
+  }, {
+    "range" : "88",
+    "domain" : "131",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "385"
+  }, {
+    "range" : "192",
+    "domain" : "233",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "386"
+  } ]
+}
