@@ -1,0 +1,1203 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.org/sconto/scobe/"
+     xml:base="http://purl.org/sconto/scobe/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:p1="http://www.owl-ontologies.com/assert.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:scome="http://purl.org/sconto/scome/"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:dcterms="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#"
+     xmlns:indonto="http://purl.org/sconto/scobe/"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#">
+    <owl:Ontology rdf:about="http://purl.org/sconto/scobe/">
+        <owl:versionIRI rdf:resource="http://purl.org/sconto/scobe/full/0.1/"/>
+        <dc:contributor xml:lang="en">Chris Lowndes</dc:contributor>
+        <dc:contributor xml:lang="en">Gabriela P. Henning</dc:contributor>
+        <dc:contributor xml:lang="en">Horacio P. Leone</dc:contributor>
+        <dc:contributor>Marcela Vegetti</dc:contributor>
+        <dc:creator xml:lang="en">Alicia C. Böhm</dc:creator>
+        <dc:description xml:lang="en">This ontology is an extension of the SCONTO ontology, presented via this academic paper https://openreview.net/pdf?id=ricE3prhfH8. It imports all SCOBE modules and thus gives the fullest expressivity that SCOBE allows. You can use this ontology as-is, or you can construct your own ontology by importing individual SCOBE modules.
+
+See also:
+http://purl.org/sconto/scopro/
+http://purl.org/sconto/scome/</dc:description>
+        <dc:publisher>Indonto, Avanade</dc:publisher>
+        <dc:title xml:lang="en">Supply Chain Benchmarking Ontology (SCOBE)</dc:title>
+        <terms:license rdf:resource="https://opensource.org/licenses/MIT"/>
+        <vann:preferredNamespacePrefix>scobe</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>http://purl.org/sconto/scobe/full/0.1/</vann:preferredNamespaceUri>
+        <owl:versionInfo xml:lang="en">0.1</owl:versionInfo>
+        <skos:historyNote xml:lang="en">Version 0.1 is an initial release that contains the full SCOBE ontology.</skos:historyNote>
+        <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-09-19</dcterms:modified>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/publisher -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#historyNote -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#historyNote"/>
+    
+
+
+    <!-- https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#modified -->
+
+    <owl:AnnotationProperty rdf:about="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#modified"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/sconto/scobe/determinesTargetGroup -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sconto/scobe/determinesTargetGroup">
+        <owl:inverseOf rdf:resource="http://purl.org/sconto/scobe/isDeterminedBy"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://purl.org/sconto/scobe/Group_Evaluation_Result"/>
+        <rdfs:range rdf:resource="http://purl.org/sconto/scobe/Reference_Group"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/sconto/scobe/hasBValueScale -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sconto/scobe/hasBValueScale">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://purl.org/sconto/scobe/Benchmarking_Membership_Property"/>
+        <rdfs:range rdf:resource="http://purl.org/sconto/scome/Value_Scale"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/sconto/scobe/hasBenchmarkGroup -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sconto/scobe/hasBenchmarkGroup">
+        <owl:inverseOf rdf:resource="http://purl.org/sconto/scobe/isBenchmarkGroupOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://purl.org/sconto/scobe/Benchmarking_Project"/>
+        <rdfs:range rdf:resource="http://purl.org/sconto/scobe/Benchmarking_Group"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/sconto/scobe/hasBenchmarkedSCEntity -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sconto/scobe/hasBenchmarkedSCEntity">
+        <owl:inverseOf rdf:resource="http://purl.org/sconto/scobe/isBenchmarkedWith"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/sconto/scobe/hasCComponent -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sconto/scobe/hasCComponent">
+        <rdfs:domain rdf:resource="http://purl.org/sconto/scobe/Composite_Criterion"/>
+        <rdfs:range rdf:resource="http://purl.org/sconto/scobe/Group_Evaluation_Criterion"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/sconto/scobe/hasCriterionResult -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sconto/scobe/hasCriterionResult">
+        <owl:inverseOf rdf:resource="http://purl.org/sconto/scobe/isCriterionResultOf"/>
+        <rdfs:domain rdf:resource="http://purl.org/sconto/scobe/Group_Evaluation_Criterion"/>
+        <rdfs:range rdf:resource="http://purl.org/sconto/scobe/Group_Evaluation_Result"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/sconto/scobe/hasEvaluationCriterion -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sconto/scobe/hasEvaluationCriterion">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://purl.org/sconto/scobe/Benchmarking_Project"/>
+        <rdfs:range rdf:resource="http://purl.org/sconto/scobe/Group_Evaluation_Criterion"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/sconto/scobe/hasEvaluationResult -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sconto/scobe/hasEvaluationResult">
+        <owl:inverseOf rdf:resource="http://purl.org/sconto/scobe/isEvaluationResultOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/sconto/scobe/hasGECValueScale -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sconto/scobe/hasGECValueScale">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://purl.org/sconto/scobe/Group_Evaluation_Criterion"/>
+        <rdfs:range rdf:resource="http://purl.org/sconto/scome/Value_Scale"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/sconto/scobe/hasMembershipProperty -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sconto/scobe/hasMembershipProperty">
+        <owl:inverseOf rdf:resource="http://purl.org/sconto/scobe/isMembershipPropertyOf"/>
+        <rdfs:domain rdf:resource="http://purl.org/sconto/scobe/Benchmarking_Group"/>
+        <rdfs:range rdf:resource="http://purl.org/sconto/scobe/Benchmarking_Membership_Property"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/sconto/scobe/hasMembershipValue -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sconto/scobe/hasMembershipValue">
+        <owl:inverseOf rdf:resource="http://purl.org/sconto/scobe/isMembershipValueOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://purl.org/sconto/scobe/Benchmarking_Membership_Property"/>
+        <rdfs:range rdf:resource="http://purl.org/sconto/scobe/Membership_Property_Value"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/sconto/scobe/hasReferencePractice -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sconto/scobe/hasReferencePractice">
+        <owl:inverseOf rdf:resource="http://purl.org/sconto/scobe/isReferencePracticeOfRGroup"/>
+        <rdfs:domain rdf:resource="http://purl.org/sconto/scobe/Reference_Group"/>
+        <rdfs:range rdf:resource="http://purl.org/sconto/scobe/Reference_Practice"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/sconto/scobe/hasReferencesValueSingleResult -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sconto/scobe/hasReferencesValueSingleResult">
+        <owl:inverseOf rdf:resource="http://purl.org/sconto/scobe/isReferenceValue"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/sconto/scobe/hasTransformationRule -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sconto/scobe/hasTransformationRule">
+        <owl:inverseOf rdf:resource="http://purl.org/sconto/scobe/isTransformationRuleOf"/>
+        <rdfs:domain rdf:resource="http://purl.org/sconto/scobe/Atomic_Criterion"/>
+        <rdfs:range rdf:resource="http://purl.org/sconto/scobe/Benchmarking_Transformation_Rule"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/sconto/scobe/isBenchmarkGroupOf -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sconto/scobe/isBenchmarkGroupOf"/>
+    
+
+
+    <!-- http://purl.org/sconto/scobe/isBenchmarkedWith -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sconto/scobe/isBenchmarkedWith">
+        <rdfs:range rdf:resource="http://purl.org/sconto/scobe/Benchmarking_Project"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/sconto/scobe/isCriterionResultOf -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sconto/scobe/isCriterionResultOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/sconto/scobe/isDeterminedBy -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sconto/scobe/isDeterminedBy">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/sconto/scobe/isEquivalentProperty -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sconto/scobe/isEquivalentProperty">
+        <rdfs:domain rdf:resource="http://purl.org/sconto/scobe/Benchmarking_Membership_Property"/>
+        <rdfs:range rdf:resource="http://purl.org/sconto/scome/Secondary_Attribute"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/sconto/scobe/isEvaluationResultOf -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sconto/scobe/isEvaluationResultOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://purl.org/sconto/scobe/Group_Evaluation_Result"/>
+        <rdfs:range rdf:resource="http://purl.org/sconto/scobe/Benchmarking_Group"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/sconto/scobe/isMembershipPropertyOf -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sconto/scobe/isMembershipPropertyOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/sconto/scobe/isMembershipValueOf -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sconto/scobe/isMembershipValueOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/sconto/scobe/isProducedBy -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sconto/scobe/isProducedBy">
+        <owl:inverseOf rdf:resource="http://purl.org/sconto/scobe/produce"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/sconto/scobe/isReferencePracticeOfRGroup -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sconto/scobe/isReferencePracticeOfRGroup">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/sconto/scobe/isReferenceValue -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sconto/scobe/isReferenceValue">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://purl.org/sconto/scobe/Single_Result"/>
+        <rdfs:range rdf:resource="http://purl.org/sconto/scobe/Reference_Value"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/sconto/scobe/isTargetGroupOf -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sconto/scobe/isTargetGroupOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://purl.org/sconto/scobe/Reference_Group"/>
+        <rdfs:range rdf:resource="http://purl.org/sconto/scobe/Benchmarking_Group"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/sconto/scobe/isTransformableInto -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sconto/scobe/isTransformableInto">
+        <rdfs:domain rdf:resource="http://purl.org/sconto/scome/Performance_Attribute"/>
+        <rdfs:range rdf:resource="http://purl.org/sconto/scobe/Atomic_Criterion"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/sconto/scobe/isTransformationRuleOf -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sconto/scobe/isTransformationRuleOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/sconto/scobe/isTransformedWith -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sconto/scobe/isTransformedWith">
+        <rdfs:domain rdf:resource="http://purl.org/sconto/scobe/Transformed_Measure"/>
+        <rdfs:range rdf:resource="http://purl.org/sconto/scobe/Benchmarking_Transformation_Rule"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/sconto/scobe/originalMeasure -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sconto/scobe/originalMeasure">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://purl.org/sconto/scobe/Transformed_Measure"/>
+        <rdfs:range rdf:resource="http://purl.org/sconto/scome/Measure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/sconto/scobe/produce -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sconto/scobe/produce">
+        <rdfs:domain rdf:resource="http://purl.org/sconto/scobe/Benchmarking_Project"/>
+        <rdfs:range rdf:resource="http://purl.org/sconto/scobe/Benchmark"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/sconto/scobe/elementValue -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/sconto/scobe/elementValue">
+        <rdfs:domain rdf:resource="http://purl.org/sconto/scobe/Membership_Property_Value"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/sconto/scobe/hasRLowerBound -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/sconto/scobe/hasRLowerBound">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/sconto/scobe/hasRUpperBound -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/sconto/scobe/hasRUpperBound">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://purl.org/sconto/scobe/Range_Result"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/sconto/scobe/hasRValue -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/sconto/scobe/hasRValue">
+        <rdfs:domain rdf:resource="http://purl.org/sconto/scobe/Single_Result"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/sconto/scobe/informationQuality -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/sconto/scobe/informationQuality">
+        <rdfs:domain rdf:resource="http://purl.org/sconto/scobe/Benchmarking_Group"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/sconto/scobe/lowerBound -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/sconto/scobe/lowerBound">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://purl.org/sconto/scobe/Membership_Property_Value"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/sconto/scobe/numberOfBGEntities -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/sconto/scobe/numberOfBGEntities">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://purl.org/sconto/scobe/Benchmarking_Group"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/sconto/scobe/numberOfRGEntities -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/sconto/scobe/numberOfRGEntities">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://purl.org/sconto/scobe/Reference_Group"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/sconto/scobe/upperBound -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/sconto/scobe/upperBound">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://purl.org/sconto/scobe/Membership_Property_Value"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/sconto/scobe/Atomic_Criterion -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scobe/Atomic_Criterion">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sconto/scobe/Group_Evaluation_Criterion"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sconto/scobe/hasTransformationRule"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sconto/scobe/Benchmarking_Transformation_Rule"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://purl.org/sconto/scobe/Composite_Criterion"/>
+        <rdfs:comment>Característica de desempeño que no resulta de la composición de otros criterios de evaluación. Se utiliza directa o indirectamente para el análisis del conjunto de miembros de un grupo de “benchmarking”</rdfs:comment>
+        <rdfs:label xml:lang="en">Atomic_Criterion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scobe/Benchmark -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scobe/Benchmark">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/sconto/scobe/Reference_Practice"/>
+                    <rdf:Description rdf:about="http://purl.org/sconto/scobe/Reference_Value"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sconto/scobe/isProducedBy"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sconto/scobe/Benchmarking_Project"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Punto de referencia contra el cual se compara el desempeño o las prácticas de cada una de las entidades de la cadena de suministros involucradas en un proyecto de “benchmarking”</rdfs:comment>
+        <rdfs:label xml:lang="en">Benchmark</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scobe/Benchmarking_Group -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scobe/Benchmarking_Group">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sconto/scobe/isBenchmarkGroupOf"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sconto/scobe/Benchmarking_Project"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sconto/scobe/hasEvaluationResult"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sconto/scobe/Group_Evaluation_Result"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sconto/scobe/hasMembershipProperty"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sconto/scobe/Benchmarking_Membership_Property"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sconto/scobe/numberOfBGEntities"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Grupo de entidades que poseen características afines preestablecidas cuyos desempeños se evalúan en un proyecto de “benchmarking” a efectos de establecer -directa o indirectamente- puntos de comparación</rdfs:comment>
+        <rdfs:label xml:lang="en">Benchmarking_Group</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scobe/Benchmarking_Membership_Property -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scobe/Benchmarking_Membership_Property">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sconto/scobe/hasBValueScale"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sconto/scome/Value_Scale"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sconto/scobe/hasMembershipValue"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sconto/scobe/Membership_Property_Value"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sconto/scobe/isEquivalentProperty"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sconto/scome/Secondary_Attribute"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sconto/scobe/isMembershipPropertyOf"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sconto/scobe/Benchmarking_Group"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Propiedad de los elementos de un grupo de “benchmarking”</rdfs:comment>
+        <rdfs:label xml:lang="en">Benchmarking_Membership_Property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scobe/Benchmarking_Project -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scobe/Benchmarking_Project">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sconto/scobe/produce"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sconto/scobe/Benchmark"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sconto/scobe/hasBenchmarkGroup"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sconto/scobe/Benchmarking_Group"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sconto/scobe/hasEvaluationCriterion"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sconto/scobe/Group_Evaluation_Criterion"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Proyecto de investigación del desempeño y/o de la actuación de un grupo de “benchmarking&quot;- con el fin de mejorar la performance de entidades de una cadena de suministros</rdfs:comment>
+        <rdfs:label xml:lang="en">Benchmarking_Project</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scobe/Benchmarking_Transformation_Rule -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scobe/Benchmarking_Transformation_Rule">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sconto/scobe/isTransformationRuleOf"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sconto/scobe/Atomic_Criterion"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Procedimiento para trasladar las medidas de atributos de desempeño a la escala correspondiente a un criterio atómico</rdfs:comment>
+        <rdfs:label xml:lang="en">Benchmarking_Transformation_Rule</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scobe/Composite_Criterion -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scobe/Composite_Criterion">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sconto/scobe/Group_Evaluation_Criterion"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sconto/scobe/hasCComponent"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.org/sconto/scobe/Group_Evaluation_Criterion"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Característica de desempeño que resulta de la composición de otros criterios de evaluación. Se utiliza directa o indirectamente para el análisis del conjunto de miembros de un grupo de “benchmarking”</rdfs:comment>
+        <rdfs:label xml:lang="en">Composite_Criterion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scobe/Group_Best_Value_Result -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scobe/Group_Best_Value_Result">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sconto/scobe/Single_Result"/>
+        <owl:disjointWith rdf:resource="http://purl.org/sconto/scobe/Group_Mean_Value_Result"/>
+        <rdfs:label xml:lang="en">Group_Best_Value_Result</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scobe/Group_Evaluation_Criterion -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scobe/Group_Evaluation_Criterion">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/sconto/scobe/Atomic_Criterion"/>
+                    <rdf:Description rdf:about="http://purl.org/sconto/scobe/Composite_Criterion"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sconto/scobe/hasCriterionResult"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sconto/scobe/Group_Evaluation_Result"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sconto/scobe/hasGECValueScale"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sconto/scome/Value_Scale"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Característica de desempeño que se utiliza para la evaluación y análisis de los miembros de un grupo de “benchmarking”</rdfs:comment>
+        <rdfs:label xml:lang="en">Group_Evaluation_Criterion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scobe/Group_Evaluation_Result -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scobe/Group_Evaluation_Result">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/sconto/scobe/Range_Result"/>
+                    <rdf:Description rdf:about="http://purl.org/sconto/scobe/Single_Result"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sconto/scobe/isCriterionResultOf"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sconto/scobe/Group_Evaluation_Criterion"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sconto/scobe/isEvaluationResultOf"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sconto/scobe/Benchmarking_Group"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Resultado del análisis de un grupo de “benchmarking” con respecto a un criterio de evaluación</rdfs:comment>
+        <rdfs:label xml:lang="en">Group_Evaluation_Result</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scobe/Group_Inferior_Range -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scobe/Group_Inferior_Range">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sconto/scobe/Range_Result"/>
+        <rdfs:label xml:lang="en">Group_Inferior_Range</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scobe/Group_Mean_Value_Result -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scobe/Group_Mean_Value_Result">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sconto/scobe/Single_Result"/>
+        <rdfs:label xml:lang="en">Group_Mean_Value_Result</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scobe/Group_Standard_Range -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scobe/Group_Standard_Range">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sconto/scobe/Range_Result"/>
+        <rdfs:label xml:lang="en">Group_Standard_Range</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scobe/Group_Superior_Range -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scobe/Group_Superior_Range">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sconto/scobe/Range_Result"/>
+        <rdfs:label xml:lang="en">Group_Superior_Range</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scobe/Membership_Property_Value -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scobe/Membership_Property_Value">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/sconto/scobe/elementValue"/>
+                                <owl:someValuesFrom>
+                                    <rdfs:Datatype>
+                                        <owl:unionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+                                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#float"/>
+                                        </owl:unionOf>
+                                    </rdfs:Datatype>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/sconto/scobe/lowerBound"/>
+                                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:qualifiedCardinality>
+                                <owl:onDataRange>
+                                    <rdfs:Datatype>
+                                        <owl:unionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+                                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#float"/>
+                                        </owl:unionOf>
+                                    </rdfs:Datatype>
+                                </owl:onDataRange>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/sconto/scobe/upperBound"/>
+                                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:qualifiedCardinality>
+                                <owl:onDataRange>
+                                    <rdfs:Datatype>
+                                        <owl:unionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+                                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#float"/>
+                                        </owl:unionOf>
+                                    </rdfs:Datatype>
+                                </owl:onDataRange>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/sconto/scobe/lowerBound"/>
+                                <owl:someValuesFrom>
+                                    <rdfs:Datatype>
+                                        <owl:unionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+                                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#float"/>
+                                        </owl:unionOf>
+                                    </rdfs:Datatype>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/sconto/scobe/upperBound"/>
+                                <owl:someValuesFrom>
+                                    <rdfs:Datatype>
+                                        <owl:unionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+                                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#float"/>
+                                        </owl:unionOf>
+                                    </rdfs:Datatype>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/sconto/scobe/elementValue"/>
+                                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:qualifiedCardinality>
+                                <owl:onDataRange>
+                                    <rdfs:Datatype>
+                                        <owl:unionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+                                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#float"/>
+                                        </owl:unionOf>
+                                    </rdfs:Datatype>
+                                </owl:onDataRange>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sconto/scobe/isMembershipValueOf"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sconto/scobe/Benchmarking_Membership_Property"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Conjunto de valores de una propiedad que pueden poseer los individuos de un grupo de “benchmarking”</rdfs:comment>
+        <rdfs:label xml:lang="en">Membership_Property_Value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scobe/Range_Result -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scobe/Range_Result">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sconto/scobe/Group_Evaluation_Result"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sconto/scobe/hasRLowerBound"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#float"/>
+                        </owl:unionOf>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sconto/scobe/hasRUpperBound"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#float"/>
+                        </owl:unionOf>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://purl.org/sconto/scobe/Single_Result"/>
+        <rdfs:comment>Resultado del análisis de un grupo de “benchmarking” que constituye un rango de valores de un criterio de evaluación</rdfs:comment>
+        <rdfs:label xml:lang="en">Range_Result</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scobe/Reference_Group -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scobe/Reference_Group">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sconto/scobe/isTargetGroupOf"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sconto/scobe/Benchmarking_Group"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sconto/scobe/hasReferencePractice"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sconto/scobe/Reference_Practice"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sconto/scobe/isDeterminedBy"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sconto/scobe/Group_Evaluation_Result"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sconto/scobe/numberOfRGEntities"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Subconjunto del grupo de “benchmarking” que se adopta como referencia para identificar buenas prácticas</rdfs:comment>
+        <rdfs:label xml:lang="en">Reference_Group</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scobe/Reference_Practice -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scobe/Reference_Practice">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sconto/scobe/Benchmark"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sconto/scobe/isReferencePracticeOfRGroup"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sconto/scobe/Reference_Group"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://purl.org/sconto/scobe/Reference_Value"/>
+        <rdfs:comment>Procedimiento; técnica; herramienta; metodología o tecnología que ha demostrado producir buenos resultados en un grupo de referencia; que ha sido seleccionada por medio de un proceso sistemático y que es considerada como ejemplar para el logro del criterio adoptado</rdfs:comment>
+        <rdfs:label xml:lang="en">Reference_Practice</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scobe/Reference_Value -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scobe/Reference_Value">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sconto/scobe/Benchmark"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sconto/scobe/hasReferencesValueSingleResult"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sconto/scobe/Single_Result"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Nivel de desempeño de un grupo de “benchmarking” que es reconocido como un punto de comparación para las entidades de la cadena de suministros vinculadas a un proyecto de “benchmarking”</rdfs:comment>
+        <rdfs:label xml:lang="en">Reference_Value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scobe/Single_Result -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scobe/Single_Result">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sconto/scobe/Group_Evaluation_Result"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sconto/scobe/hasRValue"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#float"/>
+                        </owl:unionOf>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Resultado del análisis de un grupo de “benchmarking” que constituye un valor puntual de un criterio de evaluación</rdfs:comment>
+        <rdfs:label xml:lang="en">Single_Result</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scobe/Transformed_Measure -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scobe/Transformed_Measure">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sconto/scobe/originalMeasure"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sconto/scome/Measure"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Medida de un atributo de desempeño compatiblizada para que sea comparable con un criterio atómico</rdfs:comment>
+        <rdfs:label xml:lang="en">Transformed_Measure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scome/Assessable_Attribute -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scome/Assessable_Attribute">
+        <rdfs:label xml:lang="en">Assessable_Attribute</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scome/Control_Parameter -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scome/Control_Parameter">
+        <rdfs:label xml:lang="en">Control_Parameter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scome/Measure -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scome/Measure">
+        <rdfs:label xml:lang="en">Measure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scome/Performance_Attribute -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scome/Performance_Attribute">
+        <rdfs:label xml:lang="en">Performance_Attribute</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scome/SC_Performance_Concept -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scome/SC_Performance_Concept">
+        <rdfs:label xml:lang="en">SC_Performance_Concept</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scome/SC_Performance_Dimension -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scome/SC_Performance_Dimension">
+        <rdfs:label xml:lang="en">SC_Performance_Dimension</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scome/SC_Performance_Evaluation_System -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scome/SC_Performance_Evaluation_System">
+        <rdfs:label xml:lang="en">SC_Performance_Evaluation_System</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scome/Scale_Type -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scome/Scale_Type">
+        <rdfs:label xml:lang="en">Scale_Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scome/Secondary_Attribute -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scome/Secondary_Attribute">
+        <rdfs:label xml:lang="en">Secondary_Attribute</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scome/Unit_Of_Measure -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scome/Unit_Of_Measure">
+        <rdfs:label xml:lang="en">Unit_Of_Measure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scome/Value_Scale -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scome/Value_Scale">
+        <rdfs:label xml:lang="en">Value_Scale</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scopro/Market -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scopro/Market">
+        <rdfs:label xml:lang="en">Market</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scopro/Resource_Role -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scopro/Resource_Role">
+        <rdfs:label xml:lang="en">Resource_Role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scopro/SC_Entity -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scopro/SC_Entity">
+        <rdfs:label xml:lang="en">SC_Entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scopro/Temporal_Relationship -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scopro/Temporal_Relationship">
+        <rdfs:label xml:lang="en">Temporal_Relationship</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scopro/Utilization -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scopro/Utilization">
+        <rdfs:label xml:lang="en">Utilization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/sconto/scobe/Benchmark"/>
+            <rdf:Description rdf:about="http://purl.org/sconto/scobe/Benchmarking_Group"/>
+            <rdf:Description rdf:about="http://purl.org/sconto/scobe/Benchmarking_Membership_Property"/>
+            <rdf:Description rdf:about="http://purl.org/sconto/scobe/Benchmarking_Project"/>
+            <rdf:Description rdf:about="http://purl.org/sconto/scobe/Benchmarking_Transformation_Rule"/>
+            <rdf:Description rdf:about="http://purl.org/sconto/scobe/Group_Evaluation_Criterion"/>
+            <rdf:Description rdf:about="http://purl.org/sconto/scobe/Group_Evaluation_Result"/>
+            <rdf:Description rdf:about="http://purl.org/sconto/scobe/Membership_Property_Value"/>
+            <rdf:Description rdf:about="http://purl.org/sconto/scobe/Reference_Group"/>
+            <rdf:Description rdf:about="http://purl.org/sconto/scobe/Transformed_Measure"/>
+            <rdf:Description rdf:about="http://purl.org/sconto/scome/Assessable_Attribute"/>
+            <rdf:Description rdf:about="http://purl.org/sconto/scome/Control_Parameter"/>
+            <rdf:Description rdf:about="http://purl.org/sconto/scome/SC_Performance_Concept"/>
+            <rdf:Description rdf:about="http://purl.org/sconto/scome/SC_Performance_Dimension"/>
+            <rdf:Description rdf:about="http://purl.org/sconto/scome/SC_Performance_Evaluation_System"/>
+            <rdf:Description rdf:about="http://purl.org/sconto/scome/Scale_Type"/>
+            <rdf:Description rdf:about="http://purl.org/sconto/scome/Unit_Of_Measure"/>
+            <rdf:Description rdf:about="http://purl.org/sconto/scome/Value_Scale"/>
+            <rdf:Description rdf:about="http://purl.org/sconto/scopro/Market"/>
+            <rdf:Description rdf:about="http://purl.org/sconto/scopro/Resource_Role"/>
+            <rdf:Description rdf:about="http://purl.org/sconto/scopro/SC_Entity"/>
+            <rdf:Description rdf:about="http://purl.org/sconto/scopro/Temporal_Relationship"/>
+            <rdf:Description rdf:about="http://purl.org/sconto/scopro/Utilization"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/sconto/scobe/Group_Inferior_Range"/>
+            <rdf:Description rdf:about="http://purl.org/sconto/scobe/Group_Standard_Range"/>
+            <rdf:Description rdf:about="http://purl.org/sconto/scobe/Group_Superior_Range"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,1952 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.org/sconto/scome/"
+     xml:base="http://purl.org/sconto/scome/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:p1="http://www.owl-ontologies.com/assert.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:dcterms="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#"
+     xmlns:indonto="http://purl.org/sconto/scome/"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#">
+    <owl:Ontology rdf:about="http://purl.org/sconto/scome/">
+        <owl:versionIRI rdf:resource="http://purl.org/sconto/scome/full/0.1/"/>
+        <dc:contributor xml:lang="en">Chris Lowndes</dc:contributor>
+        <dc:contributor xml:lang="en">Gabriela P. Henning</dc:contributor>
+        <dc:contributor xml:lang="en">Horacio P. Leone</dc:contributor>
+        <dc:contributor>Marcela Vegetti</dc:contributor>
+        <dc:creator xml:lang="en">Alicia C. Böhm</dc:creator>
+        <dc:description xml:lang="en">This ontology is an extension of the SCONTO ontology, presented via this academic paper https://openreview.net/pdf?id=ricE3prhfH8. It imports all SCOME modules and thus gives the fullest expressivity that SCOME allows. You can use this ontology as-is, or you can construct your own ontology by importing individual SCOME modules.
+
+See also:
+http://purl.org/sconto/scopro/
+http://purl.org/sconto/scobe/</dc:description>
+        <dc:publisher>Indonto, Avanade</dc:publisher>
+        <dc:title xml:lang="en">Supply Chain Measurement Ontology (SCOME)</dc:title>
+        <terms:license rdf:resource="https://opensource.org/licenses/MIT"/>
+        <vann:preferredNamespacePrefix>scome</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>http://purl.org/sconto/scome/full/0.1/</vann:preferredNamespaceUri>
+        <owl:versionInfo xml:lang="en">0.1</owl:versionInfo>
+        <skos:historyNote xml:lang="en">Version 0.1 is an initial release that contains the full SCOME ontology</skos:historyNote>
+        <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-09-19</dcterms:modified>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/publisher -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#historyNote -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#historyNote"/>
+    
+
+
+    <!-- https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#modified -->
+
+    <owl:AnnotationProperty rdf:about="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#modified"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/sconto/scome/areAllowedValuesOf -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sconto/scome/areAllowedValuesOf">
+        <owl:inverseOf rdf:resource="http://purl.org/sconto/scome/hasAllowedValues"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://purl.org/sconto/scome/Allowed_Values"/>
+        <rdfs:range rdf:resource="http://purl.org/sconto/scome/Assessable_Attribute"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/sconto/scome/derivesFrom -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sconto/scome/derivesFrom">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://purl.org/sconto/scome/Derived_Unit"/>
+        <rdfs:range rdf:resource="http://purl.org/sconto/scome/Unit_Of_Measure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/sconto/scome/hasAllowedValues -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sconto/scome/hasAllowedValues">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/sconto/scome/hasAssessableAttribute -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sconto/scome/hasAssessableAttribute">
+        <owl:inverseOf rdf:resource="http://purl.org/sconto/scome/isAssessableAttributeOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/sconto/scome/hasAssessmentMethod -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sconto/scome/hasAssessmentMethod">
+        <owl:inverseOf rdf:resource="http://purl.org/sconto/scome/isAssessmentMethodOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/sconto/scome/hasLinkedConcept -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sconto/scome/hasLinkedConcept">
+        <owl:inverseOf rdf:resource="http://purl.org/sconto/scome/isLinkedConceptOf"/>
+        <rdfs:domain rdf:resource="http://purl.org/sconto/scome/SC_Performance_Dimension"/>
+        <rdfs:range rdf:resource="http://purl.org/sconto/scome/SC_Performance_Concept"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/sconto/scome/hasPartMetric -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sconto/scome/hasPartMetric">
+        <owl:inverseOf rdf:resource="http://purl.org/sconto/scome/isPartOfMetric"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/sconto/scome/hasPerformanceDimension -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sconto/scome/hasPerformanceDimension">
+        <owl:inverseOf rdf:resource="http://purl.org/sconto/scome/isPerformanceDimensionOf"/>
+        <rdfs:domain rdf:resource="http://purl.org/sconto/scome/SC_Performance_Evaluation_System"/>
+        <rdfs:range rdf:resource="http://purl.org/sconto/scome/SC_Performance_Dimension"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/sconto/scome/hasPerformanceEvaulationSystem -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sconto/scome/hasPerformanceEvaulationSystem">
+        <owl:inverseOf rdf:resource="http://purl.org/sconto/scome/isPerformanceEvaulationSystemOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://purl.org/sconto/scopro/Supply_Chain"/>
+        <rdfs:range rdf:resource="http://purl.org/sconto/scome/SC_Performance_Evaluation_System"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/sconto/scome/hasScaleType -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sconto/scome/hasScaleType">
+        <owl:inverseOf rdf:resource="http://purl.org/sconto/scome/isScaleTypeOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://purl.org/sconto/scome/Value_Scale"/>
+        <rdfs:range rdf:resource="http://purl.org/sconto/scome/Scale_Type"/>
+        <rdfs:label xml:lang="es">hasScaleType</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/sconto/scome/hasTarget -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sconto/scome/hasTarget">
+        <owl:inverseOf rdf:resource="http://purl.org/sconto/scome/isTargetValueOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/sconto/scome/hasUnitOfMeasure -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sconto/scome/hasUnitOfMeasure">
+        <owl:inverseOf rdf:resource="http://purl.org/sconto/scome/isUnitOfMeasureOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://purl.org/sconto/scome/Value_Scale"/>
+        <rdfs:range rdf:resource="http://purl.org/sconto/scome/Unit_Of_Measure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/sconto/scome/hasValueScale -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sconto/scome/hasValueScale">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://purl.org/sconto/scome/Assessable_Attribute"/>
+        <rdfs:range rdf:resource="http://purl.org/sconto/scome/Value_Scale"/>
+        <rdfs:label xml:lang="es">hasValueScale</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/sconto/scome/isAssessableAttributeOf -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sconto/scome/isAssessableAttributeOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://purl.org/sconto/scome/Assessable_Attribute"/>
+        <rdfs:range rdf:resource="http://purl.org/sconto/scopro/SC_Entity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/sconto/scome/isAssessmentMethodOf -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sconto/scome/isAssessmentMethodOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://purl.org/sconto/scome/Metric"/>
+        <rdfs:range rdf:resource="http://purl.org/sconto/scome/Assessable_Attribute"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/sconto/scome/isLinkedConceptOf -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sconto/scome/isLinkedConceptOf"/>
+    
+
+
+    <!-- http://purl.org/sconto/scome/isPartOfMetric -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sconto/scome/isPartOfMetric">
+        <rdfs:domain rdf:resource="http://purl.org/sconto/scome/Metric"/>
+        <rdfs:range rdf:resource="http://purl.org/sconto/scome/Composite_Metric"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/sconto/scome/isPerformanceDimensionOf -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sconto/scome/isPerformanceDimensionOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/sconto/scome/isPerformanceEvaulationSystemOf -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sconto/scome/isPerformanceEvaulationSystemOf"/>
+    
+
+
+    <!-- http://purl.org/sconto/scome/isQuantifiedBy -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sconto/scome/isQuantifiedBy">
+        <owl:inverseOf rdf:resource="http://purl.org/sconto/scome/quantifies"/>
+        <rdfs:domain rdf:resource="http://purl.org/sconto/scome/Assessable_Attribute"/>
+        <rdfs:range rdf:resource="http://purl.org/sconto/scome/Measure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/sconto/scome/isScaleTypeOf -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sconto/scome/isScaleTypeOf"/>
+    
+
+
+    <!-- http://purl.org/sconto/scome/isShownThrough -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sconto/scome/isShownThrough">
+        <rdfs:domain rdf:resource="http://purl.org/sconto/scome/SC_Performance_Concept"/>
+        <rdfs:range rdf:resource="http://purl.org/sconto/scome/Performance_Attribute"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/sconto/scome/isTargetValueOf -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sconto/scome/isTargetValueOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://purl.org/sconto/scome/Target_Value"/>
+        <rdfs:range rdf:resource="http://purl.org/sconto/scome/Assessable_Attribute"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/sconto/scome/isUnitOfMeasureOf -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sconto/scome/isUnitOfMeasureOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/sconto/scome/quantifies -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sconto/scome/quantifies">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/sconto/scopro/entails -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sconto/scopro/entails"/>
+    
+
+
+    <!-- http://purl.org/sconto/scopro/hasResourceRole -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sconto/scopro/hasResourceRole"/>
+    
+
+
+    <!-- http://purl.org/sconto/scopro/involves -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sconto/scopro/involves"/>
+    
+
+
+    <!-- http://purl.org/sconto/scopro/isInvolvedIn -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sconto/scopro/isInvolvedIn"/>
+    
+
+
+    <!-- http://purl.org/sconto/scopro/isResourceRoleOf -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sconto/scopro/isResourceRoleOf"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/sconto/scome/definition -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/sconto/scome/definition">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://purl.org/sconto/scome/Metric"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/sconto/scome/description -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/sconto/scome/description">
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/sconto/scome/dimensionalSize -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/sconto/scome/dimensionalSize">
+        <rdfs:domain rdf:resource="http://purl.org/sconto/scome/Simple_Derived_Unit"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label xml:lang="es">dimensionalSize</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/sconto/scome/hasElementValue -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/sconto/scome/hasElementValue">
+        <rdfs:domain rdf:resource="http://purl.org/sconto/scome/Allowed_Values"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label xml:lang="es">hasElementValue</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/sconto/scome/hasLowerBound -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/sconto/scome/hasLowerBound">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://purl.org/sconto/scome/Allowed_Values"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label xml:lang="es">hasLowerBound</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/sconto/scome/hasMeasuredValue -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/sconto/scome/hasMeasuredValue">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/sconto/scome/hasNormalizedValue -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/sconto/scome/hasNormalizedValue">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/sconto/scome/hasTargetvalue -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/sconto/scome/hasTargetvalue">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://purl.org/sconto/scome/Target_Value"/>
+        <rdfs:label xml:lang="es">hasTargetValue</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/sconto/scome/hasTimeFrame -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/sconto/scome/hasTimeFrame">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://purl.org/sconto/scome/Assessable_Attribute"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label xml:lang="es">hasTimeFrame</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/sconto/scome/hasUpperBound -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/sconto/scome/hasUpperBound">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://purl.org/sconto/scome/Allowed_Values"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label xml:lang="es">hasUpperBound</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/sconto/scome/maxValue -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/sconto/scome/maxValue">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://purl.org/sconto/scome/Value_Scale"/>
+        <rdfs:label xml:lang="es">maxValue</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/sconto/scome/minValue -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/sconto/scome/minValue">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://purl.org/sconto/scome/Value_Scale"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/sconto/scome/modifierPrefix -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/sconto/scome/modifierPrefix">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://purl.org/sconto/scome/Simple_Derived_Unit"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/sconto/scome/normalizationCriteria -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/sconto/scome/normalizationCriteria">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:label xml:lang="es">normalizationCriteria</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/sconto/scome/timeFBegin -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/sconto/scome/timeFBegin">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://purl.org/sconto/scome/Measure"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/sconto/scome/timeFEnd -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/sconto/scome/timeFEnd">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://purl.org/sconto/scome/Measure"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/sconto/scome/timepoint -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/sconto/scome/timepoint">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://purl.org/sconto/scome/Measure"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:label xml:lang="es">timepoint</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/sconto/scome/valueType -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/sconto/scome/valueType">
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>Continuous</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>Discrete</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>Linguistic</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/sconto/scome/Allowed_Values -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scome/Allowed_Values">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sconto/scome/Control_Parameter"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:complementOf>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/sconto/scome/hasElementValue"/>
+                                        <owl:someValuesFrom>
+                                            <rdfs:Datatype>
+                                                <owl:unionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+                                                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#float"/>
+                                                </owl:unionOf>
+                                            </rdfs:Datatype>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:complementOf>
+                            </owl:Class>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/sconto/scome/hasLowerBound"/>
+                                <owl:someValuesFrom>
+                                    <rdfs:Datatype>
+                                        <owl:unionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+                                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#float"/>
+                                        </owl:unionOf>
+                                    </rdfs:Datatype>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/sconto/scome/hasUpperBound"/>
+                                <owl:someValuesFrom>
+                                    <rdfs:Datatype>
+                                        <owl:unionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+                                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#float"/>
+                                        </owl:unionOf>
+                                    </rdfs:Datatype>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:complementOf>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/sconto/scome/hasLowerBound"/>
+                                        <owl:someValuesFrom>
+                                            <rdfs:Datatype>
+                                                <owl:unionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+                                                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#float"/>
+                                                </owl:unionOf>
+                                            </rdfs:Datatype>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:complementOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:complementOf>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/sconto/scome/hasUpperBound"/>
+                                        <owl:someValuesFrom>
+                                            <rdfs:Datatype>
+                                                <owl:unionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+                                                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#float"/>
+                                                </owl:unionOf>
+                                            </rdfs:Datatype>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:complementOf>
+                            </owl:Class>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/sconto/scome/hasElementValue"/>
+                                <owl:someValuesFrom>
+                                    <rdfs:Datatype>
+                                        <owl:unionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+                                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#float"/>
+                                        </owl:unionOf>
+                                    </rdfs:Datatype>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sconto/scome/areAllowedValuesOf"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sconto/scome/Assessable_Attribute"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://purl.org/sconto/scome/Target_Value"/>
+        <rdfs:comment>Conjunto de valores aceptables para un determinado atributo mensurable</rdfs:comment>
+        <rdfs:label xml:lang="en">Allowed_Values</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scome/Assesment_Activity -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scome/Assesment_Activity">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sconto/scopro/entails"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sconto/scome/Measure_Creation"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/sconto/scopro/Task"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sconto/scopro/entails"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sconto/scome/Metric_Use"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Actividad mediante la cual se valora un atributo mensurable
+asignándole un valor (“measure”) de acuerdo al
+procedimiento especificado por una métrica</rdfs:comment>
+        <rdfs:label xml:lang="en">Assesment_Activity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scome/Assessable_Attribute -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scome/Assessable_Attribute">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/sconto/scome/Performance_Attribute"/>
+                    <rdf:Description rdf:about="http://purl.org/sconto/scome/Secondary_Attribute"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sconto/scome/isAssessableAttributeOf"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sconto/scopro/SC_Entity"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/sconto/scome/hasAllowedValues"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://purl.org/sconto/scome/Allowed_Values"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.org/sconto/scome/hasLowerBound"/>
+                                                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.org/sconto/scome/hasUpperBound"/>
+                                                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/sconto/scome/hasValueScale"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://purl.org/sconto/scome/Value_Scale"/>
+                                            <owl:Class>
+                                                <owl:complementOf>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://purl.org/sconto/scome/valueType"/>
+                                                        <owl:hasValue>Continuous</owl:hasValue>
+                                                    </owl:Restriction>
+                                                </owl:complementOf>
+                                            </owl:Class>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/sconto/scome/hasValueScale"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.org/sconto/scome/Value_Scale"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/sconto/scome/valueType"/>
+                                        <owl:hasValue>Continuous</owl:hasValue>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sconto/scome/hasAssessmentMethod"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sconto/scome/Metric"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sconto/scome/hasValueScale"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sconto/scome/Value_Scale"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sconto/scome/description"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Propiedad evaluable de una entidad de una cadena de suministros</rdfs:comment>
+        <rdfs:label xml:lang="en">Assessable_Attribute</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scome/Atomic_Metric -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scome/Atomic_Metric">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sconto/scome/Metric"/>
+        <owl:disjointWith rdf:resource="http://purl.org/sconto/scome/Composite_Metric"/>
+        <rdfs:comment>Método que no necesita ninguna otra métrica para la asignación de valores a un atributo mensurable</rdfs:comment>
+        <rdfs:label xml:lang="en">Atomic_Metric</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scome/Base_Unit -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scome/Base_Unit">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sconto/scome/Unit_Of_Measure"/>
+        <owl:disjointWith rdf:resource="http://purl.org/sconto/scome/Derived_Unit"/>
+        <rdfs:comment>Unidad de medida que no se deriva de otra unidad</rdfs:comment>
+        <rdfs:label xml:lang="en">Base_Unit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scome/Benefit_Equity -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scome/Benefit_Equity">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sconto/scome/SC_Performance_Concept"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sconto/scome/isLinkedConceptOf"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sconto/scome/SC_Equity_Facing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Grado de equidad en los beneficios que obtienen las organizaciones participantes de una cadena -monetarios o de otro tipo- con respecto a un parámetro que permite sentar una base para la comparación</rdfs:comment>
+        <rdfs:label xml:lang="en">Benefit_Equity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scome/Categorical -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scome/Categorical">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sconto/scome/Scale_Type"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sconto/scome/isScaleTypeOf"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/sconto/scome/Value_Scale"/>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/sconto/scome/valueType"/>
+                                        <owl:hasValue>Discrete</owl:hasValue>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/sconto/scome/valueType"/>
+                                        <owl:hasValue>Linguistic</owl:hasValue>
+                                    </owl:Restriction>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://purl.org/sconto/scome/Numerical"/>
+        <rdfs:comment>Tipo de escala cuyos valores se vinculan a una clasificación o categorización de una propiedad</rdfs:comment>
+        <rdfs:label xml:lang="en">Categorical</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scome/Complex_Derived_Unit -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scome/Complex_Derived_Unit">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sconto/scome/derivesFrom"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.org/sconto/scome/Unit_Of_Measure"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/sconto/scome/Derived_Unit"/>
+        <owl:disjointWith rdf:resource="http://purl.org/sconto/scome/Simple_Derived_Unit"/>
+        <rdfs:comment>Unidad de medida que se deriva del producto de dos o más unidades de medidas</rdfs:comment>
+        <rdfs:label xml:lang="en">Complex_Derived_Unit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scome/Composite_Metric -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scome/Composite_Metric">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sconto/scome/hasPartMetric"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sconto/scome/Metric"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/sconto/scome/Metric"/>
+        <rdfs:comment>Método que necesita de otras métricas para la asignación de valores a un atributo mensurable</rdfs:comment>
+        <rdfs:label xml:lang="en">Composite_Metric</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scome/Contribution_Equity -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scome/Contribution_Equity">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sconto/scome/SC_Performance_Concept"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sconto/scome/isLinkedConceptOf"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sconto/scome/SC_Equity_Facing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Grado de equidad en los aportes -monetarios o de otro tipo- con respecto a un parámetro que permite sentar una base para la comparación -que efectúan las organizaciones participantes de una cadena</rdfs:comment>
+        <rdfs:label xml:lang="en">Contribution_Equity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scome/Control_Parameter -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scome/Control_Parameter">
+        <rdfs:comment>Parámetro que permite calificar los valores de un atributo mensurable</rdfs:comment>
+        <rdfs:label xml:lang="en">Control_Parameter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scome/Derived_Unit -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scome/Derived_Unit">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sconto/scome/derivesFrom"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sconto/scome/Unit_Of_Measure"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/sconto/scome/Unit_Of_Measure"/>
+        <rdfs:comment>Unidad de medida que se deriva de otra/s unidad/es</rdfs:comment>
+        <rdfs:label xml:lang="en">Derived_Unit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scome/Direct_Assessment -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scome/Direct_Assessment">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sconto/scome/Assesment_Activity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sconto/scopro/entails"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/sconto/scome/Metric_Use"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/sconto/scopro/involves"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://purl.org/sconto/scome/Metric_Input"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.org/sconto/scopro/isResourceRoleOf"/>
+                                                <owl:someValuesFrom rdf:resource="http://purl.org/sconto/scome/Atomic_Metric"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Actividad de medición en la cual no se usan medidas de atributos mensurables</rdfs:comment>
+        <rdfs:label xml:lang="en">Direct_Assessment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scome/Indirect_Assessment -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scome/Indirect_Assessment">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sconto/scome/Assesment_Activity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sconto/scopro/entails"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sconto/scome/Measure_Use"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sconto/scopro/entails"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/sconto/scome/Metric_Use"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/sconto/scopro/involves"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://purl.org/sconto/scome/Metric_Input"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.org/sconto/scopro/isResourceRoleOf"/>
+                                                <owl:someValuesFrom rdf:resource="http://purl.org/sconto/scome/Composite_Metric"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Actividad de medición en la cual se usa una o más medidas de atributos mensurables</rdfs:comment>
+        <rdfs:label xml:lang="en">Indirect_Assessment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scome/Measure -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scome/Measure">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sconto/scome/quantifies"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sconto/scome/Assessable_Attribute"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/sconto/scome/Performance_Information"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:complementOf>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/sconto/scome/timeFBegin"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+                                    </owl:Restriction>
+                                </owl:complementOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:complementOf>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/sconto/scome/timeFEnd"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+                                    </owl:Restriction>
+                                </owl:complementOf>
+                            </owl:Class>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/sconto/scome/quantifies"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://purl.org/sconto/scome/Assessable_Attribute"/>
+                                            <owl:Class>
+                                                <owl:complementOf>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://purl.org/sconto/scome/hasTimeFrame"/>
+                                                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+                                                    </owl:Restriction>
+                                                </owl:complementOf>
+                                            </owl:Class>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/sconto/scome/quantifies"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://purl.org/sconto/scome/Assessable_Attribute"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.org/sconto/scome/hasTimeFrame"/>
+                                                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/sconto/scome/timeFBegin"/>
+                                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/sconto/scome/timeFEnd"/>
+                                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sconto/scopro/hasResourceRole"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sconto/scome/Measure_Output"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sconto/scome/timepoint"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sconto/scome/hasMeasuredValue"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://purl.org/sconto/scome/Metric"/>
+        <rdfs:comment>Resultado de una actividad de medición. Caracteriza a un atributo mensurable</rdfs:comment>
+        <rdfs:label xml:lang="en">Measure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scome/Measure_Creation -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scome/Measure_Creation">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sconto/scopro/Creation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sconto/scopro/involves"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sconto/scome/Measure_Output"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Generación de una medida durante una actividad de medición</rdfs:comment>
+        <rdfs:label xml:lang="en">Measure_Creation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scome/Measure_Input -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scome/Measure_Input">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sconto/scopro/Input"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sconto/scopro/isInvolvedIn"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sconto/scome/Measure_Use"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sconto/scopro/isResourceRoleOf"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sconto/scome/Measure"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://purl.org/sconto/scome/Metric_Input"/>
+        <rdfs:comment>Rol de una medida que es requerida para la ejecución de una actividad de medición indirecta</rdfs:comment>
+        <rdfs:label xml:lang="en">Measure_Input</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scome/Measure_Output -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scome/Measure_Output">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sconto/scopro/Output"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sconto/scopro/isInvolvedIn"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sconto/scome/Measure_Creation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sconto/scopro/isResourceRoleOf"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sconto/scome/Measure"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Rol de una medida que se obtiene como resultado de una actividad de medición</rdfs:comment>
+        <rdfs:label xml:lang="en">Measure_Output</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scome/Measure_Use -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scome/Measure_Use">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sconto/scopro/Use"/>
+        <owl:disjointWith rdf:resource="http://purl.org/sconto/scome/Metric_Use"/>
+        <rdfs:comment>Empleo de una medida en una actividad de medición indirecta</rdfs:comment>
+        <rdfs:label xml:lang="en">Measure_Use</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scome/Metric -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scome/Metric">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/sconto/scome/Atomic_Metric"/>
+                    <rdf:Description rdf:about="http://purl.org/sconto/scome/Composite_Metric"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sconto/scome/isAssessmentMethodOf"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sconto/scome/Assessable_Attribute"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/sconto/scome/Performance_Information"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sconto/scome/definition"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Método utilizado para la obtención del valor de un atributo mensurable</rdfs:comment>
+        <rdfs:label xml:lang="en">Metric</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scome/Metric_Input -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scome/Metric_Input">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sconto/scopro/Input"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sconto/scopro/isInvolvedIn"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sconto/scome/Metric_Use"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sconto/scopro/isResourceRoleOf"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sconto/scome/Metric"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Rol de una métrica que es requerida para la ejecución de una actividad de medición</rdfs:comment>
+        <rdfs:label xml:lang="en">Metric_Input</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scome/Metric_Use -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scome/Metric_Use">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sconto/scopro/Use"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sconto/scopro/involves"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sconto/scome/Metric_Input"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Empleo de una métrica en una actividad de medición</rdfs:comment>
+        <rdfs:label xml:lang="en">Metric_Use</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scome/Numerical -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scome/Numerical">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sconto/scome/Scale_Type"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sconto/scome/isScaleTypeOf"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/sconto/scome/Value_Scale"/>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/sconto/scome/valueType"/>
+                                        <owl:hasValue>Continuos</owl:hasValue>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/sconto/scome/valueType"/>
+                                        <owl:hasValue>Discrete</owl:hasValue>
+                                    </owl:Restriction>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Tipo de escala en la cual sus valores tienen un orden y cada par consecutivo representa un intervalo constante de una propiedad</rdfs:comment>
+        <rdfs:label xml:lang="en">Numerical</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scome/Performance_Attribute -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scome/Performance_Attribute">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sconto/scome/Assessable_Attribute"/>
+        <owl:disjointWith rdf:resource="http://purl.org/sconto/scome/Secondary_Attribute"/>
+        <rdfs:comment>Propiedad evaluable de una entidad de una cadena de suministros que caracteriza su desempeño</rdfs:comment>
+        <rdfs:label xml:lang="en">Performance_Attribute</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scome/Performance_Information -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scome/Performance_Information">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sconto/scopro/Information_Resource"/>
+        <rdfs:comment>Recurso de información vinculado a la evaluación del desempeño de una entidad de una cadena de suministros</rdfs:comment>
+        <rdfs:label xml:lang="en">Performance_Information</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scome/SC_Agility -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scome/SC_Agility">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sconto/scome/SC_Performance_Concept"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sconto/scome/isLinkedConceptOf"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sconto/scome/SC_Customer_Facing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Capacidad de una cadena de suministros de adaptarse para responder a cambios en los requerimientos</rdfs:comment>
+        <rdfs:label xml:lang="en">SC_Agility</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scome/SC_Assets -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scome/SC_Assets">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sconto/scome/SC_Performance_Concept"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sconto/scome/isLinkedConceptOf"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sconto/scome/SC_Internal_Facing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Efectividad de la gestión de los activos involucrados en la operación de una cadena de suministros</rdfs:comment>
+        <rdfs:label xml:lang="en">SC_Assets</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scome/SC_Cost -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scome/SC_Cost">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sconto/scome/SC_Performance_Concept"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sconto/scome/isLinkedConceptOf"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sconto/scome/SC_Internal_Facing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Costos asociados a la operación de una cadena de suministros</rdfs:comment>
+        <rdfs:label xml:lang="en">SC_Cost</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scome/SC_Customer_Facing -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scome/SC_Customer_Facing">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sconto/scome/SC_Performance_Dimension"/>
+        <rdfs:comment>Dimensión de desempeño de una cadena de suministros que apunta a la satisfacción de los clientes finales</rdfs:comment>
+        <rdfs:label xml:lang="en">SC_Customer_Facing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scome/SC_Equity_Facing -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scome/SC_Equity_Facing">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sconto/scome/SC_Performance_Dimension"/>
+        <rdfs:comment>Dimensión de desempeño de una cadena de suministros que se enfoca en el logro de un balance entre los aportes y los beneficios que obtienen las organizaciones participantes en la cadena</rdfs:comment>
+        <rdfs:comment>a excepción de los clientes finales. Se trata de una medida de dispersión con la cual se pretende evaluar la variabilidad en la relación entre los conceptos de aportes y beneficios de los distintos actores</rdfs:comment>
+        <rdfs:label xml:lang="en">SC_Equity_Facing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scome/SC_Internal_Facing -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scome/SC_Internal_Facing">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sconto/scome/SC_Performance_Dimension"/>
+        <rdfs:comment>Dimensión de desempeño de una cadena de suministros que se focaliza en los resultados de interés para el conjunto de participantes de la misma - con excepción de los clientes finales</rdfs:comment>
+        <rdfs:label xml:lang="en">SC_Internal_Facing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scome/SC_Performance_Concept -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scome/SC_Performance_Concept">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sconto/scome/isLinkedConceptOf"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sconto/scome/SC_Performance_Dimension"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sconto/scome/isShownThrough"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sconto/scome/Performance_Attribute"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Propiedad abstracta con la cual se puede caracterizar el desempeño de una cadena de suministros</rdfs:comment>
+        <rdfs:label xml:lang="en">SC_Performance_Concept</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scome/SC_Performance_Dimension -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scome/SC_Performance_Dimension">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sconto/scome/isPerformanceDimensionOf"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sconto/scome/SC_Performance_Evaluation_System"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sconto/scome/hasLinkedConcept"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sconto/scome/SC_Performance_Concept"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Perspectiva desde la cual se analiza el desempeño de una cadena de suministros</rdfs:comment>
+        <rdfs:label xml:lang="en">SC_Performance_Dimension</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scome/SC_Performance_Evaluation_System -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scome/SC_Performance_Evaluation_System">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sconto/scome/isPerformanceEvaulationSystemOf"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sconto/scopro/Supply_Chain"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sconto/scome/hasPerformanceDimension"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.org/sconto/scome/SC_Performance_Dimension"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Conjunto de ideas</rdfs:comment>
+        <rdfs:comment>reglas y principios que tienen como finalidad la determinación de valores de desempeño de una cadena de suministros</rdfs:comment>
+        <rdfs:label xml:lang="en">SC_Performance_Evaluation_System</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scome/SC_Reliability -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scome/SC_Reliability">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sconto/scome/SC_Performance_Concept"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sconto/scome/isLinkedConceptOf"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sconto/scome/SC_Customer_Facing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Capacidad de una cadena de suministros de operar sin fallas</rdfs:comment>
+        <rdfs:label xml:lang="en">SC_Reliability</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scome/SC_Responsiveness -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scome/SC_Responsiveness">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sconto/scome/SC_Performance_Concept"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sconto/scome/isLinkedConceptOf"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sconto/scome/SC_Customer_Facing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Capacidad de reacción de una cadena de suministros para responder a los requerimientos estándar de los clientes</rdfs:comment>
+        <rdfs:label xml:lang="en">SC_Responsiveness</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scome/Scale_Type -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scome/Scale_Type">
+        <rdfs:comment>Naturaleza de las relaciones entre los valores pertenecientes a una escala</rdfs:comment>
+        <rdfs:label xml:lang="en">Scale_Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scome/Secondary_Attribute -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scome/Secondary_Attribute">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sconto/scome/Assessable_Attribute"/>
+        <rdfs:comment>Propiedad evaluable de una entidad de una cadena de suministros que no caracteriza su desempeño</rdfs:comment>
+        <rdfs:label xml:lang="en">Secondary_Attribute</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scome/Simple_Derived_Unit -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scome/Simple_Derived_Unit">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/sconto/scome/derivesFrom"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.org/sconto/scome/Base_Unit"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/sconto/scome/derivesFrom"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://purl.org/sconto/scome/Base_Unit"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/sconto/scome/Derived_Unit"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sconto/scome/dimensionalSize"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Unidad de medida que se deriva de una única unidad base. Puede obtenerse por la adición de un prefijo a la unidad base para formar un múltiplo o submúltiplo decimal de la misma y/o por la modificación de su exponente</rdfs:comment>
+        <rdfs:label xml:lang="en">Simple_Derived_Unit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scome/Target_Value -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scome/Target_Value">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sconto/scome/Control_Parameter"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sconto/scome/isTargetValueOf"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sconto/scome/Assessable_Attribute"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sconto/scome/hasTargetvalue"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#float"/>
+                        </owl:unionOf>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Valor deseado de un atributo mensurable</rdfs:comment>
+        <rdfs:label xml:lang="en">Target_Value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scome/Unit_Of_Measure -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scome/Unit_Of_Measure">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sconto/scome/isUnitOfMeasureOf"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sconto/scome/Value_Scale"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:comment>Magnitud estándar que se usa como referencia para la unidad en una escala numérica</rdfs:comment>
+        <rdfs:label xml:lang="en">Unit_Of_Measure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scome/Value_Scale -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scome/Value_Scale">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:complementOf>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/sconto/scome/maxValue"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                    </owl:Restriction>
+                                </owl:complementOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:complementOf>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/sconto/scome/minValue"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                    </owl:Restriction>
+                                </owl:complementOf>
+                            </owl:Class>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/sconto/scome/maxValue"/>
+                                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/sconto/scome/minValue"/>
+                                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/sconto/scome/hasScaleType"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.org/sconto/scome/Numerical"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/sconto/scome/valueType"/>
+                                <owl:hasValue>Continuous</owl:hasValue>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/sconto/scome/valueType"/>
+                        <owl:hasValue>Discrete</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/sconto/scome/valueType"/>
+                        <owl:hasValue>Linguistic</owl:hasValue>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sconto/scome/hasScaleType"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sconto/scome/Scale_Type"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sconto/scome/valueType"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:oneOf>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>Continuous</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>Discrete</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first>Linguistic</rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </owl:oneOf>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Conjunto de posibles valores de una propiedad y las relaciones entre sí- las cuales se determinan por el tipo de escala asociado</rdfs:comment>
+        <rdfs:label xml:lang="en">Value_Scale</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scopro/Creation -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scopro/Creation">
+        <rdfs:label xml:lang="en">Creation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scopro/Information_Resource -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scopro/Information_Resource">
+        <rdfs:label xml:lang="en">Information_Resource</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scopro/Input -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scopro/Input">
+        <rdfs:label xml:lang="en">Input</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scopro/Market -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scopro/Market">
+        <rdfs:comment>Conjunto de compradores reales y potenciales que son agrupados por  compartir ciertas características distintivas</rdfs:comment>
+        <rdfs:label xml:lang="en">Market</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scopro/Output -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scopro/Output">
+        <rdfs:label xml:lang="en">Output</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scopro/Resource_Role -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scopro/Resource_Role">
+        <rdfs:label xml:lang="en">Resource_Role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scopro/SC_Entity -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scopro/SC_Entity">
+        <rdfs:label xml:lang="en">SC_Entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scopro/Supply_Chain -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scopro/Supply_Chain">
+        <rdfs:label xml:lang="en">Supply_Chain</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scopro/Task -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scopro/Task">
+        <rdfs:label xml:lang="en">Task</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scopro/Temporal_Relationship -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scopro/Temporal_Relationship">
+        <rdfs:label xml:lang="en">Temporal_Relationship</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scopro/Use -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scopro/Use">
+        <rdfs:label xml:lang="en">Use</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sconto/scopro/Utilization -->
+
+    <owl:Class rdf:about="http://purl.org/sconto/scopro/Utilization">
+        <rdfs:label xml:lang="en">Utilization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/sconto/scome/Absolute -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sconto/scome/Absolute">
+        <rdf:type rdf:resource="http://purl.org/sconto/scome/Numerical"/>
+        <rdfs:comment>Tipo de escala que establece una distancia específica entre sus valores. Posee un punto cero absoluto - así como - un valor preestablecido y fijo para la unidad</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sconto/scome/Interval -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sconto/scome/Interval">
+        <rdf:type rdf:resource="http://purl.org/sconto/scome/Numerical"/>
+        <rdfs:comment>Tipo de escala que establece una distancia específica entre sus valores. La escala de intervalo carece de un punto cero absoluto. Es decir, el valor cero se establece por convención o conveniencia</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sconto/scome/Nominal -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sconto/scome/Nominal">
+        <rdf:type rdf:resource="http://purl.org/sconto/scome/Categorical"/>
+        <rdfs:comment>Tipo de escala cuyos valores constituyen clases o categorías separadas de una propiedad sin un orden entre ellas</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sconto/scome/Ordinal -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sconto/scome/Ordinal">
+        <rdf:type rdf:resource="http://purl.org/sconto/scome/Categorical"/>
+        <rdfs:comment xml:lang="es">Tipo de escala cuyos valores constituyen clases o categorías separadas y ordenadas de una propiedad</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sconto/scome/Ratio -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sconto/scome/Ratio">
+        <rdf:type rdf:resource="http://purl.org/sconto/scome/Numerical"/>
+        <rdfs:comment>Tipo de escala que establece una distancia específica entre sus valores y que posee un punto cero absoluto. En el punto cero la característica o atributo que se mide es nulo</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/sconto/scome/Assessable_Attribute"/>
+            <rdf:Description rdf:about="http://purl.org/sconto/scome/Control_Parameter"/>
+            <rdf:Description rdf:about="http://purl.org/sconto/scome/SC_Performance_Concept"/>
+            <rdf:Description rdf:about="http://purl.org/sconto/scome/SC_Performance_Dimension"/>
+            <rdf:Description rdf:about="http://purl.org/sconto/scome/SC_Performance_Evaluation_System"/>
+            <rdf:Description rdf:about="http://purl.org/sconto/scome/Scale_Type"/>
+            <rdf:Description rdf:about="http://purl.org/sconto/scome/Unit_Of_Measure"/>
+            <rdf:Description rdf:about="http://purl.org/sconto/scome/Value_Scale"/>
+            <rdf:Description rdf:about="http://purl.org/sconto/scopro/Market"/>
+            <rdf:Description rdf:about="http://purl.org/sconto/scopro/Resource_Role"/>
+            <rdf:Description rdf:about="http://purl.org/sconto/scopro/SC_Entity"/>
+            <rdf:Description rdf:about="http://purl.org/sconto/scopro/Temporal_Relationship"/>
+            <rdf:Description rdf:about="http://purl.org/sconto/scopro/Utilization"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/sconto/scome/Benefit_Equity"/>
+            <rdf:Description rdf:about="http://purl.org/sconto/scome/Contribution_Equity"/>
+            <rdf:Description rdf:about="http://purl.org/sconto/scome/SC_Agility"/>
+            <rdf:Description rdf:about="http://purl.org/sconto/scome/SC_Assets"/>
+            <rdf:Description rdf:about="http://purl.org/sconto/scome/SC_Cost"/>
+            <rdf:Description rdf:about="http://purl.org/sconto/scome/SC_Reliability"/>
+            <rdf:Description rdf:about="http://purl.org/sconto/scome/SC_Responsiveness"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/sconto/scome/SC_Customer_Facing"/>
+            <rdf:Description rdf:about="http://purl.org/sconto/scome/SC_Equity_Facing"/>
+            <rdf:Description rdf:about="http://purl.org/sconto/scome/SC_Internal_Facing"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/sconto/scome/Absolute"/>
+            <rdf:Description rdf:about="http://purl.org/sconto/scome/Interval"/>
+            <rdf:Description rdf:about="http://purl.org/sconto/scome/Nominal"/>
+            <rdf:Description rdf:about="http://purl.org/sconto/scome/Ordinal"/>
+            <rdf:Description rdf:about="http://purl.org/sconto/scome/Ratio"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
