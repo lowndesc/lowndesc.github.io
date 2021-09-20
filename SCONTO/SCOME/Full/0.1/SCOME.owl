@@ -23,7 +23,8 @@
         <dc:contributor xml:lang="en">Gabriela P. Henning</dc:contributor>
         <dc:contributor xml:lang="en">Horacio P. Leone</dc:contributor>
         <dc:contributor>Marcela Vegetti</dc:contributor>
-        <dc:creator xml:lang="en">Alicia C. Böhm</dc:creator>
+        <dc:creator xml:lang="en">Chris Lowndes, Avanade
+Alicia C. Boehm, IndOnto</dc:creator>
         <dc:description xml:lang="en">This ontology is an extension of the SCONTO ontology, presented via this [academic paper](https://openreview.net/pdf?id=ricE3prhfH8). It imports all SCOME modules and thus gives the fullest expressivity that SCOME allows. You can use this ontology as-is, or you can construct your own ontology by importing individual SCOME modules.
 
 See also:
