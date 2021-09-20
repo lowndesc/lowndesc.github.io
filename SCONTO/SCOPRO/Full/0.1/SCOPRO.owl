@@ -24,11 +24,7 @@
         <dc:contributor xml:lang="en">Horacio P. Leone</dc:contributor>
         <dc:contributor>Marcela Vegetti</dc:contributor>
         <dc:creator xml:lang="en">Alicia C. Böhm</dc:creator>
-        <dc:description xml:lang="en">This ontology is an extension of the SCONTO ontology, presented via this [academic paper](https://openreview.net/pdf?id=ricE3prhfH8). It imports all SCOPRO modules and thus gives the fullest expressivity that SCOPRO allows. You can use this ontology as-is, or you can construct your own ontology by importing individual SCOPRO modules.
-
-See also:
-[Supply Chain Measurement Ontology (SCOME)](http://purl.org/sconto/scome)
-[Supply Chain Benchmarking Ontology (SCOBE)](http://purl.org/sconto/scobe)</dc:description>
+        <dc:description xml:lang="en">This ontology is an extension of the SCONTO ontology, presented via this [academic paper](https://openreview.net/pdf?id=ricE3prhfH8). It imports all SCOPRO modules and thus gives the fullest expressivity that SCOPRO allows. You can use this ontology as-is, or you can construct your own ontology by importing individual SCOPRO modules.</dc:description>
         <dc:publisher>Indonto, Avanade</dc:publisher>
         <dc:title xml:lang="en">Supply Chain Process Ontology (SCOPRO)</dc:title>
         <terms:license rdf:resource="https://opensource.org/licenses/MIT"/>
@@ -36,6 +32,9 @@ See also:
         <vann:preferredNamespaceUri>http://purl.org/sconto/scopro/full/0.1/</vann:preferredNamespaceUri>
         <owl:versionInfo xml:lang="en">0.1</owl:versionInfo>
         <skos:historyNote xml:lang="en">Version 0.1 is an initial release that contains the full SCOPRO ontology.</skos:historyNote>
+        <skos:note xml:lang="en">See also:
+        * [Supply Chain Measurement Ontology (SCOME)](http://purl.org/sconto/scome)
+        * [Supply Chain Benchmarking Ontology (SCOBE)](http://purl.org/sconto/scobe)</skos:note>
     </owl:Ontology>
     
 
