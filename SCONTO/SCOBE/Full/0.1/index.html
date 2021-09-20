@@ -192,13 +192,13 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
     <script type="application/ld+json">
       [
   {
-    "@id": "http://generic.org/sco/scobe",
+    "@id": "http://purl.org/sconto/scobe/",
     "@type": [
       "https://schema.org/DefinedTermSet"
     ],
     "https://schema.org/description": [
       {
-        "@value": "<p>This ontology imports all SCOBE modules and thus gives the fullest expressivity that SCOBE allows. You can use this ontology as-is, or you can construct your own ontology by importing individual SCOBE modules.</p>"
+        "@value": "<p>This ontology is an extension of the SCONTO ontology, presented via this academic paper https://openreview.net/pdf?id=ricE3prhfH8. It imports all SCOBE modules and thus gives the fullest expressivity that SCOBE allows. You can use this ontology as-is, or you can construct your own ontology by importing individual SCOBE modules.</p>\n<p>See also:\nhttp://purl.org/sconto/scopro/\nhttp://purl.org/sconto/scome/</p>"
       }
     ],
     "https://schema.org/license": [
@@ -225,10 +225,10 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
     <h2 style="display:none;">Metadata</h2>
     <dl>
         <dt>URI</dt>
-        <dd><code>http://generic.org/sco/scobe</code></dd>
+        <dd><code>http://purl.org/sconto/scobe/</code></dd>
         <dt><a class="proplink" href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/publisher">Publisher</a>(s)</dt>
         <dd>
-            Avanade<br/>
+            Indonto, Avanade<br/>
         </dd>
         <dt><a class="proplink" href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/creator">Creator</a>(s)</dt>
         <dd>
@@ -244,11 +244,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <dt>Version Information</dt>
         <dd>0.1</dd>
         <dt>Version URI</dt>
-        <dd><a href="http://generic.org/sco/scobe/full/0.1/">scobe:</a></dd>
-        <dt>Imports</dt>
-        <dd>
-            <a href="http://generic.org/sco/scobe/asset/0.1/">http://generic.org/sco/scobe/asset/0.1/</a><br/>
-        </dd>
+        <dd><a href="http://purl.org/sconto/scobe/full/0.1/">scobe:</a></dd>
         <dt>License</dt>
         <dd><a href="https://opensource.org/licenses/MIT">https://opensource.org/licenses/MIT</a></dd>
         <dt>Ontology RDF</dt>
@@ -256,9 +252,12 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
     </dl>
     <h2>Description</h2>
     <div id="description">
-        <p>This ontology imports all SCOBE modules and thus gives the fullest expressivity that SCOBE allows. You can use this ontology as-is, or you can construct your own ontology by importing individual SCOBE modules.</p>
+        <p>This ontology is an extension of the SCONTO ontology, presented via this academic paper https://openreview.net/pdf?id=ricE3prhfH8. It imports all SCOBE modules and thus gives the fullest expressivity that SCOBE allows. You can use this ontology as-is, or you can construct your own ontology by importing individual SCOBE modules.</p>
+<p>See also:
+http://purl.org/sconto/scopro/
+http://purl.org/sconto/scome/</p>
     </div>
-    <p><strong>History Note:</strong> <p>Version 0.1 is an initial release that contains the full SCOBE</p></p>
+    <p><strong>History Note:</strong> <p>Version 0.1 is an initial release that contains the full SCOBE ontology.</p></p>
 </section>
 <section id="toc">
     <h2>Table of Contents</h2>
@@ -267,6 +266,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <li><a href="#objectproperties">Object Properties</a></li>
         <li><a href="#functionalproperties">Functional Properties</a></li>
         <li><a href="#datatypeproperties">Datatype Properties</a></li>
+        <li><a href="#annotationproperties">Annotation Properties</a></li>
         <li><a href="#namespaces">Namespaces</a></li>
         <li><a href="#legend">Legend</a></li>
     </ol>
@@ -281,27 +281,43 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
   <section id="classes">
     <h2>Classes <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
     <ul class="hlist">
-      <li><a href="http://generic.org/sco/scobe#Atomic_Criterion">http://generic.org/sco/scobe#Atomic_Criterion</a></li>
-      <li><a href="http://generic.org/sco/scobe#Benchmark">http://generic.org/sco/scobe#Benchmark</a></li>
-      <li><a href="http://generic.org/sco/scobe#Benchmarking_Group">http://generic.org/sco/scobe#Benchmarking_Group</a></li>
-      <li><a href="http://generic.org/sco/scobe#Benchmarking_Membership_Property">http://generic.org/sco/scobe#Benchmarking_Membership_Property</a></li>
-      <li><a href="http://generic.org/sco/scobe#Benchmarking_Project">http://generic.org/sco/scobe#Benchmarking_Project</a></li>
-      <li><a href="http://generic.org/sco/scobe#Benchmarking_Transformation_Rule">http://generic.org/sco/scobe#Benchmarking_Transformation_Rule</a></li>
-      <li><a href="http://generic.org/sco/scobe#Composite_Criterion">http://generic.org/sco/scobe#Composite_Criterion</a></li>
-      <li><a href="http://generic.org/sco/scobe#Group_Best_Value_Result">http://generic.org/sco/scobe#Group_Best_Value_Result</a></li>
-      <li><a href="http://generic.org/sco/scobe#Group_Evaluation_Criterion">http://generic.org/sco/scobe#Group_Evaluation_Criterion</a></li>
-      <li><a href="http://generic.org/sco/scobe#Group_Evaluation_Result">http://generic.org/sco/scobe#Group_Evaluation_Result</a></li>
-      <li><a href="http://generic.org/sco/scobe#Group_Inferior_Range">http://generic.org/sco/scobe#Group_Inferior_Range</a></li>
-      <li><a href="http://generic.org/sco/scobe#Group_Mean_Value_Result">http://generic.org/sco/scobe#Group_Mean_Value_Result</a></li>
-      <li><a href="http://generic.org/sco/scobe#Group_Standard_Range">http://generic.org/sco/scobe#Group_Standard_Range</a></li>
-      <li><a href="http://generic.org/sco/scobe#Group_Superior_Range">http://generic.org/sco/scobe#Group_Superior_Range</a></li>
-      <li><a href="http://generic.org/sco/scobe#Membership_Property_Value">http://generic.org/sco/scobe#Membership_Property_Value</a></li>
-      <li><a href="http://generic.org/sco/scobe#Range_Result">http://generic.org/sco/scobe#Range_Result</a></li>
-      <li><a href="http://generic.org/sco/scobe#Reference_Group">http://generic.org/sco/scobe#Reference_Group</a></li>
-      <li><a href="http://generic.org/sco/scobe#Reference_Practice">http://generic.org/sco/scobe#Reference_Practice</a></li>
-      <li><a href="http://generic.org/sco/scobe#Reference_Value">http://generic.org/sco/scobe#Reference_Value</a></li>
-      <li><a href="http://generic.org/sco/scobe#Single_Result">http://generic.org/sco/scobe#Single_Result</a></li>
-      <li><a href="http://generic.org/sco/scobe#Transformed_Measure">http://generic.org/sco/scobe#Transformed_Measure</a></li>
+      <li><a href="http://purl.org/sconto/scobe/Atomic_Criterion">Atomic_Criterion</a></li>
+      <li><a href="http://purl.org/sconto/scobe/Benchmark">Benchmark</a></li>
+      <li><a href="http://purl.org/sconto/scobe/Benchmarking_Group">Benchmarking_Group</a></li>
+      <li><a href="http://purl.org/sconto/scobe/Benchmarking_Membership_Property">Benchmarking_Membership_Property</a></li>
+      <li><a href="http://purl.org/sconto/scobe/Benchmarking_Project">Benchmarking_Project</a></li>
+      <li><a href="http://purl.org/sconto/scobe/Benchmarking_Transformation_Rule">Benchmarking_Transformation_Rule</a></li>
+      <li><a href="http://purl.org/sconto/scobe/Composite_Criterion">Composite_Criterion</a></li>
+      <li><a href="http://purl.org/sconto/scobe/Group_Best_Value_Result">Group_Best_Value_Result</a></li>
+      <li><a href="http://purl.org/sconto/scobe/Group_Evaluation_Criterion">Group_Evaluation_Criterion</a></li>
+      <li><a href="http://purl.org/sconto/scobe/Group_Evaluation_Result">Group_Evaluation_Result</a></li>
+      <li><a href="http://purl.org/sconto/scobe/Group_Inferior_Range">Group_Inferior_Range</a></li>
+      <li><a href="http://purl.org/sconto/scobe/Group_Mean_Value_Result">Group_Mean_Value_Result</a></li>
+      <li><a href="http://purl.org/sconto/scobe/Group_Standard_Range">Group_Standard_Range</a></li>
+      <li><a href="http://purl.org/sconto/scobe/Group_Superior_Range">Group_Superior_Range</a></li>
+      <li><a href="http://purl.org/sconto/scobe/Membership_Property_Value">Membership_Property_Value</a></li>
+      <li><a href="http://purl.org/sconto/scobe/Range_Result">Range_Result</a></li>
+      <li><a href="http://purl.org/sconto/scobe/Reference_Group">Reference_Group</a></li>
+      <li><a href="http://purl.org/sconto/scobe/Reference_Practice">Reference_Practice</a></li>
+      <li><a href="http://purl.org/sconto/scobe/Reference_Value">Reference_Value</a></li>
+      <li><a href="http://purl.org/sconto/scobe/Single_Result">Single_Result</a></li>
+      <li><a href="http://purl.org/sconto/scobe/Transformed_Measure">Transformed_Measure</a></li>
+      <li><a href="http://purl.org/sconto/scome/Assessable_Attribute">scome:Assessable_Attribute</a></li>
+      <li><a href="http://purl.org/sconto/scome/Control_Parameter">scome:Control_Parameter</a></li>
+      <li><a href="http://purl.org/sconto/scome/Measure">scome:Measure</a></li>
+      <li><a href="http://purl.org/sconto/scome/Performance_Attribute">scome:Performance_Attribute</a></li>
+      <li><a href="http://purl.org/sconto/scome/SC_Performance_Concept">scome:SC_Performance_Concept</a></li>
+      <li><a href="http://purl.org/sconto/scome/SC_Performance_Dimension">scome:SC_Performance_Dimension</a></li>
+      <li><a href="http://purl.org/sconto/scome/SC_Performance_Evaluation_System">scome:SC_Performance_Evaluation_System</a></li>
+      <li><a href="http://purl.org/sconto/scome/Scale_Type">scome:Scale_Type</a></li>
+      <li><a href="http://purl.org/sconto/scome/Secondary_Attribute">scome:Secondary_Attribute</a></li>
+      <li><a href="http://purl.org/sconto/scome/Unit_Of_Measure">scome:Unit_Of_Measure</a></li>
+      <li><a href="http://purl.org/sconto/scome/Value_Scale">scome:Value_Scale</a></li>
+      <li><a href="http://purl.org/sconto/scopro/Market">http://purl.org/sconto/scopro/Market</a></li>
+      <li><a href="http://purl.org/sconto/scopro/Resource_Role">http://purl.org/sconto/scopro/Resource_Role</a></li>
+      <li><a href="http://purl.org/sconto/scopro/SC_Entity">http://purl.org/sconto/scopro/SC_Entity</a></li>
+      <li><a href="http://purl.org/sconto/scopro/Temporal_Relationship">http://purl.org/sconto/scopro/Temporal_Relationship</a></li>
+      <li><a href="http://purl.org/sconto/scopro/Utilization">http://purl.org/sconto/scopro/Utilization</a></li>
     </ul>
     <div class="entity class" id="Atomic_Criterion">
         <h3>
@@ -311,7 +327,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://generic.org/sco/scobe#Atomic_Criterion</code></td>
+                <td><code>http://purl.org/sconto/scobe/Atomic_Criterion</code></td>
             </tr>
             <tr>
                 <th>Description</th>
@@ -322,25 +338,25 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#Group_Evaluation_Criterion">http://generic.org/sco/scobe#Group_Evaluation_Criterion</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/Group_Evaluation_Criterion">Group_Evaluation_Criterion</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#hasTransformationRule">http://generic.org/sco/scobe#hasTransformationRule</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="http://generic.org/sco/scobe#Benchmarking_Transformation_Rule">http://generic.org/sco/scobe#Benchmarking_Transformation_Rule</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/hasTransformationRule">hasTransformationRule</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="http://purl.org/sconto/scobe/Benchmarking_Transformation_Rule">Benchmarking_Transformation_Rule</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#hasTransformationRule">http://generic.org/sco/scobe#hasTransformationRule</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/hasTransformationRule">hasTransformationRule</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#isTransformableInto">http://generic.org/sco/scobe#isTransformableInto</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/isTransformableInto">isTransformableInto</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -353,7 +369,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://generic.org/sco/scobe#Benchmark</code></td>
+                <td><code>http://purl.org/sconto/scobe/Benchmark</code></td>
             </tr>
             <tr>
                 <th>Description</th>
@@ -364,20 +380,20 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#isProducedBy">http://generic.org/sco/scobe#isProducedBy</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="http://generic.org/sco/scobe#Benchmarking_Project">http://generic.org/sco/scobe#Benchmarking_Project</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/isProducedBy">isProducedBy</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="http://purl.org/sconto/scobe/Benchmarking_Project">Benchmarking_Project</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#Reference_Value">http://generic.org/sco/scobe#Reference_Value</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="http://generic.org/sco/scobe#Reference_Practice">http://generic.org/sco/scobe#Reference_Practice</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/Reference_Value">Reference_Value</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/Reference_Practice">Reference_Practice</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#produce">http://generic.org/sco/scobe#produce</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/produce">produce</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -390,7 +406,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://generic.org/sco/scobe#Benchmarking_Group</code></td>
+                <td><code>http://purl.org/sconto/scobe/Benchmarking_Group</code></td>
             </tr>
             <tr>
                 <th>Description</th>
@@ -407,25 +423,25 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#numberOfBGEntities">http://generic.org/sco/scobe#numberOfBGEntities</a><sup class="sup-fp" title="functional property">fp</sup> <span class="cardinality">some</span> <a href="http://www.w3.org/2001/XMLSchema#integer">xsd:integer</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="http://generic.org/sco/scobe#hasEvaluationResult">http://generic.org/sco/scobe#hasEvaluationResult</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="http://generic.org/sco/scobe#Group_Evaluation_Result">http://generic.org/sco/scobe#Group_Evaluation_Result</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="http://generic.org/sco/scobe#hasMembershipProperty">http://generic.org/sco/scobe#hasMembershipProperty</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="http://generic.org/sco/scobe#Benchmarking_Membership_Property">http://generic.org/sco/scobe#Benchmarking_Membership_Property</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/numberOfBGEntities">numberOfBGEntities</a><sup class="sup-fp" title="functional property">fp</sup> <span class="cardinality">some</span> <a href="http://www.w3.org/2001/XMLSchema#integer">xsd:integer</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/hasMembershipProperty">hasMembershipProperty</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="http://purl.org/sconto/scobe/Benchmarking_Membership_Property">Benchmarking_Membership_Property</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/hasEvaluationResult">hasEvaluationResult</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="http://purl.org/sconto/scobe/Group_Evaluation_Result">Group_Evaluation_Result</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#informationQuality">http://generic.org/sco/scobe#informationQuality</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="http://generic.org/sco/scobe#hasMembershipProperty">http://generic.org/sco/scobe#hasMembershipProperty</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="http://generic.org/sco/scobe#numberOfBGEntities">http://generic.org/sco/scobe#numberOfBGEntities</a><sup class="sup-fp" title="functional property">fp</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/hasMembershipProperty">hasMembershipProperty</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/numberOfBGEntities">numberOfBGEntities</a><sup class="sup-fp" title="functional property">fp</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/informationQuality">informationQuality</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#isEvaluationResultOf">http://generic.org/sco/scobe#isEvaluationResultOf</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="http://generic.org/sco/scobe#hasBenchmarkGroup">http://generic.org/sco/scobe#hasBenchmarkGroup</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="http://generic.org/sco/scobe#isTargetGroupOf">http://generic.org/sco/scobe#isTargetGroupOf</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/isTargetGroupOf">isTargetGroupOf</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/hasBenchmarkGroup">hasBenchmarkGroup</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/isEvaluationResultOf">isEvaluationResultOf</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -438,7 +454,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://generic.org/sco/scobe#Benchmarking_Membership_Property</code></td>
+                <td><code>http://purl.org/sconto/scobe/Benchmarking_Membership_Property</code></td>
             </tr>
             <tr>
                 <th>Description</th>
@@ -449,24 +465,24 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#isEquivalentProperty">http://generic.org/sco/scobe#isEquivalentProperty</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="http://generic.org/sco/scome#Secondary_Attribute">http://generic.org/sco/scome#Secondary_Attribute</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="http://generic.org/sco/scobe#hasMembershipValue">http://generic.org/sco/scobe#hasMembershipValue</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="http://generic.org/sco/scobe#Membership_Property_Value">http://generic.org/sco/scobe#Membership_Property_Value</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="http://generic.org/sco/scobe#hasBValueScale">http://generic.org/sco/scobe#hasBValueScale</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="http://generic.org/sco/scome#Value_Scale">http://generic.org/sco/scome#Value_Scale</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="http://generic.org/sco/scobe#isMembershipPropertyOf">http://generic.org/sco/scobe#isMembershipPropertyOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="http://generic.org/sco/scobe#Benchmarking_Group">http://generic.org/sco/scobe#Benchmarking_Group</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/hasMembershipValue">hasMembershipValue</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="http://purl.org/sconto/scobe/Membership_Property_Value">Membership_Property_Value</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/isEquivalentProperty">isEquivalentProperty</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="http://purl.org/sconto/scome/Secondary_Attribute">scome:Secondary_Attribute</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/hasBValueScale">hasBValueScale</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="http://purl.org/sconto/scome/Value_Scale">scome:Value_Scale</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/isMembershipPropertyOf">isMembershipPropertyOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="http://purl.org/sconto/scobe/Benchmarking_Group">Benchmarking_Group</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#hasMembershipValue">http://generic.org/sco/scobe#hasMembershipValue</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="http://generic.org/sco/scobe#isEquivalentProperty">http://generic.org/sco/scobe#isEquivalentProperty</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="http://generic.org/sco/scobe#hasBValueScale">http://generic.org/sco/scobe#hasBValueScale</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/isEquivalentProperty">isEquivalentProperty</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/hasBValueScale">hasBValueScale</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/hasMembershipValue">hasMembershipValue</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#hasMembershipProperty">http://generic.org/sco/scobe#hasMembershipProperty</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/hasMembershipProperty">hasMembershipProperty</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -479,7 +495,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://generic.org/sco/scobe#Benchmarking_Project</code></td>
+                <td><code>http://purl.org/sconto/scobe/Benchmarking_Project</code></td>
             </tr>
             <tr>
                 <th>Description</th>
@@ -496,22 +512,22 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#hasEvaluationCriterion">http://generic.org/sco/scobe#hasEvaluationCriterion</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="http://generic.org/sco/scobe#Group_Evaluation_Criterion">http://generic.org/sco/scobe#Group_Evaluation_Criterion</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="http://generic.org/sco/scobe#hasBenchmarkGroup">http://generic.org/sco/scobe#hasBenchmarkGroup</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="http://generic.org/sco/scobe#Benchmarking_Group">http://generic.org/sco/scobe#Benchmarking_Group</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/hasBenchmarkGroup">hasBenchmarkGroup</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="http://purl.org/sconto/scobe/Benchmarking_Group">Benchmarking_Group</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/hasEvaluationCriterion">hasEvaluationCriterion</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="http://purl.org/sconto/scobe/Group_Evaluation_Criterion">Group_Evaluation_Criterion</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#produce">http://generic.org/sco/scobe#produce</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="http://generic.org/sco/scobe#hasBenchmarkGroup">http://generic.org/sco/scobe#hasBenchmarkGroup</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="http://generic.org/sco/scobe#hasEvaluationCriterion">http://generic.org/sco/scobe#hasEvaluationCriterion</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/produce">produce</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/hasBenchmarkGroup">hasBenchmarkGroup</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/hasEvaluationCriterion">hasEvaluationCriterion</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#isBenchmarkedWith">http://generic.org/sco/scobe#isBenchmarkedWith</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/isBenchmarkedWith">isBenchmarkedWith</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -524,7 +540,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://generic.org/sco/scobe#Benchmarking_Transformation_Rule</code></td>
+                <td><code>http://purl.org/sconto/scobe/Benchmarking_Transformation_Rule</code></td>
             </tr>
             <tr>
                 <th>Description</th>
@@ -535,14 +551,14 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#isTransformationRuleOf">http://generic.org/sco/scobe#isTransformationRuleOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="http://generic.org/sco/scobe#Atomic_Criterion">http://generic.org/sco/scobe#Atomic_Criterion</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/isTransformationRuleOf">isTransformationRuleOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="http://purl.org/sconto/scobe/Atomic_Criterion">Atomic_Criterion</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#isTransformedWith">http://generic.org/sco/scobe#isTransformedWith</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="http://generic.org/sco/scobe#hasTransformationRule">http://generic.org/sco/scobe#hasTransformationRule</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/hasTransformationRule">hasTransformationRule</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/isTransformedWith">isTransformedWith</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -555,7 +571,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://generic.org/sco/scobe#Composite_Criterion</code></td>
+                <td><code>http://purl.org/sconto/scobe/Composite_Criterion</code></td>
             </tr>
             <tr>
                 <th>Description</th>
@@ -566,19 +582,19 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#Group_Evaluation_Criterion">http://generic.org/sco/scobe#Group_Evaluation_Criterion</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/Group_Evaluation_Criterion">Group_Evaluation_Criterion</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#hasCComponent">http://generic.org/sco/scobe#hasCComponent</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 2 <a href="http://generic.org/sco/scobe#Group_Evaluation_Criterion">http://generic.org/sco/scobe#Group_Evaluation_Criterion</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/hasCComponent">hasCComponent</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 2 <a href="http://purl.org/sconto/scobe/Group_Evaluation_Criterion">Group_Evaluation_Criterion</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#hasCComponent">http://generic.org/sco/scobe#hasCComponent</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/hasCComponent">hasCComponent</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -591,12 +607,12 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://generic.org/sco/scobe#Group_Best_Value_Result</code></td>
+                <td><code>http://purl.org/sconto/scobe/Group_Best_Value_Result</code></td>
             </tr>
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#Single_Result">http://generic.org/sco/scobe#Single_Result</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/Single_Result">Single_Result</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -609,7 +625,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://generic.org/sco/scobe#Group_Evaluation_Criterion</code></td>
+                <td><code>http://purl.org/sconto/scobe/Group_Evaluation_Criterion</code></td>
             </tr>
             <tr>
                 <th>Description</th>
@@ -626,29 +642,29 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#hasCriterionResult">http://generic.org/sco/scobe#hasCriterionResult</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="http://generic.org/sco/scobe#Group_Evaluation_Result">http://generic.org/sco/scobe#Group_Evaluation_Result</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="http://generic.org/sco/scobe#hasGECValueScale">http://generic.org/sco/scobe#hasGECValueScale</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="http://generic.org/sco/scome#Value_Scale">http://generic.org/sco/scome#Value_Scale</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/hasGECValueScale">hasGECValueScale</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="http://purl.org/sconto/scome/Value_Scale">scome:Value_Scale</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/hasCriterionResult">hasCriterionResult</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="http://purl.org/sconto/scobe/Group_Evaluation_Result">Group_Evaluation_Result</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#Composite_Criterion">http://generic.org/sco/scobe#Composite_Criterion</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="http://generic.org/sco/scobe#Atomic_Criterion">http://generic.org/sco/scobe#Atomic_Criterion</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/Atomic_Criterion">Atomic_Criterion</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/Composite_Criterion">Composite_Criterion</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#hasGECValueScale">http://generic.org/sco/scobe#hasGECValueScale</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="http://generic.org/sco/scobe#hasCriterionResult">http://generic.org/sco/scobe#hasCriterionResult</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/hasGECValueScale">hasGECValueScale</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/hasCriterionResult">hasCriterionResult</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#hasEvaluationCriterion">http://generic.org/sco/scobe#hasEvaluationCriterion</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="http://generic.org/sco/scobe#hasCComponent">http://generic.org/sco/scobe#hasCComponent</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/hasCComponent">hasCComponent</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/hasEvaluationCriterion">hasEvaluationCriterion</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -661,7 +677,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://generic.org/sco/scobe#Group_Evaluation_Result</code></td>
+                <td><code>http://purl.org/sconto/scobe/Group_Evaluation_Result</code></td>
             </tr>
             <tr>
                 <th>Description</th>
@@ -678,28 +694,28 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#isCriterionResultOf">http://generic.org/sco/scobe#isCriterionResultOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="http://generic.org/sco/scobe#Group_Evaluation_Criterion">http://generic.org/sco/scobe#Group_Evaluation_Criterion</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="http://generic.org/sco/scobe#isEvaluationResultOf">http://generic.org/sco/scobe#isEvaluationResultOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="http://generic.org/sco/scobe#Benchmarking_Group">http://generic.org/sco/scobe#Benchmarking_Group</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/isEvaluationResultOf">isEvaluationResultOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="http://purl.org/sconto/scobe/Benchmarking_Group">Benchmarking_Group</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/isCriterionResultOf">isCriterionResultOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="http://purl.org/sconto/scobe/Group_Evaluation_Criterion">Group_Evaluation_Criterion</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#Range_Result">http://generic.org/sco/scobe#Range_Result</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="http://generic.org/sco/scobe#Single_Result">http://generic.org/sco/scobe#Single_Result</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/Range_Result">Range_Result</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/Single_Result">Single_Result</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#isEvaluationResultOf">http://generic.org/sco/scobe#isEvaluationResultOf</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="http://generic.org/sco/scobe#determinesTargetGroup">http://generic.org/sco/scobe#determinesTargetGroup</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/isEvaluationResultOf">isEvaluationResultOf</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/determinesTargetGroup">determinesTargetGroup</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#hasCriterionResult">http://generic.org/sco/scobe#hasCriterionResult</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/hasCriterionResult">hasCriterionResult</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -712,12 +728,12 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://generic.org/sco/scobe#Group_Inferior_Range</code></td>
+                <td><code>http://purl.org/sconto/scobe/Group_Inferior_Range</code></td>
             </tr>
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#Range_Result">http://generic.org/sco/scobe#Range_Result</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/Range_Result">Range_Result</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -730,12 +746,12 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://generic.org/sco/scobe#Group_Mean_Value_Result</code></td>
+                <td><code>http://purl.org/sconto/scobe/Group_Mean_Value_Result</code></td>
             </tr>
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#Single_Result">http://generic.org/sco/scobe#Single_Result</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/Single_Result">Single_Result</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -748,12 +764,12 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://generic.org/sco/scobe#Group_Standard_Range</code></td>
+                <td><code>http://purl.org/sconto/scobe/Group_Standard_Range</code></td>
             </tr>
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#Range_Result">http://generic.org/sco/scobe#Range_Result</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/Range_Result">Range_Result</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -766,12 +782,12 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://generic.org/sco/scobe#Group_Superior_Range</code></td>
+                <td><code>http://purl.org/sconto/scobe/Group_Superior_Range</code></td>
             </tr>
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#Range_Result">http://generic.org/sco/scobe#Range_Result</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/Range_Result">Range_Result</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -784,7 +800,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://generic.org/sco/scobe#Membership_Property_Value</code></td>
+                <td><code>http://purl.org/sconto/scobe/Membership_Property_Value</code></td>
             </tr>
             <tr>
                 <th>Description</th>
@@ -795,27 +811,27 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    (<a href="N58ed0f9b136241ac99056ae628914f68">N58ed0f9b136241ac99056ae628914f68</a><sup class="sup-c" title="class">c</sup> or <a href="N3f5cf2f786b54ccabfd9bff23fe07b12">N3f5cf2f786b54ccabfd9bff23fe07b12</a><sup class="sup-c" title="class">c</sup>)<br/>
+                    (<a href="N9c424c4d5b0242099d08c5369639a5ef">N9c424c4d5b0242099d08c5369639a5ef</a><sup class="sup-c" title="class">c</sup> or <a href="N8e572d8db88645a3be5397c9746d232a">N8e572d8db88645a3be5397c9746d232a</a><sup class="sup-c" title="class">c</sup>)<br/>
                 </td>
             </tr>
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#isMembershipValueOf">http://generic.org/sco/scobe#isMembershipValueOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="http://generic.org/sco/scobe#Benchmarking_Membership_Property">http://generic.org/sco/scobe#Benchmarking_Membership_Property</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/isMembershipValueOf">isMembershipValueOf</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="http://purl.org/sconto/scobe/Benchmarking_Membership_Property">Benchmarking_Membership_Property</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#lowerBound">http://generic.org/sco/scobe#lowerBound</a><sup class="sup-fp" title="functional property">fp</sup><br/>
-                    <a href="http://generic.org/sco/scobe#upperBound">http://generic.org/sco/scobe#upperBound</a><sup class="sup-fp" title="functional property">fp</sup><br/>
-                    <a href="http://generic.org/sco/scobe#elementValue">http://generic.org/sco/scobe#elementValue</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/lowerBound">lowerBound</a><sup class="sup-fp" title="functional property">fp</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/elementValue">elementValue</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/upperBound">upperBound</a><sup class="sup-fp" title="functional property">fp</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#hasMembershipValue">http://generic.org/sco/scobe#hasMembershipValue</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/hasMembershipValue">hasMembershipValue</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -828,7 +844,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://generic.org/sco/scobe#Range_Result</code></td>
+                <td><code>http://purl.org/sconto/scobe/Range_Result</code></td>
             </tr>
             <tr>
                 <th>Description</th>
@@ -839,28 +855,28 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#Group_Evaluation_Result">http://generic.org/sco/scobe#Group_Evaluation_Result</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/Group_Evaluation_Result">Group_Evaluation_Result</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#hasRUpperBound">http://generic.org/sco/scobe#hasRUpperBound</a><sup class="sup-fp" title="functional property">fp</sup> <span class="cardinality">some</span> (<a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a><sup class="sup-c" title="class">c</sup> or <a href="http://www.w3.org/2001/XMLSchema#float">xsd:float</a><sup class="sup-c" title="class">c</sup> or <a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a><sup class="sup-c" title="class">c</sup> or <a href="http://www.w3.org/2001/XMLSchema#float">xsd:float</a><sup class="sup-c" title="class">c</sup>)<br/>
-                    <a href="http://generic.org/sco/scobe#hasRLowerBound">http://generic.org/sco/scobe#hasRLowerBound</a><sup class="sup-fp" title="functional property">fp</sup> <span class="cardinality">some</span> (<a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a><sup class="sup-c" title="class">c</sup> or <a href="http://www.w3.org/2001/XMLSchema#float">xsd:float</a><sup class="sup-c" title="class">c</sup> or <a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a><sup class="sup-c" title="class">c</sup> or <a href="http://www.w3.org/2001/XMLSchema#float">xsd:float</a><sup class="sup-c" title="class">c</sup>)<br/>
+                    <a href="http://purl.org/sconto/scobe/hasRLowerBound">hasRLowerBound</a><sup class="sup-fp" title="functional property">fp</sup> <span class="cardinality">some</span> (<a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a><sup class="sup-c" title="class">c</sup> or <a href="http://www.w3.org/2001/XMLSchema#float">xsd:float</a><sup class="sup-c" title="class">c</sup> or <a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a><sup class="sup-c" title="class">c</sup> or <a href="http://www.w3.org/2001/XMLSchema#float">xsd:float</a><sup class="sup-c" title="class">c</sup>)<br/>
+                    <a href="http://purl.org/sconto/scobe/hasRUpperBound">hasRUpperBound</a><sup class="sup-fp" title="functional property">fp</sup> <span class="cardinality">some</span> (<a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a><sup class="sup-c" title="class">c</sup> or <a href="http://www.w3.org/2001/XMLSchema#float">xsd:float</a><sup class="sup-c" title="class">c</sup> or <a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a><sup class="sup-c" title="class">c</sup> or <a href="http://www.w3.org/2001/XMLSchema#float">xsd:float</a><sup class="sup-c" title="class">c</sup>)<br/>
                 </td>
             </tr>
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#Group_Standard_Range">http://generic.org/sco/scobe#Group_Standard_Range</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="http://generic.org/sco/scobe#Group_Superior_Range">http://generic.org/sco/scobe#Group_Superior_Range</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="http://generic.org/sco/scobe#Group_Inferior_Range">http://generic.org/sco/scobe#Group_Inferior_Range</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/Group_Inferior_Range">Group_Inferior_Range</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/Group_Standard_Range">Group_Standard_Range</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/Group_Superior_Range">Group_Superior_Range</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#hasRUpperBound">http://generic.org/sco/scobe#hasRUpperBound</a><sup class="sup-fp" title="functional property">fp</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/hasRUpperBound">hasRUpperBound</a><sup class="sup-fp" title="functional property">fp</sup><br/>
                 </td>
             </tr>
         </table>
@@ -873,7 +889,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://generic.org/sco/scobe#Reference_Group</code></td>
+                <td><code>http://purl.org/sconto/scobe/Reference_Group</code></td>
             </tr>
             <tr>
                 <th>Description</th>
@@ -884,23 +900,23 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#hasReferencePractice">http://generic.org/sco/scobe#hasReferencePractice</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="http://generic.org/sco/scobe#Reference_Practice">http://generic.org/sco/scobe#Reference_Practice</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="http://generic.org/sco/scobe#isDeterminedBy">http://generic.org/sco/scobe#isDeterminedBy</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="http://generic.org/sco/scobe#Group_Evaluation_Result">http://generic.org/sco/scobe#Group_Evaluation_Result</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="http://generic.org/sco/scobe#numberOfRGEntities">http://generic.org/sco/scobe#numberOfRGEntities</a><sup class="sup-fp" title="functional property">fp</sup> <span class="cardinality">some</span> <a href="http://www.w3.org/2001/XMLSchema#integer">xsd:integer</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/numberOfRGEntities">numberOfRGEntities</a><sup class="sup-fp" title="functional property">fp</sup> <span class="cardinality">some</span> <a href="http://www.w3.org/2001/XMLSchema#integer">xsd:integer</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/hasReferencePractice">hasReferencePractice</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="http://purl.org/sconto/scobe/Reference_Practice">Reference_Practice</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/isDeterminedBy">isDeterminedBy</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="http://purl.org/sconto/scobe/Group_Evaluation_Result">Group_Evaluation_Result</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#hasReferencePractice">http://generic.org/sco/scobe#hasReferencePractice</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="http://generic.org/sco/scobe#numberOfRGEntities">http://generic.org/sco/scobe#numberOfRGEntities</a><sup class="sup-fp" title="functional property">fp</sup><br/>
-                    <a href="http://generic.org/sco/scobe#isTargetGroupOf">http://generic.org/sco/scobe#isTargetGroupOf</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/numberOfRGEntities">numberOfRGEntities</a><sup class="sup-fp" title="functional property">fp</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/hasReferencePractice">hasReferencePractice</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/isTargetGroupOf">isTargetGroupOf</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#determinesTargetGroup">http://generic.org/sco/scobe#determinesTargetGroup</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/determinesTargetGroup">determinesTargetGroup</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -913,7 +929,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://generic.org/sco/scobe#Reference_Practice</code></td>
+                <td><code>http://purl.org/sconto/scobe/Reference_Practice</code></td>
             </tr>
             <tr>
                 <th>Description</th>
@@ -924,19 +940,19 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#Benchmark">http://generic.org/sco/scobe#Benchmark</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/Benchmark">Benchmark</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#isReferencePracticeOfRGroup">http://generic.org/sco/scobe#isReferencePracticeOfRGroup</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="http://generic.org/sco/scobe#Reference_Group">http://generic.org/sco/scobe#Reference_Group</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/isReferencePracticeOfRGroup">isReferencePracticeOfRGroup</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="http://purl.org/sconto/scobe/Reference_Group">Reference_Group</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#hasReferencePractice">http://generic.org/sco/scobe#hasReferencePractice</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/hasReferencePractice">hasReferencePractice</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -949,7 +965,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://generic.org/sco/scobe#Reference_Value</code></td>
+                <td><code>http://purl.org/sconto/scobe/Reference_Value</code></td>
             </tr>
             <tr>
                 <th>Description</th>
@@ -960,19 +976,19 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#Benchmark">http://generic.org/sco/scobe#Benchmark</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/Benchmark">Benchmark</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#hasReferencesValueSingleResult">http://generic.org/sco/scobe#hasReferencesValueSingleResult</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="http://generic.org/sco/scobe#Single_Result">http://generic.org/sco/scobe#Single_Result</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/hasReferencesValueSingleResult">hasReferencesValueSingleResult</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="http://purl.org/sconto/scobe/Single_Result">Single_Result</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#isReferenceValue">http://generic.org/sco/scobe#isReferenceValue</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/isReferenceValue">isReferenceValue</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -985,7 +1001,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://generic.org/sco/scobe#Single_Result</code></td>
+                <td><code>http://purl.org/sconto/scobe/Single_Result</code></td>
             </tr>
             <tr>
                 <th>Description</th>
@@ -996,27 +1012,27 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#Group_Evaluation_Result">http://generic.org/sco/scobe#Group_Evaluation_Result</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/Group_Evaluation_Result">Group_Evaluation_Result</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#hasRValue">http://generic.org/sco/scobe#hasRValue</a><sup class="sup-dp" title="datatype property">dp</sup> <span class="cardinality">some</span> (<a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a><sup class="sup-c" title="class">c</sup> or <a href="http://www.w3.org/2001/XMLSchema#float">xsd:float</a><sup class="sup-c" title="class">c</sup>)<br/>
+                    <a href="http://purl.org/sconto/scobe/hasRValue">hasRValue</a><sup class="sup-dp" title="datatype property">dp</sup> <span class="cardinality">some</span> (<a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a><sup class="sup-c" title="class">c</sup> or <a href="http://www.w3.org/2001/XMLSchema#float">xsd:float</a><sup class="sup-c" title="class">c</sup>)<br/>
                 </td>
             </tr>
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#Group_Best_Value_Result">http://generic.org/sco/scobe#Group_Best_Value_Result</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="http://generic.org/sco/scobe#Group_Mean_Value_Result">http://generic.org/sco/scobe#Group_Mean_Value_Result</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/Group_Mean_Value_Result">Group_Mean_Value_Result</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/Group_Best_Value_Result">Group_Best_Value_Result</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#isReferenceValue">http://generic.org/sco/scobe#isReferenceValue</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="http://generic.org/sco/scobe#hasRValue">http://generic.org/sco/scobe#hasRValue</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/isReferenceValue">isReferenceValue</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/hasRValue">hasRValue</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                 </td>
             </tr>
         </table>
@@ -1029,7 +1045,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://generic.org/sco/scobe#Transformed_Measure</code></td>
+                <td><code>http://purl.org/sconto/scobe/Transformed_Measure</code></td>
             </tr>
             <tr>
                 <th>Description</th>
@@ -1040,15 +1056,232 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#originalMeasure">http://generic.org/sco/scobe#originalMeasure</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="http://generic.org/sco/scome#Measure">http://generic.org/sco/scome#Measure</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/originalMeasure">originalMeasure</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="http://purl.org/sconto/scome/Measure">scome:Measure</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#isTransformedWith">http://generic.org/sco/scobe#isTransformedWith</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="http://generic.org/sco/scobe#originalMeasure">http://generic.org/sco/scobe#originalMeasure</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/isTransformedWith">isTransformedWith</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/originalMeasure">originalMeasure</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="Assessable_Attribute">
+        <h3>
+          Assessable_Attribute<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#Assessable_Attribute" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://purl.org/sconto/scome/Assessable_Attribute</code></td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="Control_Parameter">
+        <h3>
+          Control_Parameter<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#Control_Parameter" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://purl.org/sconto/scome/Control_Parameter</code></td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="Measure">
+        <h3>
+          Measure<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#Measure" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://purl.org/sconto/scome/Measure</code></td>
+            </tr>
+            <tr>
+                <th>In range of</th>
+                <td>
+                    <a href="http://purl.org/sconto/scobe/originalMeasure">originalMeasure</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="Performance_Attribute">
+        <h3>
+          Performance_Attribute<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#Performance_Attribute" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://purl.org/sconto/scome/Performance_Attribute</code></td>
+            </tr>
+            <tr>
+                <th>In domain of</th>
+                <td>
+                    <a href="http://purl.org/sconto/scobe/isTransformableInto">isTransformableInto</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="SC_Performance_Concept">
+        <h3>
+          SC_Performance_Concept<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#SC_Performance_Concept" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://purl.org/sconto/scome/SC_Performance_Concept</code></td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="SC_Performance_Dimension">
+        <h3>
+          SC_Performance_Dimension<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#SC_Performance_Dimension" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://purl.org/sconto/scome/SC_Performance_Dimension</code></td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="SC_Performance_Evaluation_System">
+        <h3>
+          SC_Performance_Evaluation_System<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#SC_Performance_Evaluation_System" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://purl.org/sconto/scome/SC_Performance_Evaluation_System</code></td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="Scale_Type">
+        <h3>
+          Scale_Type<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#Scale_Type" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://purl.org/sconto/scome/Scale_Type</code></td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="Secondary_Attribute">
+        <h3>
+          Secondary_Attribute<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#Secondary_Attribute" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://purl.org/sconto/scome/Secondary_Attribute</code></td>
+            </tr>
+            <tr>
+                <th>In range of</th>
+                <td>
+                    <a href="http://purl.org/sconto/scobe/isEquivalentProperty">isEquivalentProperty</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="Unit_Of_Measure">
+        <h3>
+          Unit_Of_Measure<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#Unit_Of_Measure" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://purl.org/sconto/scome/Unit_Of_Measure</code></td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="Value_Scale">
+        <h3>
+          Value_Scale<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#Value_Scale" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://purl.org/sconto/scome/Value_Scale</code></td>
+            </tr>
+            <tr>
+                <th>In range of</th>
+                <td>
+                    <a href="http://purl.org/sconto/scobe/hasGECValueScale">hasGECValueScale</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="http://purl.org/sconto/scobe/hasBValueScale">hasBValueScale</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="Market">
+        <h3>
+          Market<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#Market" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://purl.org/sconto/scopro/Market</code></td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="Resource_Role">
+        <h3>
+          Resource_Role<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#Resource_Role" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://purl.org/sconto/scopro/Resource_Role</code></td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="SC_Entity">
+        <h3>
+          SC_Entity<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#SC_Entity" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://purl.org/sconto/scopro/SC_Entity</code></td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="Temporal_Relationship">
+        <h3>
+          Temporal_Relationship<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#Temporal_Relationship" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://purl.org/sconto/scopro/Temporal_Relationship</code></td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="Utilization">
+        <h3>
+          Utilization<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#Utilization" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://purl.org/sconto/scopro/Utilization</code></td>
             </tr>
         </table>
     </div>
@@ -1095,24 +1328,24 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://generic.org/sco/scobe#determinesTargetGroup</code></td>
+                <td><code>http://purl.org/sconto/scobe/determinesTargetGroup</code></td>
             </tr>
             <tr>
                 <th>Inverse properties</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#isDeterminedBy">http://generic.org/sco/scobe#isDeterminedBy</a><sup class="sup-op" title="object property">op</sup>
+                    <a href="http://purl.org/sconto/scobe/isDeterminedBy">isDeterminedBy</a><sup class="sup-op" title="object property">op</sup>
                 </td>
             </tr>
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#Group_Evaluation_Result">http://generic.org/sco/scobe#Group_Evaluation_Result</a><sup class="sup-c" title="class">c</sup>
+                    <a href="http://purl.org/sconto/scobe/Group_Evaluation_Result">Group_Evaluation_Result</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
                 <th>Range(s)</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#Reference_Group">http://generic.org/sco/scobe#Reference_Group</a><sup class="sup-c" title="class">c</sup>
+                    <a href="http://purl.org/sconto/scobe/Reference_Group">Reference_Group</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -1124,18 +1357,18 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://generic.org/sco/scobe#hasBValueScale</code></td>
+                <td><code>http://purl.org/sconto/scobe/hasBValueScale</code></td>
             </tr>
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#Benchmarking_Membership_Property">http://generic.org/sco/scobe#Benchmarking_Membership_Property</a><sup class="sup-c" title="class">c</sup>
+                    <a href="http://purl.org/sconto/scobe/Benchmarking_Membership_Property">Benchmarking_Membership_Property</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
                 <th>Range(s)</th>
                 <td>
-                    <a href="http://generic.org/sco/scome#Value_Scale">http://generic.org/sco/scome#Value_Scale</a><sup class="sup-c" title="class">c</sup>
+                    <a href="http://purl.org/sconto/scome/Value_Scale">scome:Value_Scale</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -1147,24 +1380,24 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://generic.org/sco/scobe#hasBenchmarkGroup</code></td>
+                <td><code>http://purl.org/sconto/scobe/hasBenchmarkGroup</code></td>
             </tr>
             <tr>
                 <th>Inverse properties</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#isBenchmarkGroupOf">http://generic.org/sco/scobe#isBenchmarkGroupOf</a><sup class="sup-op" title="object property">op</sup>
+                    <a href="http://purl.org/sconto/scobe/isBenchmarkGroupOf">isBenchmarkGroupOf</a><sup class="sup-op" title="object property">op</sup>
                 </td>
             </tr>
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#Benchmarking_Project">http://generic.org/sco/scobe#Benchmarking_Project</a><sup class="sup-c" title="class">c</sup>
+                    <a href="http://purl.org/sconto/scobe/Benchmarking_Project">Benchmarking_Project</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
                 <th>Range(s)</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#Benchmarking_Group">http://generic.org/sco/scobe#Benchmarking_Group</a><sup class="sup-c" title="class">c</sup>
+                    <a href="http://purl.org/sconto/scobe/Benchmarking_Group">Benchmarking_Group</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -1176,12 +1409,12 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://generic.org/sco/scobe#hasBenchmarkedSCEntity</code></td>
+                <td><code>http://purl.org/sconto/scobe/hasBenchmarkedSCEntity</code></td>
             </tr>
             <tr>
                 <th>Inverse properties</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#isBenchmarkedWith">http://generic.org/sco/scobe#isBenchmarkedWith</a><sup class="sup-op" title="object property">op</sup>
+                    <a href="http://purl.org/sconto/scobe/isBenchmarkedWith">isBenchmarkedWith</a><sup class="sup-op" title="object property">op</sup>
                 </td>
             </tr>
         </table>
@@ -1193,18 +1426,18 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://generic.org/sco/scobe#hasCComponent</code></td>
+                <td><code>http://purl.org/sconto/scobe/hasCComponent</code></td>
             </tr>
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#Composite_Criterion">http://generic.org/sco/scobe#Composite_Criterion</a><sup class="sup-c" title="class">c</sup>
+                    <a href="http://purl.org/sconto/scobe/Composite_Criterion">Composite_Criterion</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
                 <th>Range(s)</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#Group_Evaluation_Criterion">http://generic.org/sco/scobe#Group_Evaluation_Criterion</a><sup class="sup-c" title="class">c</sup>
+                    <a href="http://purl.org/sconto/scobe/Group_Evaluation_Criterion">Group_Evaluation_Criterion</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -1216,24 +1449,24 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://generic.org/sco/scobe#hasCriterionResult</code></td>
+                <td><code>http://purl.org/sconto/scobe/hasCriterionResult</code></td>
             </tr>
             <tr>
                 <th>Inverse properties</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#isCriterionResultOf">http://generic.org/sco/scobe#isCriterionResultOf</a><sup class="sup-op" title="object property">op</sup>
+                    <a href="http://purl.org/sconto/scobe/isCriterionResultOf">isCriterionResultOf</a><sup class="sup-op" title="object property">op</sup>
                 </td>
             </tr>
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#Group_Evaluation_Criterion">http://generic.org/sco/scobe#Group_Evaluation_Criterion</a><sup class="sup-c" title="class">c</sup>
+                    <a href="http://purl.org/sconto/scobe/Group_Evaluation_Criterion">Group_Evaluation_Criterion</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
                 <th>Range(s)</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#Group_Evaluation_Result">http://generic.org/sco/scobe#Group_Evaluation_Result</a><sup class="sup-c" title="class">c</sup>
+                    <a href="http://purl.org/sconto/scobe/Group_Evaluation_Result">Group_Evaluation_Result</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -1245,18 +1478,18 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://generic.org/sco/scobe#hasEvaluationCriterion</code></td>
+                <td><code>http://purl.org/sconto/scobe/hasEvaluationCriterion</code></td>
             </tr>
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#Benchmarking_Project">http://generic.org/sco/scobe#Benchmarking_Project</a><sup class="sup-c" title="class">c</sup>
+                    <a href="http://purl.org/sconto/scobe/Benchmarking_Project">Benchmarking_Project</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
                 <th>Range(s)</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#Group_Evaluation_Criterion">http://generic.org/sco/scobe#Group_Evaluation_Criterion</a><sup class="sup-c" title="class">c</sup>
+                    <a href="http://purl.org/sconto/scobe/Group_Evaluation_Criterion">Group_Evaluation_Criterion</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -1268,12 +1501,12 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://generic.org/sco/scobe#hasEvaluationResult</code></td>
+                <td><code>http://purl.org/sconto/scobe/hasEvaluationResult</code></td>
             </tr>
             <tr>
                 <th>Inverse properties</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#isEvaluationResultOf">http://generic.org/sco/scobe#isEvaluationResultOf</a><sup class="sup-op" title="object property">op</sup>
+                    <a href="http://purl.org/sconto/scobe/isEvaluationResultOf">isEvaluationResultOf</a><sup class="sup-op" title="object property">op</sup>
                 </td>
             </tr>
         </table>
@@ -1285,18 +1518,18 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://generic.org/sco/scobe#hasGECValueScale</code></td>
+                <td><code>http://purl.org/sconto/scobe/hasGECValueScale</code></td>
             </tr>
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#Group_Evaluation_Criterion">http://generic.org/sco/scobe#Group_Evaluation_Criterion</a><sup class="sup-c" title="class">c</sup>
+                    <a href="http://purl.org/sconto/scobe/Group_Evaluation_Criterion">Group_Evaluation_Criterion</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
                 <th>Range(s)</th>
                 <td>
-                    <a href="http://generic.org/sco/scome#Value_Scale">http://generic.org/sco/scome#Value_Scale</a><sup class="sup-c" title="class">c</sup>
+                    <a href="http://purl.org/sconto/scome/Value_Scale">scome:Value_Scale</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -1308,24 +1541,24 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://generic.org/sco/scobe#hasMembershipProperty</code></td>
+                <td><code>http://purl.org/sconto/scobe/hasMembershipProperty</code></td>
             </tr>
             <tr>
                 <th>Inverse properties</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#isMembershipPropertyOf">http://generic.org/sco/scobe#isMembershipPropertyOf</a><sup class="sup-op" title="object property">op</sup>
+                    <a href="http://purl.org/sconto/scobe/isMembershipPropertyOf">isMembershipPropertyOf</a><sup class="sup-op" title="object property">op</sup>
                 </td>
             </tr>
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#Benchmarking_Group">http://generic.org/sco/scobe#Benchmarking_Group</a><sup class="sup-c" title="class">c</sup>
+                    <a href="http://purl.org/sconto/scobe/Benchmarking_Group">Benchmarking_Group</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
                 <th>Range(s)</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#Benchmarking_Membership_Property">http://generic.org/sco/scobe#Benchmarking_Membership_Property</a><sup class="sup-c" title="class">c</sup>
+                    <a href="http://purl.org/sconto/scobe/Benchmarking_Membership_Property">Benchmarking_Membership_Property</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -1337,24 +1570,24 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://generic.org/sco/scobe#hasMembershipValue</code></td>
+                <td><code>http://purl.org/sconto/scobe/hasMembershipValue</code></td>
             </tr>
             <tr>
                 <th>Inverse properties</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#isMembershipValueOf">http://generic.org/sco/scobe#isMembershipValueOf</a><sup class="sup-op" title="object property">op</sup>
+                    <a href="http://purl.org/sconto/scobe/isMembershipValueOf">isMembershipValueOf</a><sup class="sup-op" title="object property">op</sup>
                 </td>
             </tr>
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#Benchmarking_Membership_Property">http://generic.org/sco/scobe#Benchmarking_Membership_Property</a><sup class="sup-c" title="class">c</sup>
+                    <a href="http://purl.org/sconto/scobe/Benchmarking_Membership_Property">Benchmarking_Membership_Property</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
                 <th>Range(s)</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#Membership_Property_Value">http://generic.org/sco/scobe#Membership_Property_Value</a><sup class="sup-c" title="class">c</sup>
+                    <a href="http://purl.org/sconto/scobe/Membership_Property_Value">Membership_Property_Value</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -1366,24 +1599,24 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://generic.org/sco/scobe#hasReferencePractice</code></td>
+                <td><code>http://purl.org/sconto/scobe/hasReferencePractice</code></td>
             </tr>
             <tr>
                 <th>Inverse properties</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#isReferencePracticeOfRGroup">http://generic.org/sco/scobe#isReferencePracticeOfRGroup</a><sup class="sup-op" title="object property">op</sup>
+                    <a href="http://purl.org/sconto/scobe/isReferencePracticeOfRGroup">isReferencePracticeOfRGroup</a><sup class="sup-op" title="object property">op</sup>
                 </td>
             </tr>
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#Reference_Group">http://generic.org/sco/scobe#Reference_Group</a><sup class="sup-c" title="class">c</sup>
+                    <a href="http://purl.org/sconto/scobe/Reference_Group">Reference_Group</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
                 <th>Range(s)</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#Reference_Practice">http://generic.org/sco/scobe#Reference_Practice</a><sup class="sup-c" title="class">c</sup>
+                    <a href="http://purl.org/sconto/scobe/Reference_Practice">Reference_Practice</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -1395,12 +1628,12 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://generic.org/sco/scobe#hasReferencesValueSingleResult</code></td>
+                <td><code>http://purl.org/sconto/scobe/hasReferencesValueSingleResult</code></td>
             </tr>
             <tr>
                 <th>Inverse properties</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#isReferenceValue">http://generic.org/sco/scobe#isReferenceValue</a><sup class="sup-op" title="object property">op</sup>
+                    <a href="http://purl.org/sconto/scobe/isReferenceValue">isReferenceValue</a><sup class="sup-op" title="object property">op</sup>
                 </td>
             </tr>
         </table>
@@ -1412,24 +1645,24 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://generic.org/sco/scobe#hasTransformationRule</code></td>
+                <td><code>http://purl.org/sconto/scobe/hasTransformationRule</code></td>
             </tr>
             <tr>
                 <th>Inverse properties</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#isTransformationRuleOf">http://generic.org/sco/scobe#isTransformationRuleOf</a><sup class="sup-op" title="object property">op</sup>
+                    <a href="http://purl.org/sconto/scobe/isTransformationRuleOf">isTransformationRuleOf</a><sup class="sup-op" title="object property">op</sup>
                 </td>
             </tr>
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#Atomic_Criterion">http://generic.org/sco/scobe#Atomic_Criterion</a><sup class="sup-c" title="class">c</sup>
+                    <a href="http://purl.org/sconto/scobe/Atomic_Criterion">Atomic_Criterion</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
                 <th>Range(s)</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#Benchmarking_Transformation_Rule">http://generic.org/sco/scobe#Benchmarking_Transformation_Rule</a><sup class="sup-c" title="class">c</sup>
+                    <a href="http://purl.org/sconto/scobe/Benchmarking_Transformation_Rule">Benchmarking_Transformation_Rule</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -1441,7 +1674,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://generic.org/sco/scobe#isBenchmarkGroupOf</code></td>
+                <td><code>http://purl.org/sconto/scobe/isBenchmarkGroupOf</code></td>
             </tr>
         </table>
     </div>
@@ -1452,12 +1685,12 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://generic.org/sco/scobe#isBenchmarkedWith</code></td>
+                <td><code>http://purl.org/sconto/scobe/isBenchmarkedWith</code></td>
             </tr>
             <tr>
                 <th>Range(s)</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#Benchmarking_Project">http://generic.org/sco/scobe#Benchmarking_Project</a><sup class="sup-c" title="class">c</sup>
+                    <a href="http://purl.org/sconto/scobe/Benchmarking_Project">Benchmarking_Project</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -1469,7 +1702,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://generic.org/sco/scobe#isCriterionResultOf</code></td>
+                <td><code>http://purl.org/sconto/scobe/isCriterionResultOf</code></td>
             </tr>
         </table>
     </div>
@@ -1480,7 +1713,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://generic.org/sco/scobe#isDeterminedBy</code></td>
+                <td><code>http://purl.org/sconto/scobe/isDeterminedBy</code></td>
             </tr>
         </table>
     </div>
@@ -1491,18 +1724,18 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://generic.org/sco/scobe#isEquivalentProperty</code></td>
+                <td><code>http://purl.org/sconto/scobe/isEquivalentProperty</code></td>
             </tr>
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#Benchmarking_Membership_Property">http://generic.org/sco/scobe#Benchmarking_Membership_Property</a><sup class="sup-c" title="class">c</sup>
+                    <a href="http://purl.org/sconto/scobe/Benchmarking_Membership_Property">Benchmarking_Membership_Property</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
                 <th>Range(s)</th>
                 <td>
-                    <a href="http://generic.org/sco/scome#Secondary_Attribute">http://generic.org/sco/scome#Secondary_Attribute</a><sup class="sup-c" title="class">c</sup>
+                    <a href="http://purl.org/sconto/scome/Secondary_Attribute">scome:Secondary_Attribute</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -1514,18 +1747,18 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://generic.org/sco/scobe#isEvaluationResultOf</code></td>
+                <td><code>http://purl.org/sconto/scobe/isEvaluationResultOf</code></td>
             </tr>
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#Group_Evaluation_Result">http://generic.org/sco/scobe#Group_Evaluation_Result</a><sup class="sup-c" title="class">c</sup>
+                    <a href="http://purl.org/sconto/scobe/Group_Evaluation_Result">Group_Evaluation_Result</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
                 <th>Range(s)</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#Benchmarking_Group">http://generic.org/sco/scobe#Benchmarking_Group</a><sup class="sup-c" title="class">c</sup>
+                    <a href="http://purl.org/sconto/scobe/Benchmarking_Group">Benchmarking_Group</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -1537,7 +1770,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://generic.org/sco/scobe#isMembershipPropertyOf</code></td>
+                <td><code>http://purl.org/sconto/scobe/isMembershipPropertyOf</code></td>
             </tr>
         </table>
     </div>
@@ -1548,7 +1781,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://generic.org/sco/scobe#isMembershipValueOf</code></td>
+                <td><code>http://purl.org/sconto/scobe/isMembershipValueOf</code></td>
             </tr>
         </table>
     </div>
@@ -1559,12 +1792,12 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://generic.org/sco/scobe#isProducedBy</code></td>
+                <td><code>http://purl.org/sconto/scobe/isProducedBy</code></td>
             </tr>
             <tr>
                 <th>Inverse properties</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#produce">http://generic.org/sco/scobe#produce</a><sup class="sup-op" title="object property">op</sup>
+                    <a href="http://purl.org/sconto/scobe/produce">produce</a><sup class="sup-op" title="object property">op</sup>
                 </td>
             </tr>
         </table>
@@ -1576,7 +1809,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://generic.org/sco/scobe#isReferencePracticeOfRGroup</code></td>
+                <td><code>http://purl.org/sconto/scobe/isReferencePracticeOfRGroup</code></td>
             </tr>
         </table>
     </div>
@@ -1587,18 +1820,18 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://generic.org/sco/scobe#isReferenceValue</code></td>
+                <td><code>http://purl.org/sconto/scobe/isReferenceValue</code></td>
             </tr>
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#Single_Result">http://generic.org/sco/scobe#Single_Result</a><sup class="sup-c" title="class">c</sup>
+                    <a href="http://purl.org/sconto/scobe/Single_Result">Single_Result</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
                 <th>Range(s)</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#Reference_Value">http://generic.org/sco/scobe#Reference_Value</a><sup class="sup-c" title="class">c</sup>
+                    <a href="http://purl.org/sconto/scobe/Reference_Value">Reference_Value</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -1610,18 +1843,18 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://generic.org/sco/scobe#isTargetGroupOf</code></td>
+                <td><code>http://purl.org/sconto/scobe/isTargetGroupOf</code></td>
             </tr>
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#Reference_Group">http://generic.org/sco/scobe#Reference_Group</a><sup class="sup-c" title="class">c</sup>
+                    <a href="http://purl.org/sconto/scobe/Reference_Group">Reference_Group</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
                 <th>Range(s)</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#Benchmarking_Group">http://generic.org/sco/scobe#Benchmarking_Group</a><sup class="sup-c" title="class">c</sup>
+                    <a href="http://purl.org/sconto/scobe/Benchmarking_Group">Benchmarking_Group</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -1633,18 +1866,18 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://generic.org/sco/scobe#isTransformableInto</code></td>
+                <td><code>http://purl.org/sconto/scobe/isTransformableInto</code></td>
             </tr>
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="http://generic.org/sco/scome#Performance_Attribute">http://generic.org/sco/scome#Performance_Attribute</a><sup class="sup-c" title="class">c</sup>
+                    <a href="http://purl.org/sconto/scome/Performance_Attribute">scome:Performance_Attribute</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
                 <th>Range(s)</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#Atomic_Criterion">http://generic.org/sco/scobe#Atomic_Criterion</a><sup class="sup-c" title="class">c</sup>
+                    <a href="http://purl.org/sconto/scobe/Atomic_Criterion">Atomic_Criterion</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -1656,7 +1889,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://generic.org/sco/scobe#isTransformationRuleOf</code></td>
+                <td><code>http://purl.org/sconto/scobe/isTransformationRuleOf</code></td>
             </tr>
         </table>
     </div>
@@ -1667,18 +1900,18 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://generic.org/sco/scobe#isTransformedWith</code></td>
+                <td><code>http://purl.org/sconto/scobe/isTransformedWith</code></td>
             </tr>
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#Transformed_Measure">http://generic.org/sco/scobe#Transformed_Measure</a><sup class="sup-c" title="class">c</sup>
+                    <a href="http://purl.org/sconto/scobe/Transformed_Measure">Transformed_Measure</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
                 <th>Range(s)</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#Benchmarking_Transformation_Rule">http://generic.org/sco/scobe#Benchmarking_Transformation_Rule</a><sup class="sup-c" title="class">c</sup>
+                    <a href="http://purl.org/sconto/scobe/Benchmarking_Transformation_Rule">Benchmarking_Transformation_Rule</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -1690,18 +1923,18 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://generic.org/sco/scobe#originalMeasure</code></td>
+                <td><code>http://purl.org/sconto/scobe/originalMeasure</code></td>
             </tr>
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#Transformed_Measure">http://generic.org/sco/scobe#Transformed_Measure</a><sup class="sup-c" title="class">c</sup>
+                    <a href="http://purl.org/sconto/scobe/Transformed_Measure">Transformed_Measure</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
                 <th>Range(s)</th>
                 <td>
-                    <a href="http://generic.org/sco/scome#Measure">http://generic.org/sco/scome#Measure</a><sup class="sup-c" title="class">c</sup>
+                    <a href="http://purl.org/sconto/scome/Measure">scome:Measure</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -1713,18 +1946,18 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://generic.org/sco/scobe#produce</code></td>
+                <td><code>http://purl.org/sconto/scobe/produce</code></td>
             </tr>
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#Benchmarking_Project">http://generic.org/sco/scobe#Benchmarking_Project</a><sup class="sup-c" title="class">c</sup>
+                    <a href="http://purl.org/sconto/scobe/Benchmarking_Project">Benchmarking_Project</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
                 <th>Range(s)</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#Benchmark">http://generic.org/sco/scobe#Benchmark</a><sup class="sup-c" title="class">c</sup>
+                    <a href="http://purl.org/sconto/scobe/Benchmark">Benchmark</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -1748,7 +1981,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://generic.org/sco/scobe#hasRLowerBound</code></td>
+                <td><code>http://purl.org/sconto/scobe/hasRLowerBound</code></td>
             </tr>
         </table>
     </div>
@@ -1759,12 +1992,12 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://generic.org/sco/scobe#hasRUpperBound</code></td>
+                <td><code>http://purl.org/sconto/scobe/hasRUpperBound</code></td>
             </tr>
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#Range_Result">http://generic.org/sco/scobe#Range_Result</a><sup class="sup-c" title="class">c</sup>
+                    <a href="http://purl.org/sconto/scobe/Range_Result">Range_Result</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -1776,12 +2009,12 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://generic.org/sco/scobe#lowerBound</code></td>
+                <td><code>http://purl.org/sconto/scobe/lowerBound</code></td>
             </tr>
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#Membership_Property_Value">http://generic.org/sco/scobe#Membership_Property_Value</a><sup class="sup-c" title="class">c</sup>
+                    <a href="http://purl.org/sconto/scobe/Membership_Property_Value">Membership_Property_Value</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -1793,12 +2026,12 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://generic.org/sco/scobe#numberOfBGEntities</code></td>
+                <td><code>http://purl.org/sconto/scobe/numberOfBGEntities</code></td>
             </tr>
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#Benchmarking_Group">http://generic.org/sco/scobe#Benchmarking_Group</a><sup class="sup-c" title="class">c</sup>
+                    <a href="http://purl.org/sconto/scobe/Benchmarking_Group">Benchmarking_Group</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
@@ -1816,12 +2049,12 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://generic.org/sco/scobe#numberOfRGEntities</code></td>
+                <td><code>http://purl.org/sconto/scobe/numberOfRGEntities</code></td>
             </tr>
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#Reference_Group">http://generic.org/sco/scobe#Reference_Group</a><sup class="sup-c" title="class">c</sup>
+                    <a href="http://purl.org/sconto/scobe/Reference_Group">Reference_Group</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
@@ -1839,12 +2072,12 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://generic.org/sco/scobe#upperBound</code></td>
+                <td><code>http://purl.org/sconto/scobe/upperBound</code></td>
             </tr>
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#Membership_Property_Value">http://generic.org/sco/scobe#Membership_Property_Value</a><sup class="sup-c" title="class">c</sup>
+                    <a href="http://purl.org/sconto/scobe/Membership_Property_Value">Membership_Property_Value</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -1865,12 +2098,12 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://generic.org/sco/scobe#elementValue</code></td>
+                <td><code>http://purl.org/sconto/scobe/elementValue</code></td>
             </tr>
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#Membership_Property_Value">http://generic.org/sco/scobe#Membership_Property_Value</a><sup class="sup-c" title="class">c</sup>
+                    <a href="http://purl.org/sconto/scobe/Membership_Property_Value">Membership_Property_Value</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -1882,12 +2115,12 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://generic.org/sco/scobe#hasRValue</code></td>
+                <td><code>http://purl.org/sconto/scobe/hasRValue</code></td>
             </tr>
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#Single_Result">http://generic.org/sco/scobe#Single_Result</a><sup class="sup-c" title="class">c</sup>
+                    <a href="http://purl.org/sconto/scobe/Single_Result">Single_Result</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -1899,13 +2132,139 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://generic.org/sco/scobe#informationQuality</code></td>
+                <td><code>http://purl.org/sconto/scobe/informationQuality</code></td>
             </tr>
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="http://generic.org/sco/scobe#Benchmarking_Group">http://generic.org/sco/scobe#Benchmarking_Group</a><sup class="sup-c" title="class">c</sup>
+                    <a href="http://purl.org/sconto/scobe/Benchmarking_Group">Benchmarking_Group</a><sup class="sup-c" title="class">c</sup>
                 </td>
+            </tr>
+        </table>
+    </div>
+</section>
+
+<section id="annotationproperties">
+    <h2>Annotation Properties <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
+    <ul class="hlist">
+        <li><a href="#contributor">contributor</a></li>
+        <li><a href="#creator">creator</a></li>
+        <li><a href="#description">description</a></li>
+        <li><a href="#publisher">publisher</a></li>
+        <li><a href="#title">title</a></li>
+        <li><a href="#license">license</a></li>
+        <li><a href="#preferredNamespacePrefix">preferredNamespacePrefix</a></li>
+        <li><a href="#preferredNamespaceUri">preferredNamespaceUri</a></li>
+        <li><a href="#historyNote">historyNote</a></li>
+        <li><a href="#modified">modified</a></li>
+    </ul>
+    <div class="entity property" id="contributor">
+        <h3>contributor<sup title="annotation property" class="sup-ap">ap</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#contributor" title="fragment link to here">#</a>&nbsp;<a href="#annotationproperties" title="Annotation Properties Index">APs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://purl.org/dc/elements/1.1/contributor</code></td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="creator">
+        <h3>creator<sup title="annotation property" class="sup-ap">ap</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#creator" title="fragment link to here">#</a>&nbsp;<a href="#annotationproperties" title="Annotation Properties Index">APs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://purl.org/dc/elements/1.1/creator</code></td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="description">
+        <h3>description<sup title="annotation property" class="sup-ap">ap</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#description" title="fragment link to here">#</a>&nbsp;<a href="#annotationproperties" title="Annotation Properties Index">APs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://purl.org/dc/elements/1.1/description</code></td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="publisher">
+        <h3>publisher<sup title="annotation property" class="sup-ap">ap</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#publisher" title="fragment link to here">#</a>&nbsp;<a href="#annotationproperties" title="Annotation Properties Index">APs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://purl.org/dc/elements/1.1/publisher</code></td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="title">
+        <h3>title<sup title="annotation property" class="sup-ap">ap</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#title" title="fragment link to here">#</a>&nbsp;<a href="#annotationproperties" title="Annotation Properties Index">APs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://purl.org/dc/elements/1.1/title</code></td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="license">
+        <h3>license<sup title="annotation property" class="sup-ap">ap</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#license" title="fragment link to here">#</a>&nbsp;<a href="#annotationproperties" title="Annotation Properties Index">APs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://purl.org/dc/terms/license</code></td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="preferredNamespacePrefix">
+        <h3>preferredNamespacePrefix<sup title="annotation property" class="sup-ap">ap</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#preferredNamespacePrefix" title="fragment link to here">#</a>&nbsp;<a href="#annotationproperties" title="Annotation Properties Index">APs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://purl.org/vocab/vann/preferredNamespacePrefix</code></td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="preferredNamespaceUri">
+        <h3>preferredNamespaceUri<sup title="annotation property" class="sup-ap">ap</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#preferredNamespaceUri" title="fragment link to here">#</a>&nbsp;<a href="#annotationproperties" title="Annotation Properties Index">APs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://purl.org/vocab/vann/preferredNamespaceUri</code></td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="historyNote">
+        <h3>historyNote<sup title="annotation property" class="sup-ap">ap</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#historyNote" title="fragment link to here">#</a>&nbsp;<a href="#annotationproperties" title="Annotation Properties Index">APs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.w3.org/2004/02/skos/core#historyNote</code></td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="modified">
+        <h3>modified<sup title="annotation property" class="sup-ap">ap</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#modified" title="fragment link to here">#</a>&nbsp;<a href="#annotationproperties" title="Annotation Properties Index">APs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#modified</code></td>
             </tr>
         </table>
     </div>
@@ -1916,9 +2275,9 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
     <h2>Namespaces <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
     <dl>
         <dt>default (scobe)</dt>
-        <dd><code>http://generic.org/sco/scobe/full/0.1/</code></dd>
+        <dd><code>http://purl.org/sconto/scobe/full/0.1/</code></dd>
         <dt>:</dt>
-        <dd><code>http://generic.org/sco/scobe</code></dd>
+        <dd><code>http://purl.org/sconto/scobe/</code></dd>
         <dt>dc</dt>
         <dd><code>http://purl.org/dc/elements/1.1/</code></dd>
         <dt>dcterms</dt>
@@ -1936,7 +2295,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <dt>rdfs</dt>
         <dd><code>http://www.w3.org/2000/01/rdf-schema#</code></dd>
         <dt>scome</dt>
-        <dd><code>http://generic.org/sco/scome</code></dd>
+        <dd><code>http://purl.org/sconto/scome/</code></dd>
         <dt>sdo</dt>
         <dd><code>http://schema.org/</code></dd>
         <dt>skos</dt>
